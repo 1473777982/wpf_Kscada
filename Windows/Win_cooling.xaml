@@ -1,0 +1,194 @@
+﻿<Window  x:Class="R2R.Pages.Win_cooling"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+      xmlns:controls="clr-namespace:controls;assembly=controls"
+      mc:Ignorable="d" 
+      Height="600" Width="500" 
+      Title="" HorizontalAlignment="Left" VerticalAlignment="Top" Icon="/Xwindow/Resources/立方体 立体 多面体 方块2.png">
+
+    <Grid  Background="{StaticResource Color_BackGround}">
+        <GroupBox Header="CA1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Background="{x:Null}" Height="179" Width="217">
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Height="137">
+                <Grid Height="18" Width="200">
+                    <TextBlock TextWrapping="Wrap" Text="温度(℃)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="66,0,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="流量(L/min)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="124,0,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="位置" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="腔体" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center"  Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="阴极1" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="阴极2" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center"  Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="CA2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="232,10,0,0" Background="{x:Null}" Height="179" Width="217">
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Height="137">
+                <Grid Height="18" Width="200">
+                    <TextBlock TextWrapping="Wrap" Text="位置" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBlock TextWrapping="Wrap" Text="温度(℃)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="66,0,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="流量(L/min)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="124,0,0,0"/>
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="腔体" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center"  Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="阴极1" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="阴极2" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center"  Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="TPM" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center"  Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="CA3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,194,0,0" Background="{x:Null}" Height="179" Width="217">
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Height="137">
+                <Grid Height="18" Width="200">
+                    <TextBlock TextWrapping="Wrap" Text="位置" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBlock TextWrapping="Wrap" Text="温度(℃)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="66,0,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="流量(L/min)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="124,0,0,0"/>
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="腔体" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center"  Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="阴极1" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="阴极2" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center"  Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="TPM" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center"  Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="CA4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="232,194,0,0" Background="{x:Null}" Height="179" Width="217">
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Height="137">
+                <Grid Height="18" Width="200">
+                    <TextBlock TextWrapping="Wrap" Text="位置" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBlock TextWrapping="Wrap" Text="温度(℃)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="66,0,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="流量(L/min)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="124,0,0,0"/>
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="腔体" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center"  Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="膜厚仪" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="电极" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center"  Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="分子泵" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center"  Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="CA5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,378,0,0" Background="{x:Null}" Height="179" Width="217">
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Height="137">
+                <Grid Height="18" Width="200">
+                    <TextBlock TextWrapping="Wrap" Text="位置" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBlock TextWrapping="Wrap" Text="温度(℃)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="66,0,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="流量(L/min)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="124,0,0,0"/>
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="腔体" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center"  Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="阴极1" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="阴极2" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center"  Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="TPM" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center"  Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="other" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="232,378,0,0" Background="{x:Null}" Height="179" Width="217">
+            <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Height="137">
+                <Grid Height="18" Width="200">
+                    <TextBlock TextWrapping="Wrap" Text="位置" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBlock TextWrapping="Wrap" Text="温度(℃)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="66,0,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="流量(L/min)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="124,0,0,0"/>
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="离子源" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center"  Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+                <Grid Height="18" Width="200" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="恒温水箱" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Background="{StaticResource Color_tagCtrl_read}" Margin="66,0,0,0" setAble="False"/>
+                    <controls:tagControl HorizontalAlignment="Left" FontSize="14" Width="60" VerticalAlignment="Center" Margin="134,0,0,0" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</Window>

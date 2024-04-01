@@ -1,0 +1,13 @@
+﻿<Window x:Class="R2R.Xwindow.User_manager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:R2R.Xwindow"
+        mc:Ignorable="d"
+        Title="User_manager"  Width="550" Height="400" Loaded="Window_Loaded" Background="{x:Null}" Icon="/Xwindow/Resources/立方体 立体 多面体 方块2.png">
+    <Grid Background="{StaticResource Color_BackGround}" >
+        <DataGrid x:Name="dg"  ItemsSource="{Binding}" VerticalAlignment="Top"/>
+        <Button x:Name="bt_conform" Content="确定" Padding="0,0,0,0"  FontSize="13"  HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="100" Height="30" Margin="0,0,10,10" Click="bt_conform_Click"/>
+    </Grid>
+</Window>

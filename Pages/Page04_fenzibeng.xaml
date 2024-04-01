@@ -1,0 +1,29 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:R2R"
+      xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+      xmlns:UControl="clr-namespace:R2R.UControl" x:Class="R2R.Page04_fenzibeng"
+      mc:Ignorable="d" 
+      d:DesignHeight="945" d:DesignWidth="1920" 
+      Title="Page04_fenzibeng">
+
+    <Grid x:Name="Page04fenzibeng"  Background="{StaticResource Color_BackGround}">
+        <TabControl FontSize="25">
+            <TabItem Header="TP 1-4" Width="200">
+                <Frame x:Name="frame1"/>
+            </TabItem>
+            <TabItem Header="TP 5-8" Padding="0,0,0,0" Width="200" PreviewMouseLeftButtonDown="TabItem_PreviewMouseLeftButtonDown">
+                <Frame x:Name="frame2"/>
+            </TabItem>
+            <TabItem Header="TP 9-12" Width="200" PreviewMouseLeftButtonDown="TabItem_PreviewMouseLeftButtonDown">
+                <Frame x:Name="frame3"/>
+            </TabItem>
+            <TabItem Header="TP 13-16" Width="200" PreviewMouseLeftButtonDown="TabItem_PreviewMouseLeftButtonDown">
+                <Frame x:Name="frame4"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Page>

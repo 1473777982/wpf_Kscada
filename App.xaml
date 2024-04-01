@@ -1,0 +1,104 @@
+﻿<Application x:Class="R2R.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:R2R"
+             xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+            
+             >
+    <!--StartupUri="Mainwindow.xaml"-->
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Panuon.UI.Silver;component/Control.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/R2R;component/Xwindow/Resources/Dictionary_GlobalStyles.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/R2R;component/Xwindow/Resources/Dictionaray_ScrollView.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/R2R;component/Xwindow/Resources/Dictionaray_DataGrid.xaml" />
+                <!--<ResourceDictionary Source="pack://application:,,,/R2R;component/Xwindow/Resources/Dictionary_MenuItem.xaml" />-->
+            </ResourceDictionary.MergedDictionaries>
+            <Style TargetType="ScrollBar" BasedOn="{StaticResource for_scrollbar}"/>
+            <!--<Style TargetType="ScrollViewer" BasedOn="{StaticResource for_scrollviewer}"/>-->
+            <SolidColorBrush x:Key="Color_BackGround" Color="#FFF1F2F3" />
+            <SolidColorBrush x:Key="Color_Running" Color="#FF33CC22" />
+            <SolidColorBrush x:Key="Color_Alarm" Color="#FFFD2F2F" />
+            <SolidColorBrush x:Key="Color_Warn" Color="#FFFFEE00" />
+            <SolidColorBrush x:Key="Color_General" Color="#FF7C848E" />
+            <SolidColorBrush x:Key="Color_MouseOver" Color="#FF9AF8FF" />
+            <SolidColorBrush x:Key="Color_tagCtrl_read" Color="#FFD3D5DE" />
+            <SolidColorBrush x:Key="Color_tagCtrl_write" Color="White" />
+            <Color x:Key="sigColor1_Run">#FF33CC22</Color>
+
+
+
+
+            <Style x:Key="box"  TargetType="Rectangle">
+                <Setter Property="Fill" Value="#FFF1F2F3" />
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Fill" Value="{StaticResource Color_MouseOver}" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="path"  TargetType="Path">
+                <Setter Property="Fill" Value="#FFF1F2F3" />
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Fill" Value="{StaticResource Color_MouseOver}" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="SV"  TargetType="Rectangle">
+                <Setter Property="Fill" Value="White" />
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Fill" Value="{StaticResource Color_MouseOver}" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="ShadowRectangleStyle" TargetType="Rectangle">
+                <Setter Property="Fill" Value="White"/>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Effect">
+                            <Setter.Value>
+                                <DropShadowEffect Color="Black" Direction="320" ShadowDepth="5" Opacity="0.7"/>
+                            </Setter.Value>
+                        </Setter>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="BVGV"  TargetType="Canvas">
+                <Setter Property="Background" Value="{x:Null}" />
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="{StaticResource Color_MouseOver}" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="ellipse"  TargetType="Ellipse">
+                <Setter Property="Fill" Value="White" />
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Fill" Value="{StaticResource Color_MouseOver}" />
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="ellipse_shadow" TargetType="Ellipse">
+                <Setter Property="Fill" Value="White"/>
+                <!--<Setter Property="Effect">
+                    <Setter.Value>
+                        <DropShadowEffect ShadowDepth="0"/>
+                    </Setter.Value>
+                </Setter>-->
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Effect">
+                            <Setter.Value>
+                                <DropShadowEffect ShadowDepth="5" Color="Black" Opacity="0.7"/>
+                            </Setter.Value>
+                        </Setter>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

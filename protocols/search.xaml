@@ -1,0 +1,24 @@
+﻿<Window x:Class="R2R.protocols.search"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:R2R.protocols"
+      xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+      mc:Ignorable="d" 
+      Title="查找" Background="{x:Null}" Icon="/Xwindow/Resources/立方体 立体 多面体 方块2.png">
+
+    <Grid Background="{StaticResource Color_BackGround}">
+        <TextBox x:Name="textBox_search" pu:TextBoxHelper.CornerRadius="20"
+            pu:TextBoxHelper.Watermark="Search ..."
+            Height="40"
+            Width="299"
+            Padding="15,0,30,0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,0,0,0"
+                           />
+        <Button x:Name="button_search_next" HorizontalAlignment="Left"                 
+            Width="60" Height="30" Click="search_Click" Content="下一个" VerticalAlignment="Top" Margin="350,5,0,0"/>
+        <Button x:Name="button_search_befor" HorizontalAlignment="Left"
+            Width="60" Height="30" Click="search_Click"  Content="上一个"  VerticalAlignment="Top" Margin="450,5,20,0" />
+
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:R2R"
+      xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+      xmlns:UControl="clr-namespace:R2R.UControl" xmlns:UControl1="clr-namespace:R2R.UControl" xmlns:controls="clr-namespace:controls;assembly=controls" x:Class="R2R.Page07_peifang"
+      mc:Ignorable="d" 
+      d:DesignHeight="945" d:DesignWidth="1920" 
+      Title="Page07_peifang">
+    <Grid x:Name="Page07peifang" Background="{StaticResource Color_BackGround}"/>
+</Page>

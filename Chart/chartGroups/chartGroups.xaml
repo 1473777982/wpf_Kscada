@@ -1,0 +1,23 @@
+﻿<Window x:Class="R2R.Chart.chartGroups"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Silver="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver" 
+        mc:Ignorable="d"
+        Title="chartGroups" Height="450" Width="800" Background="{x:Null}" Icon="/Xwindow/Resources/立方体 立体 多面体 方块2.png">
+    <Grid Loaded="Grid_Loaded" Background="{StaticResource Color_BackGround}">
+        <TabControl x:Name="tabControl" Background="{x:Null}" Width="696" Margin="0,10,0,10">
+            <TabItem Header="实时曲线组" FontSize="14" >
+                <Frame x:Name="tabitem1"/>
+            </TabItem>
+            <TabItem Header="历史曲线组" FontSize="14">
+                <Frame x:Name="tabitem2"/>
+            </TabItem>
+        </TabControl>
+        <Button Content="保存"
+                Height="20" Width="120"
+                HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="628,10,0,0" Click="click_save" />
+    </Grid>
+</Window>

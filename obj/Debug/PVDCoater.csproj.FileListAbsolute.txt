@@ -1,0 +1,648 @@
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\PVDCoater.csproj.SuggestedBindingRedirects.cache
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\Xwindow\Resources\Styles.baml
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\Pages\ADSclinet.g.cs
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\Pages\zhenkong.g.cs
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\Window1.g.cs
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\Window2.g.cs
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\Xwindow\MacLikeWindow.g.cs
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\Xwindow\NavbarWindow.g.cs
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\Xwindow\NeteaseMusicWindow.g.cs
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\App.g.cs
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\PVDtest_MarkupCompile.cache
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\PVDtest_MarkupCompile.lref
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\PVDtest.exe
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\PVDtest.pdb
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\PVDtest.exe.config
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\PVDtest.exe
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\PVDtest.pdb
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\CsvHelper.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Google.Protobuf.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\InfluxDB.Client.Core.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\InfluxDB.Client.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\JsonSubTypes.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Microsoft.Net.Http.Headers.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\MySql.Data.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\NodaTime.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\NodaTime.Serialization.JsonNet.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\NPOI.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\NPOI.OOXML.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Panuon.UI.Silver.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Pipelines.Sockets.Unofficial.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\RestSharp.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\StackExchange.Redis.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Buffers.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Memory.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Reactive.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Security.Permissions.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Threading.Channels.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\TwinCAT.Ads.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\ZstdNet.dll
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\CsvHelper.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Google.Protobuf.pdb
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Google.Protobuf.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Microsoft.Extensions.ObjectPool.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Microsoft.Net.Http.Headers.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\MySql.Data.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\NodaTime.pdb
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\NodaTime.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\NodaTime.Serialization.JsonNet.pdb
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\NodaTime.Serialization.JsonNet.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\NPOI.pdb
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\NPOI.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\NPOI.OOXML.pdb
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\NPOI.OOXML.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\NPOI.OpenXml4Net.pdb
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\NPOI.OpenXmlFormats.pdb
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\Pipelines.Sockets.Unofficial.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\RestSharp.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\StackExchange.Redis.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Buffers.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Diagnostics.PerformanceCounter.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Memory.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Reactive.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Security.Permissions.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Threading.Channels.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Maxwell\Desktop\PVDtest\bin\Debug\TwinCAT.Ads.xml
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\App.baml
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\Pages\ADSclinet.baml
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\Pages\zhenkong.baml
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\Window1.baml
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\Window2.baml
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\Xwindow\MacLikeWindow.baml
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\Xwindow\NavbarWindow.baml
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\Xwindow\NeteaseMusicWindow.baml
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\PVDtest.g.resources
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\PVDtest.Properties.Resources.resources
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\PVDCoater.csproj.GenerateResource.cache
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\PVDCoater.csproj.CoreCompileInputs.cache
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\PVDCoater.csproj.CopyComplete
+C:\Users\Maxwell\Desktop\PVDtest\obj\Debug\PVDCoater.csproj.AssemblyReference.cache
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\CsvHelper.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Google.Protobuf.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\InfluxDB.Client.Core.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\InfluxDB.Client.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\JsonSubTypes.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Microsoft.Net.Http.Headers.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\MySql.Data.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\NodaTime.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\NodaTime.Serialization.JsonNet.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\NPOI.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\NPOI.OOXML.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Panuon.UI.Silver.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Pipelines.Sockets.Unofficial.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\RestSharp.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\StackExchange.Redis.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Buffers.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Memory.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Reactive.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Security.Permissions.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Threading.Channels.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\TwinCAT.Ads.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\ZstdNet.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\CsvHelper.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Google.Protobuf.pdb
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Google.Protobuf.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Microsoft.Extensions.ObjectPool.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Microsoft.Net.Http.Headers.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\MySql.Data.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\NodaTime.pdb
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\NodaTime.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\NodaTime.Serialization.JsonNet.pdb
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\NodaTime.Serialization.JsonNet.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\NPOI.pdb
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\NPOI.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\NPOI.OOXML.pdb
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\NPOI.OOXML.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\NPOI.OpenXml4Net.pdb
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\NPOI.OpenXmlFormats.pdb
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\Pipelines.Sockets.Unofficial.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\RestSharp.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\StackExchange.Redis.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Buffers.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Diagnostics.PerformanceCounter.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Memory.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Reactive.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Security.Permissions.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Threading.Channels.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\TwinCAT.Ads.xml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\PVDCoater.csproj.SuggestedBindingRedirects.cache
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Xwindow\Resources\Styles.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\ADSclinet.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Xwindow\MacLikeWindow.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Xwindow\NavbarWindow.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Xwindow\NeteaseMusicWindow.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\App.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\App.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\ADSclinet.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Xwindow\MacLikeWindow.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Xwindow\NavbarWindow.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Xwindow\NeteaseMusicWindow.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\PVDCoater.csproj.GenerateResource.cache
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\PVDCoater.csproj.CoreCompileInputs.cache
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\PVDCoater.csproj.CopyComplete
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\PVDCoater.exe.config
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\PVDCoater.exe
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\PVDCoater.pdb
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\DynamicDataDisplay.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\log4net.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\System.ValueTuple.dll
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\DynamicDataDisplay.pdb
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\log4net.xml
+C:\Users\Maxwell\Desktop\PVDCoater\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page04_1.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page04_2.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page04_3.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page04_4.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page10_Help.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page01_zonglan.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page02_zhenkong.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page03_yinji.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page04_fenzibeng.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page05_dianyuan.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page06_dianji.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page07_peifang.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page08_MFC.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page09_SystemParameter.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page11_EtherCAT.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page12_Alarm.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page13_OperationRecord.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page14_EnergyStatistics.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\UControl\MyTextBox.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Xwindow\login.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Xwindow\SplashWindow.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Xwindow\Users.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Xwindow\Xwindow.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Mainwindow.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\PVDCoater_MarkupCompile.cache
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\PVDCoater_MarkupCompile.lref
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page04_1.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page04_2.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page04_3.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page04_4.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page10_Help.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page01_zonglan.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page02_zhenkong.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page03_yinji.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page04_fenzibeng.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page05_dianyuan.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page06_dianji.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page07_peifang.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page08_MFC.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page09_SystemParameter.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page11_EtherCAT.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page12_Alarm.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page13_OperationRecord.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page14_EnergyStatistics.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\UControl\MyTextBox.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Xwindow\login.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Xwindow\SplashWindow.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Xwindow\Users.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Xwindow\Xwindow.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Mainwindow.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\PVDCoater.g.resources
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\PVDCoater.Properties.Resources.resources
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\PVDCoater.exe
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\PVDCoater.pdb
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Xwindow\timepicker.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Xwindow\timepicker.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page15_cooling.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page15_cooling.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\PVDCoater.exe.config
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\PVDCoater.exe
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\PVDCoater.pdb
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\CsvHelper.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\DynamicDataDisplay.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Google.Protobuf.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\InfluxDB.Client.Core.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\InfluxDB.Client.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\JsonSubTypes.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\log4net.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Microsoft.Net.Http.Headers.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\MySql.Data.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\NodaTime.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\NodaTime.Serialization.JsonNet.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\NPOI.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\NPOI.OOXML.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Panuon.UI.Silver.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Pipelines.Sockets.Unofficial.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\RestSharp.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\StackExchange.Redis.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Buffers.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Memory.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Reactive.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Security.Permissions.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Threading.Channels.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\TwinCAT.Ads.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\ZstdNet.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.ValueTuple.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\CsvHelper.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\DynamicDataDisplay.pdb
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Google.Protobuf.pdb
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Google.Protobuf.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\log4net.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Microsoft.Extensions.ObjectPool.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Microsoft.Net.Http.Headers.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\MySql.Data.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\NodaTime.pdb
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\NodaTime.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\NodaTime.Serialization.JsonNet.pdb
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\NodaTime.Serialization.JsonNet.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\NPOI.pdb
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\NPOI.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\NPOI.OOXML.pdb
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\NPOI.OOXML.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\NPOI.OpenXml4Net.pdb
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\NPOI.OpenXmlFormats.pdb
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\Pipelines.Sockets.Unofficial.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\RestSharp.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\StackExchange.Redis.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Buffers.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Diagnostics.PerformanceCounter.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Memory.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Reactive.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Security.Permissions.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Threading.Channels.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\TwinCAT.Ads.xml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\bin\Debug\ru-ru\DynamicDataDisplay.resources.dll
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\PVDCoater.csproj.SuggestedBindingRedirects.cache
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Xwindow\Resources\Styles.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page04_1.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page04_2.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page04_3.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page04_4.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page10_Help.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page01_zonglan.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page02_zhenkong.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page03_yinji.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page04_fenzibeng.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page05_dianyuan.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page06_dianji.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page07_peifang.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page08_MFC.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page09_SystemParameter.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page11_EtherCAT.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page12_Alarm.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page13_OperationRecord.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\ADSclinet.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page14_EnergyStatistics.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page15_cooling.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\UControl\MyTextBox.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Xwindow\login.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Xwindow\SplashWindow.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Xwindow\timepicker.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Xwindow\Users.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Xwindow\Xwindow.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Mainwindow.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Xwindow\MacLikeWindow.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Xwindow\NavbarWindow.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Xwindow\NeteaseMusicWindow.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\App.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\PVDCoater_MarkupCompile.cache
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\PVDCoater_MarkupCompile.lref
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\App.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page04_1.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page04_2.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page04_3.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page04_4.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page10_Help.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page01_zonglan.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page02_zhenkong.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page03_yinji.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page04_fenzibeng.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page05_dianyuan.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page06_dianji.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page07_peifang.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page08_MFC.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page09_SystemParameter.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page11_EtherCAT.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page12_Alarm.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page13_OperationRecord.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\ADSclinet.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page14_EnergyStatistics.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Pages\Page15_cooling.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Themes\Generic.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\UControl\MyTextBox.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Xwindow\login.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Xwindow\SplashWindow.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Xwindow\timepicker.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Xwindow\Users.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Xwindow\Xwindow.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Mainwindow.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Xwindow\MacLikeWindow.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Xwindow\NavbarWindow.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\Xwindow\NeteaseMusicWindow.baml
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\PVDCoater.g.resources
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\PVDCoater.Properties.Resources.resources
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\PVDCoater.csproj.GenerateResource.cache
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\PVDCoater.csproj.CoreCompileInputs.cache
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\PVDCoater.csproj.CopyComplete
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\PVDCoater.exe
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\PVDCoater.pdb
+C:\Users\Maxwell\Desktop\PVDCoater - 副本\obj\Debug\PVDCoater.csproj.AssemblyReference.cache
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page05_dianyuan1.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\Pages\Page05_dianyuan1.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\hotKey\HotKeySettingsWindow.baml
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\hotKey\HotKeySettingsWindow.g.cs
+C:\Users\Maxwell\Desktop\PVDCoater\obj\Debug\PVDCoater.csproj.AssemblyReference.cache
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\PVDCoater.csproj.AssemblyReference.cache
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\PVDCoater.csproj.SuggestedBindingRedirects.cache
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\hotKey\HotKeySettingsWindow.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\Resources\Styles.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\hotKey\HotKeySettingsWindow.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page04_1.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page04_2.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page04_3.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page04_4.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page10_Help.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page01_zonglan.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page02_zhenkong.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page03_yinji.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page04_fenzibeng.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page05_dianyuan.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page06_dianji.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page07_peifang.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page08_MFC.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page09_SystemParameter.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page11_EtherCAT.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page12_Alarm.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page13_OperationRecord.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\ADSclinet.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page14_EnergyStatistics.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page15_cooling.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\UControl\MyTextBox.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\login.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\SplashWindow.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\timepicker.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\Users.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\Xwindow.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Mainwindow.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\MacLikeWindow.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\NavbarWindow.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\NeteaseMusicWindow.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\App.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\PVDCoater_MarkupCompile.cache
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\PVDCoater_MarkupCompile.lref
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\PVDCoater.exe
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\PVDCoater.pdb
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\PVDCoater.exe.config
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\PVDCoater.exe
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\PVDCoater.pdb
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\CsvHelper.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Google.Protobuf.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\InfluxDB.Client.Core.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\InfluxDB.Client.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\JsonSubTypes.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\log4net.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Microsoft.Net.Http.Headers.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\MySql.Data.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\NodaTime.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\NodaTime.Serialization.JsonNet.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\NPOI.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\NPOI.OOXML.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Panuon.UI.Silver.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Pipelines.Sockets.Unofficial.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\RestSharp.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\StackExchange.Redis.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Buffers.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Memory.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Reactive.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Security.Permissions.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Threading.Channels.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\TwinCAT.Ads.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\ZstdNet.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.ValueTuple.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\CsvHelper.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Google.Protobuf.pdb
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Google.Protobuf.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\log4net.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Microsoft.Extensions.ObjectPool.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Microsoft.Net.Http.Headers.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\MySql.Data.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\NodaTime.pdb
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\NodaTime.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\NodaTime.Serialization.JsonNet.pdb
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\NodaTime.Serialization.JsonNet.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\NPOI.pdb
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\NPOI.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\NPOI.OOXML.pdb
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\NPOI.OOXML.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\NPOI.OpenXml4Net.pdb
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\NPOI.OpenXmlFormats.pdb
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\Pipelines.Sockets.Unofficial.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\RestSharp.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\StackExchange.Redis.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Buffers.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Diagnostics.PerformanceCounter.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Memory.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Reactive.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Security.Permissions.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Threading.Channels.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\TwinCAT.Ads.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\App.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page04_1.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page04_2.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page04_3.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page04_4.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page10_Help.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page01_zonglan.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page02_zhenkong.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page03_yinji.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page04_fenzibeng.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page05_dianyuan.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page06_dianji.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page07_peifang.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page08_MFC.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page09_SystemParameter.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page11_EtherCAT.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page12_Alarm.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page13_OperationRecord.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\ADSclinet.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page14_EnergyStatistics.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Pages\Page15_cooling.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\UControl\MyTextBox.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\login.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\SplashWindow.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\timepicker.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\Users.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\Xwindow.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Mainwindow.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\MacLikeWindow.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\NavbarWindow.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\NeteaseMusicWindow.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\PVDCoater.g.resources
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\PVDCoater.Properties.Resources.resources
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\PVDCoater.csproj.GenerateResource.cache
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\PVDCoater.csproj.CoreCompileInputs.cache
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\PVDCoater.csproj.CopyComplete
+C:\Users\Maxwell\Desktop\R2R_WPF\bin\Debug\MiniExcel.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\ADSclient_varInfo.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\ADSclient_varInfo.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\VAR_monitor.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\Xwindow\VAR_monitor.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\UControl\HisChart.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\UControl\RealChart.g.cs
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\UControl\HisChart.baml
+C:\Users\Maxwell\Desktop\R2R_WPF\obj\Debug\UControl\RealChart.baml

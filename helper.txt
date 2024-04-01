@@ -1,0 +1,70 @@
+安装部署：
+1、influxDB
+        注册influxDB为系统服务
+        public static string org = "org_R2R";
+        public static string bucket = "bucket_R2R";
+        public static string measurement = "mem_history";
+        public static string username = "R2R";
+        public static string password = "influx_R2R";
+        public static string Token = 实际token
+2、SQL express
+3、.netframwork 4.7.2以上版本
+4、安装twinCAT
+
+
+架构：
+1、加载界面：login
+2、主界面：Mainwindow
+3、子界面：Pages
+4、报警：Page_Alarm
+5、通讯：Page_Ads
+6、曲线：Page_Chart
+
+
+用户控件：
+1、tagControl：变量输入输出
+2、tagSignal：状态显示
+
+
+UI：Panuon.UI.Silver;
+
+
+全局函数：
+1、log：public static void addLog(string operation)
+2、操作记录：public static void addoperationTOsql(string operation)
+3、添加用户报警： public static void AddAlarm(string des)
+4、删除用户报警： public static void DelAlarm(string des)
+5、ADS写入：  tag_manager.Current.setTag(string name,object obj)
+6、ADS脉冲：   tag_manager.Current.pulseTag(string varName,int time)
+
+快捷键：进入主界面菜单设置
+
+
+用户：
+username   password      levol  group   备注
+admin	   superadmin	 200	0	    admin
+ME	       engineer  	 125	0	    设备
+PE	       technition	 75  	0	    工艺
+PRD	       op123	     25	    0	    生产
+user	   1	         1	    0	    访客
+
+
+mySQL更换sql express ：
+   （1）App.cs 行 139替换
+   （2）ADSclinet.cs 行 595替换
+   （3）ADSclinet.cs 行 549替换
+   （4）App.cs 行 139替换
+   （5）App.cs 行 139替换
+   （6）App.cs 行 139替换
+
+
+sql server:
+1、通讯目录树右键新建连接，数据库根据输入的表名称新建表，表名称不能重复
+2、保存和更新通讯设置时，根据表名称更新数据表
+
+
+未完成项：
+1、Pages文件夹：子画面；参考Fscada画面
+2、Page_Chart画面
+3、PLC通讯优化：汇川PLC通讯添加
+4、操作记录界面

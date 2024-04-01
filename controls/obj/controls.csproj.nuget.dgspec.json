@@ -1,0 +1,132 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Maxwell\\Desktop\\R2R_WPF\\controls\\controls.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Maxwell\\Desktop\\R2R_WPF\\common\\common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Maxwell\\Desktop\\R2R_WPF\\common\\common.csproj",
+        "projectName": "common",
+        "projectPath": "C:\\Users\\Maxwell\\Desktop\\R2R_WPF\\common\\common.csproj",
+        "packagesPath": "C:\\Users\\Maxwell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Maxwell\\Desktop\\R2R_WPF\\common\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Maxwell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.14, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\Maxwell\\Desktop\\R2R_WPF\\controls\\controls.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Maxwell\\Desktop\\R2R_WPF\\controls\\controls.csproj",
+        "projectName": "controls",
+        "projectPath": "C:\\Users\\Maxwell\\Desktop\\R2R_WPF\\controls\\controls.csproj",
+        "packagesPath": "C:\\Users\\Maxwell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Maxwell\\Desktop\\R2R_WPF\\controls\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Maxwell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Maxwell\\Desktop\\R2R_WPF\\common\\common.csproj": {
+                "projectPath": "C:\\Users\\Maxwell\\Desktop\\R2R_WPF\\common\\common.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "NModbus": {
+              "target": "Package",
+              "version": "[3.0.80, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.14, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

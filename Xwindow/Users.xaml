@@ -1,0 +1,55 @@
+﻿<pu:WindowX x:Class="R2R.Xwindow.Users"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:R2R.Xwindow"
+        xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="用户登录" Height="300" Width="500"
+        BorderThickness="0"
+        pu:WindowXCaption.Header=" " Icon="/Xwindow/Resources/立方体 立体 多面体 方块2.png">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="pu:ButtonHelper.ButtonStyle" 
+            Value="Outline"/>
+            <Setter Property="BorderThickness" Value="0,0,0,0"/>
+            <Setter Property="BorderBrush" Value="#00000000"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Background" Value="{x:Null}"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=(pu:ButtonHelper.ButtonStyle),RelativeSource={RelativeSource Self}, Mode=OneWay}"
+                    Value="Outline">
+                    <Setter Property="pu:ButtonHelper.CornerRadius"
+                    Value="0"/>
+                    <Setter Property="pu:ButtonHelper.ClickStyle"
+                    Value="Sink"/>
+                    <Setter Property="pu:ButtonHelper.HoverBrush"
+                    Value="#FF3CBCC9"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="105,65,0,0" TextWrapping="Wrap" Text="用户名" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="111,125,0,0" TextWrapping="Wrap" Text="密码" VerticalAlignment="Top" RenderTransformOrigin="0.479,1.651"/>
+        <TextBox x:Name="User" Height="30"
+             Width="200"
+             pu:TextBoxHelper.Header=""
+             pu:TextBoxHelper.Watermark="User"
+             pu:TextBoxHelper.CornerRadius="3" 
+             pu:TextBoxHelper.IsClearButtonVisible="True" Text="User" Cursor="IBeam" Margin="171,58,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" TextAlignment="Left" VerticalContentAlignment="Center" GotFocus="User_GotFocus" />
+        <TextBox x:Name="Password" Height="30"
+            Width="200"
+            pu:TextBoxHelper.Header=""
+            pu:TextBoxHelper.Watermark="Password"
+            pu:TextBoxHelper.CornerRadius="3" Margin="171,118,0,0"
+            pu:TextBoxHelper.IsClearButtonVisible="True" Text="Password" Cursor="IBeam" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" KeyDown="Password_KeyDown" GotFocus="Password_GotFocus"  />
+        <Button x:Name="no" Content="取消"
+           Background="#FF7C848E"  Width="100" Height="30" Margin="123,197,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="no_Click"  />
+        <Button x:Name="yes" Content="确定"
+           Background="#FF7C848E"  Width="100" Height="30" Margin="309,197,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="yes_Click"  />
+
+    </Grid>
+</pu:WindowX>

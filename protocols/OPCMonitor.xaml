@@ -1,0 +1,59 @@
+﻿<Window x:Class="R2R.protocols.OPCMonitor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:R2R.protocols"
+        xmlns:wf ="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:forms1="clr-namespace:OpcUaHelper.Forms;assembly=OpcUaHelper"       
+        mc:Ignorable="d"
+        Title="OPCMonitor" d:DesignHeight="800"  d:DesignWidth="1000" Closing="Window_Closing" Icon="/Xwindow/Resources/立方体 立体 多面体 方块2.png">
+    <Window.Resources>
+        <ContextMenu x:Key="ContextMenu1">
+            <MenuItem Header="delete" Click="MenuItem_Click_1" />
+        </ContextMenu>
+        <ContextMenu x:Key="ContextMenu2">
+            <MenuItem Header="add" Click="MenuItem_Click_2" />
+        </ContextMenu>
+    </Window.Resources>
+    <Grid>
+        <Button x:Name="OK" Content="确定" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="70" BorderBrush="Black" Panel.ZIndex="3" Margin="0,0,114,10" Click="OK_Click"/>
+        <Button x:Name="Cancel" Content="取消" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="70" BorderBrush="Black" Panel.ZIndex="3" Margin="0,0,24,10" Click="Cancel_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="30,26,0,0" TextWrapping="Wrap" Text="Address:" VerticalAlignment="Top"/>
+        <TextBox x:Name="tblock1" HorizontalAlignment="Left" Margin="115,26,0,0" TextWrapping="Wrap" Text="opc.tcp://192.168.1.88:4840" VerticalAlignment="Top" Width="462"/>
+        <Button Content="Connect" HorizontalAlignment="Left" Margin="587,25,0,0" VerticalAlignment="Top" Click="connect_Click"/>
+        <WindowsFormsHost HorizontalAlignment="Left" Height="375" Margin="30,58,0,0" VerticalAlignment="Top" Width="220">
+            <forms1:TreeViewEx x:Name="BrowseNodesTV" BeforeExpand="BrowseNodesTV_BeforeExpand" AfterSelect="BrowseNodesTV_AfterSelect" MouseClick="BrowseNodesTV_MouseClick"/>
+        </WindowsFormsHost>
+        <TextBlock x:Name="state" HorizontalAlignment="Left" Margin="30,0,0,10" TextWrapping="Wrap" Text="state" VerticalAlignment="Bottom" Panel.ZIndex="3"/>
+        <Button x:Name="Subscript" Content="Subscript" HorizontalAlignment="Left" Margin="255,59,0,0" VerticalAlignment="Top" Click="Subscript_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="336,60,0,0" TextWrapping="Wrap" Text="Selected NodeId:" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox_nodeId" Margin="449,60,160,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="label_time_spend" HorizontalAlignment="Right" Margin="837,61,120,0" TextWrapping="Wrap" Text="0ms" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,439,0,0" TextWrapping="Wrap" Text="Added NodeIds" VerticalAlignment="Top"/>
+        <WindowsFormsHost Margin="255,82,20,355" Height="350">
+            <wf:DataGridView BackgroundColor="White"  x:Name="dataGridView1" AccessibleRole="Default" AllowUserToAddRows="False" AllowUserToDeleteRows="False" Anchor="None" BorderStyle="FixedSingle" CellBorderStyle="Single" ClipboardCopyMode="EnableWithAutoHeaderText" AutoSizeColumnsMode="None" AutoSizeRowsMode="None" ColumnHeadersBorderStyle="Single" Dock="Fill">
+                <wf:DataGridView.Columns>
+                    <wf:DataGridViewImageColumn Width="20"/>
+                    <wf:DataGridViewTextBoxColumn HeaderText="name"/>
+                    <wf:DataGridViewTextBoxColumn HeaderText="value"/>
+                    <wf:DataGridViewTextBoxColumn HeaderText="type"/>
+                    <wf:DataGridViewTextBoxColumn HeaderText="AccessLevel"/>
+                    <wf:DataGridViewTextBoxColumn HeaderText="Description"/>
+                    <wf:DataGridViewTextBoxColumn HeaderText="StatusCode"/>
+                </wf:DataGridView.Columns>
+            </wf:DataGridView>
+        </WindowsFormsHost>
+        <WindowsFormsHost Margin="35,459,20,35">
+            <wf:DataGridView BackgroundColor="White" x:Name="dataGridView2" AccessibleRole="Default" AllowUserToAddRows="False" AllowUserToDeleteRows="False" Anchor="None" BorderStyle="FixedSingle" CellBorderStyle="Single" ClipboardCopyMode="EnableWithAutoHeaderText" AutoSizeColumnsMode="None" AutoSizeRowsMode="None" ColumnHeadersBorderStyle="Single" Dock="Fill" MouseClick="dataGridView2_MouseClick">
+                <wf:DataGridView.Columns>
+                    <wf:DataGridViewTextBoxColumn x:Name="name" HeaderText="name"/>
+                    <wf:DataGridViewTextBoxColumn Name="address" HeaderText="address"/>
+                    <wf:DataGridViewTextBoxColumn x:Name="tagType" HeaderText="tagType"/>
+                    <wf:DataGridViewTextBoxColumn x:Name="Description" HeaderText="Description"/>
+                </wf:DataGridView.Columns>
+            </wf:DataGridView>
+        </WindowsFormsHost>
+
+    </Grid>
+</Window>

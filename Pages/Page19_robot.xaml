@@ -1,0 +1,320 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:R2R.Pages"
+      xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+      xmlns:controls="clr-namespace:controls;assembly=controls"  
+      xmlns:UControl="clr-namespace:R2R.UControl" x:Class="R2R.Pages.Page19_robot"  
+      mc:Ignorable="d" 
+      d:DesignHeight="945" d:DesignWidth="1920"   
+      Title="Page19_robot">
+
+    <Grid Background="{StaticResource Color_BackGround}">
+        <GroupBox x:Name="TP" Header="分子泵" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,212,0,0" Background="{x:Null}" Height="327" Width="334">
+            <Grid Margin="0,-10,0,0">
+                <controls:tagSignal x:Name="signal_TPM_TX" HorizontalAlignment="Left" Margin="21,8,0,0" VerticalAlignment="Top" Text="通讯状态" FontSize="13" Width="60" Background="{StaticResource Color_tagCtrl_read}" FontStyle="Italic"/>
+                <TextBlock TextWrapping="Wrap" Text="实际速度" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,102,0,0"/>
+                <TextBlock TextWrapping="Wrap" Text="实际电流" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,78,0,0"/>
+                <controls:tagControl x:Name="value_TPM_I" HorizontalAlignment="Left" Margin="92,78,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_read}" varName="Robot_value_FZB_I" setAble="False"/>
+                <controls:tagControl x:Name="value_TPM_speed" HorizontalAlignment="Left" Margin="92,102,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_read}" varName="Robot_value_FZB_speed" setAble="False"/>
+                <TextBlock TextWrapping="Wrap" Text="实际温度" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,124,0,0"/>
+                <controls:tagControl x:Name="value_TPM_tempe" HorizontalAlignment="Left" Margin="92,124,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_read}" varName="Robot_value_FZB_tempe" setAble="False"/>
+                <TextBlock TextWrapping="Wrap" Text="故障信息" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,55,0,0"/>
+                <TextBlock x:Name="tblock_FZB_state" HorizontalAlignment="Left" Margin="96,32,0,0" TextWrapping="Wrap" Text="运行状态" VerticalAlignment="Top" Background="{StaticResource Color_tagCtrl_read}" FontStyle="Italic"/>
+                <TextBlock TextWrapping="Wrap" Text="故障信息" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,55,0,0"/>
+                <TextBlock x:Name="tb_name" HorizontalAlignment="Left" Margin="26,145,0,0" TextWrapping="Wrap" Text="启动限值" VerticalAlignment="Top"/>
+                <TextBlock x:Name="tb_name复制__C_复制__C_1" HorizontalAlignment="Left" Margin="157,145,0,0" TextWrapping="Wrap" Text="mbar" VerticalAlignment="Top"/>
+                <controls:tagControl Background="{StaticResource Color_tagCtrl_write}" x:Name="tagCtr_starLimit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" FontSize="14" setAble="True" Margin="92,145,0,0" varName="Robot_set_FZB_VacuumLmt"/>
+                <TextBlock TextWrapping="Wrap" Text="运行状态" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,32,0,0"/>
+                <Button Content="ON" HorizontalAlignment="Left" Margin="10,213,0,0" VerticalAlignment="Top" Width="60" Click="Button_FZB_Click"/>
+                <Button Content="LowSpd" HorizontalAlignment="Left" Margin="10,243,0,0" VerticalAlignment="Top" Width="60" Click="Button_FZB_Click"/>
+                <Button Content="OFF" HorizontalAlignment="Left" Margin="79,213,0,0" VerticalAlignment="Top" Width="60" Click="Button_FZB_Click"/>
+                <Button Content="Reset" HorizontalAlignment="Left" Margin="150,243,0,0" VerticalAlignment="Top" Width="60" Click="Button_FZB_Click"/>
+                <Button Content="Para" HorizontalAlignment="Left" Margin="150,213,0,0" VerticalAlignment="Top" Width="60" Click="Button_FZB_Click"/>
+                <Button Content="HiSpd" HorizontalAlignment="Left" Margin="78,243,0,0" VerticalAlignment="Top" Width="60" Click="Button_FZB_Click"/>
+                <controls:tagControl x:Name="value_TPM_I复制__C_" HorizontalAlignment="Left" Margin="92,55,0,0" VerticalAlignment="Top" FontSize="14" varName="Robot_err_str_FZB" Foreground="#FFB18C28" FontStyle="Italic"/>
+                <TextBlock x:Name="tb_name复制__C_复制__C_1复制__C_" HorizontalAlignment="Left" Margin="157,124,0,0" TextWrapping="Wrap" Text="℃" VerticalAlignment="Top"/>
+                <TextBlock x:Name="tb_name复制__C_复制__C_1复制__C_1" HorizontalAlignment="Left" Margin="157,102,0,0" TextWrapping="Wrap" Text="mm/s" VerticalAlignment="Top"/>
+                <TextBlock x:Name="tb_name复制__C_复制__C_1复制__C_2" HorizontalAlignment="Left" Margin="157,78,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top"/>
+                <controls:tagBitSignal x:Name="FZB_limit_bit0" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="230,54,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="真空度" bitIndex="0" varName="Robot_signal_FZB_LimitInfo"/>
+                <controls:tagBitSignal x:Name="FZB_limit_bit1" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="230,79,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="前级泵组" bitIndex="1" varName="Robot_signal_FZB_LimitInfo"/>
+                <controls:tagBitSignal x:Name="FZB_limit_bit3" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="230,104,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="外部条件3" bitIndex="2" varName="Robot_signal_FZB_LimitInfo"/>
+                <controls:tagBitSignal x:Name="FZB_limit_bit4" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="230,130,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="外部条件4" bitIndex="3" varName="Robot_signal_FZB_LimitInfo"/>
+                <controls:tagBitSignal x:Name="FZB_limit_bit5" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="230,155,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="外部条件5" bitIndex="4" varName="Robot_signal_FZB_LimitInfo"/>
+                <controls:tagBitSignal x:Name="FZB_limit_bit6" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="230,180,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="内部限制" bitIndex="6" varName="Robot_signal_FZB_LimitInfo"/>
+                <controls:tagBitSignal x:Name="FZB_limit_bit7" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="230,205,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="I/O反馈" bitIndex="7" varName="Robot_signal_FZB_LimitInfo"/>
+                <TextBlock TextWrapping="Wrap" Text="启动条件" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="230,32,0,0"/>
+                <TextBlock x:Name="tb_name复制__C_" HorizontalAlignment="Left" Margin="26,166,0,0" TextWrapping="Wrap" Text="低速设定" VerticalAlignment="Top"/>
+                <TextBlock x:Name="tb_name复制__C_复制__C_1复制__C_3" HorizontalAlignment="Left" Margin="156,168,0,0" TextWrapping="Wrap" Text="r/min" VerticalAlignment="Top"/>
+                <controls:tagControl Background="{StaticResource Color_tagCtrl_write}" x:Name="lowSpeed_set" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" FontSize="14" setAble="True" Margin="92,168,0,0" varName="Robot_set_FZB_lowSpeed"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="真空" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,37,0,0" Background="{x:Null}" Height="170" Width="334">
+            <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Width="270" Height="125">
+                <TextBlock TextWrapping="Wrap" Text="MPG" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,18,0,0"/>
+                <TextBlock TextWrapping="Wrap" Text="PSG" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="72,0,0,0"/>
+                <TextBlock TextWrapping="Wrap" Text="GV" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="73,87,0,0"/>
+                <controls:tagControl x:Name="value_MPG" HorizontalAlignment="Left" Margin="110,18,0,0" VerticalAlignment="Top" FontSize="14" Width="100"  Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:#.##E+0}" varName="Robot_value_MPG" setAble="False"/>
+                <controls:tagControl x:Name="value_PSG" HorizontalAlignment="Left" Margin="110,0,0,0" VerticalAlignment="Center" FontSize="14" Width="100"  Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:#.##E+0}" varName="Robot_value_PSG" setAble="False"/>
+                <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="40" RenderTransformOrigin="0.5,0.5" Margin="33,7,0,0">
+                    <Canvas.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Canvas.RenderTransform>
+                    <Ellipse x:Name="Ell_MPG" Stretch="Fill" Fill="#FFFFFFFF" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" Width="40" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" PreviewMouseLeftButtonDown="Ell_MPG_PreviewMouseLeftButtonDown"/>
+                    <Line X1="0" Y1="0" X2="7" Y2="25" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="7" VerticalAlignment="Top" />
+                    <Line Y2="25" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" X1="7" HorizontalAlignment="Left" Canvas.Left="22" Canvas.Top="7" VerticalAlignment="Top"/>
+                    <Line X2="20" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="28" VerticalAlignment="Top" >
+                        <Line.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Line.RenderTransform>
+                    </Line>
+                    <Line X2="20" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="22" VerticalAlignment="Top" >
+                        <Line.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Line.RenderTransform>
+                    </Line>
+                </Canvas>
+                <Canvas x:Name="Canvas_GV" Width="30"  Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="37,83,0,0">
+                    <Rectangle Height="2" Canvas.Left="9" Canvas.Top="16" Width="12" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="-1" ScaleY="-1"/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                        <Rectangle.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black"/>
+                                <GradientStop Color="#FFEAEEEF" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Path Data="M31,22L31,55 35,55 35,22 31,22z" Stretch="Fill" Fill="#FF7F7F7F" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Width="4" Height="9" RenderTransformOrigin="0.5,0.5"  Canvas.Left="13.742" Canvas.Top="1.343" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Path Data="M32,22L32,55 34,55 34,22 32,22z" Stretch="Fill" Fill="#FFE5E5E5" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Width="2" Height="9" RenderTransformOrigin="0.5,0.5"  Canvas.Left="14.742" Canvas.Top="1.343" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Path Data="M33,22L33,55 33,55 33,22 33,22z" Stretch="Fill" Fill="#FFFFFFFF" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Width="0" Height="33" RenderTransformOrigin="0.5,0.5"  Canvas.Left="15.742" Canvas.Top="1.343" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Path Data="M31,55L31,22" Stretch="Fill" Stroke="#FFC0C0C0" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Width="1" Height="9" RenderTransformOrigin="0.5,0.5"  Canvas.Left="14.052" Canvas.Top="0.67" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Path Data="M59,2L7,2 7,22 59,22 59,2z" Stretch="Fill" Fill="#FFFFFFFF" Stroke="#FFC0C0C0" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Width="20" Height="14" RenderTransformOrigin="0.5,0.5"  Canvas.Left="5.043" Canvas.Top="-2.028" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Path x:Name="Path_GV" Data="M64,70L64,39 2,70 2,39 64,70" Stretch="Fill" Fill="#FFFFFFFF" Stroke="#FFC0C0C0" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Width="30" Height="10" RenderTransformOrigin="0.5,0.5"  Canvas.Left="0.066" Canvas.Top="17.592" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Path Data="M35,22L35,55" Stretch="Fill" Stroke="#FFC0C0C0" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Width="1" Height="22" RenderTransformOrigin="0.5,0.5"  Canvas.Left="14.494" Canvas.Top="-6.064" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="122.81"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                </Canvas>
+                <Canvas HorizontalAlignment="Left" VerticalAlignment="Center" Width="40" Height="40" Margin="33,0,0,0" RenderTransformOrigin="0.5,0.5">
+                    <Canvas.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Canvas.RenderTransform>
+                    <Ellipse x:Name="Ell_PSG" Stretch="Fill" Fill="#FFFFFFFF" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" Width="40" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Line X1="0" Y1="0" X2="7" Y2="25" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="7" VerticalAlignment="Top" />
+                    <Line Y2="25" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" X1="7" HorizontalAlignment="Left" Canvas.Left="22" Canvas.Top="7" VerticalAlignment="Top"/>
+                    <Line X2="20" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="28" VerticalAlignment="Top" >
+                        <Line.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Line.RenderTransform>
+                    </Line>
+                </Canvas>
+                <TextBlock TextWrapping="Wrap" Text="mbar" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="215,18,0,0"/>
+                <TextBlock TextWrapping="Wrap" Text="mbar" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="215,0,0,0"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="robot参数" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="364,0,0,0" Background="{x:Null}" Height="882" Width="888">
+            <Grid>
+                <WrapPanel HorizontalAlignment="Left" VerticalAlignment="Top" Width="333" Height="494">
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息1" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString1" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString2" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息3" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString3" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息4" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString4" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息5" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString5" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息6" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString6" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息7" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString7" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息8" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString8" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息9" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString9" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息10" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString10" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息11" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString11" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息12" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString12" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息13" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString13" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息14" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString14" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息15" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString15" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息16" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString16" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息17" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString17" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息18" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString18" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息19" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString19" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="反馈信息20" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="100" Margin="10,5,0,0"/>
+                    <controls:tagControl Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" varName="Robot_value_stateString20" Width="200" FontSize="14" Margin="10,5,0,0" setAble="False"/>
+
+                </WrapPanel>
+                <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="369,10,0,0" ShowGridLines="True">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock TextWrapping="Wrap" Text="腔室条件" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Width="80"/>
+                    <TextBlock TextWrapping="Wrap" Text="HomeRetract" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Width="90" Grid.Column="1"/>
+                    <TextBlock TextWrapping="Wrap" Text="插板阀开启" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Width="90" Grid.Column="2" Margin="10,0,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="护板开启" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Width="90" Margin="10,0,0,0" Grid.Column="3"/>
+                    <TextBlock TextWrapping="Wrap" Text="水冷盘低位" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Width="90" Margin="10,0,0,0" Grid.Column="4"/>
+                    <TextBlock TextWrapping="Wrap" Text="CA0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Grid.Row="1"/>
+                    <TextBlock TextWrapping="Wrap" Text="CA1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Grid.Row="2"/>
+                    <TextBlock TextWrapping="Wrap" Text="CA2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Grid.Row="3"/>
+                    <TextBlock TextWrapping="Wrap" Text="CA3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Grid.Row="4"/>
+                    <TextBlock TextWrapping="Wrap" Text="CA4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Grid.Row="5"/>
+                    <TextBlock TextWrapping="Wrap" Text="CA5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" Grid.Row="6"/>
+                    <Ellipse x:Name="ell_0_0" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="1" Grid.Row="1"/>
+                    <Ellipse x:Name="ell_0_1" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="2" Grid.Row="1"/>
+                    <Ellipse x:Name="ell_0_2" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="3" Grid.Row="1"/>
+                    <Ellipse x:Name="ell_0_3" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="4" Grid.Row="1"/>
+                    <Ellipse x:Name="ell_1_0" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Top" Width="20" Grid.Column="1" Grid.Row="2" Margin="0,10,0,0"/>
+                    <Ellipse x:Name="ell_1_1" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Top" Width="20" Grid.Column="2" Grid.Row="2" Margin="0,10,0,0"/>
+                    <Ellipse x:Name="ell_1_2" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Top" Width="20" Grid.Column="3" Grid.Row="2" Margin="0,10,0,0"/>
+                    <Ellipse x:Name="ell_1_3" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Top" Width="20" Grid.Column="4" Grid.Row="2" Margin="0,10,0,0"/>
+                    <Ellipse x:Name="ell_2_0" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="1" Grid.Row="3"/>
+                    <Ellipse x:Name="ell_2_1" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="2" Grid.Row="3"/>
+                    <Ellipse x:Name="ell_2_2" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="3" Grid.Row="3"/>
+                    <Ellipse x:Name="ell_2_3" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="4" Grid.Row="3"/>
+                    <Ellipse x:Name="ell_3_0" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="1" Grid.Row="4"/>
+                    <Ellipse x:Name="ell_3_1" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="2" Grid.Row="4"/>
+                    <Ellipse x:Name="ell_3_2" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="3" Grid.Row="4"/>
+                    <Ellipse x:Name="ell_3_3" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="4" Grid.Row="4"/>
+                    <Ellipse x:Name="ell_4_0" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="1" Grid.Row="5"/>
+                    <Ellipse x:Name="ell_4_1" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="2" Grid.Row="5"/>
+                    <Ellipse x:Name="ell_4_2" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="3" Grid.Row="5"/>
+                    <Ellipse x:Name="ell_4_3" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="4" Grid.Row="5"/>
+                    <Ellipse x:Name="ell_5_0" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="1" Grid.Row="6"/>
+                    <Ellipse x:Name="ell_5_1" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="2" Grid.Row="6"/>
+                    <Ellipse x:Name="ell_5_2" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="3" Grid.Row="6"/>
+                    <Ellipse x:Name="ell_5_3" HorizontalAlignment="Center" Height="20" Stroke="Black" VerticalAlignment="Center" Width="20" Grid.Column="4" Grid.Row="6"/>
+                </Grid>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="robot操作" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1257,37,0,0" Background="{x:Null}" Height="595" Width="627">
+            <Grid>
+                <ComboBox x:Name="combo" HorizontalAlignment="Left" VerticalAlignment="Top"
+                    pu:ComboBoxHelper.Header="目标腔室选择 " Width="160" HorizontalContentAlignment="Center" 
+                    Foreground="Black" Margin="19,86,0,0" SelectionChanged="combo_SelectionChanged"  >
+                    <ComboBoxItem Content="CA0"/>
+                    <ComboBoxItem Content="CA1"/>
+                    <ComboBoxItem Content="CA2"/>
+                    <ComboBoxItem Content="CA3"/>
+                    <ComboBoxItem Content="CA4"/>
+                    <ComboBoxItem Content="CA5"/>
+                </ComboBox>
+                <WrapPanel Margin="0,118,123,268">
+                    <Button Content="INIT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_robot_Click" Margin="15,10,0,0"/>
+                    <Button Content="ORGN" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Click="Button_robot_Click" Margin="15,10,0,0"/>
+                    <Button Content="RESET" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_robot_Click" Margin="15,10,0,0"/>
+                    <Button Content="STOP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_robot_Click" Margin="15,10,0,0"/>
+                    <Button Content="PAUSE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_robot_Click" Margin="15,10,0,0"/>
+                    <Button Content="SETSPEED" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_robot_Click" Margin="15,10,0,0"/>
+                    <Button Content="CLMP" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_robot_Click" Margin="15,10,0,0"/>
+                    <Button Content="UCLM" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_robot_Click" Margin="15,10,0,0"/>
+                    <Button Content="HOME" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_robot_Click" Margin="15,25,0,0"/>
+                    <Button Content="LOAD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_robot_Click" Margin="15,25,0,0"/>
+                    <Button Content="UNLOAD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_robot_Click" Margin="15,25,0,0"/>
+                    <Button Content="AWC_LOAD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_robot_Click" Margin="15,25,0,0"/>
+                    <Button Content="AWC_UNLOAD" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_robot_Click" Margin="15,10,0,0"/>
+                    <Button Content="READ_STAT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="Button_robot_Click" Margin="15,10,0,0"/>
+                </WrapPanel>
+                <Button Content="FB_INIT" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Click="Button_robot_Click" Margin="99,312,0,0"/>
+                <controls:tagSignal x:Name="signal_TPM_TX复制__C_" HorizontalAlignment="Left" Margin="461,86,0,0" VerticalAlignment="Top" Text="Wait" FontSize="13" Width="60" Background="{StaticResource Color_tagCtrl_read}" FontStyle="Italic" varName="Robot_signal_wait"/>
+                <Button Content="Enable" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Click="Button_robot_Click" Margin="19,16,0,0"/>
+                <TextBlock TextWrapping="Wrap" Text="FB动作" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="19,313,0,0"/>
+                <TextBlock TextWrapping="Wrap" Text="状态" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="461,8,0,0"/>
+                <TextBlock TextWrapping="Wrap" Text="Speed(%)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="21,51,0,0"/>
+                <controls:tagControl Background="{StaticResource Color_tagCtrl_write}" x:Name="tagCtr_starLimit复制__C_" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" FontSize="14" setAble="True" Margin="99,51,0,0" varName="Robot_set_speed"/>
+                <controls:tagSignal x:Name="signal_TPM_TX复制__C_1复制__C_" HorizontalAlignment="Left" Margin="461,31,0,0" VerticalAlignment="Top" Text="使能" FontSize="13" Width="60" Background="{StaticResource Color_tagCtrl_read}" FontStyle="Italic" varName="Robot_signal_enable"/>
+                <controls:tagSignal x:Name="signal_TPM_TX复制__C_复制__C_" HorizontalAlignment="Left" Margin="461,60,0,0" VerticalAlignment="Top" Text="通讯完成" FontSize="13" Width="60" Background="{StaticResource Color_tagCtrl_read}" FontStyle="Italic" varName="Robot_signal_cnn"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="气缸" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,554,0,0" Background="{x:Null}" Width="334">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid x:Name="cylinder_CBF复制__C_" Height="18">
+                    <TextBlock TextWrapping="Wrap" Text="名称" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBlock TextWrapping="Wrap" Text="关" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="73,0,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="开" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="139,0,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="条件" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="211,0,0,0"/>
+                </Grid>
+                <Grid x:Name="cylinder_FZB" VerticalAlignment="Top" Margin="0,10,0,0" Height="NaN">
+                    <TextBlock TextWrapping="Wrap" Text="分子泵&#xA;前级阀" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <Button x:Name="FZB_home" Content="关闭" HorizontalAlignment="Left" Margin="51,0,0,0" VerticalAlignment="Center" Width="60" Click="cylinder_Click"/>
+                    <Button x:Name="FZB_work" Content="打开" HorizontalAlignment="Left" Margin="117,0,0,0" VerticalAlignment="Center" Width="60" Click="cylinder_Click"/>
+                    <controls:tagBitSignal  x:Name="FZBQJ_limit_bit0" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" FontSize="14" Text="外部条件1" bitIndex="0" Margin="188,0,0,0" varName="Robot_signal_cylinder_FZB_LimitInfo"/>
+                    <controls:tagBitSignal  x:Name="FZBQJ_limit_bit1" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" FontSize="14" Text="外部条件2" bitIndex="1" Margin="188,25,0,0" varName="Robot_signal_cylinder_FZB_LimitInfo"/>
+                </Grid>
+                <Grid x:Name="cylinder_PKF" Height="NaN" Margin="0,20,0,0">
+                    <TextBlock TextWrapping="Wrap" Text="破空阀" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <Button x:Name="PKF_home" Content="关闭" HorizontalAlignment="Left" Margin="51,0,0,0" VerticalAlignment="Center" Width="60" Click="cylinder_Click"/>
+                    <Button x:Name="PKF_work" Content="打开" HorizontalAlignment="Left" Margin="117,0,0,0" VerticalAlignment="Center" Width="60" Click="cylinder_Click"/>
+                    <controls:tagBitSignal  x:Name="PKF_limit_bit0" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" FontSize="14" Text="蝶阀关闭" bitIndex="0" Margin="188,0,0,0" varName="Robot_signal_cylinder_PKF_LimitInfo"/>
+                    <controls:tagBitSignal  x:Name="PKF_limit_bit1" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" FontSize="14" Text="插板阀关闭" bitIndex="1" Margin="188,26,0,0" varName="Robot_signal_cylinder_PKF_LimitInfo"/>
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+
+    </Grid>
+</Page>

@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="DateTimePicker.DateTimePicker_view"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="36" 
+             d:DesignWidth="150" 
+             xmlns:my="clr-namespace:DateTimePicker"             
+             Loaded="UserControl_Loaded"
+             x:Name="mydp"
+             >
+
+    <Grid>
+        <Border BorderBrush="{Binding ElementName=mydp,Path=BorderBrush}" 
+                BorderThickness="1" 
+                Name="border1" 
+                CornerRadius="3"
+                >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="32"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Grid.Column="0"
+                         Background="Transparent"
+                         Margin="5,0,0,0"
+            HorizontalAlignment="Left" 
+            Foreground="{Binding ElementName=mydp,Path=Foreground}"
+            Name="textBlock1"        
+                         BorderThickness="0"
+                         Height="36"
+                         FontSize="{Binding ElementName=mydp,Path=FontSize}"
+                         FontFamily="{Binding ElementName=mydp,Path=FontFamily}"
+            VerticalAlignment="Center"  
+                         VerticalContentAlignment="Center"
+            TextAlignment="Center"
+            TextChanged="TimeTextChanged_Click"
+            Text="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type my:DateTimePicker_view}},Path=DateTimeStr}"
+            />
+                <my:IconButton Grid.Column="1"
+                x:Name="iconButton1" 
+                Height="32" 
+                VerticalAlignment="Center"
+                Width="32" 
+                HorizontalAlignment="Right"
+                Icon="/Images/DateTimePicker/date.png"                 
+                Click="iconButton1_Click"
+                
+                />
+            </Grid>
+        </Border>
+
+
+
+
+
+
+        <Grid x:Name="girdChioce" 
+              Background="Transparent"
+              VerticalAlignment="Top"
+              Margin="0,50,0,40">
+            <Popup x:Name="popChioce" 
+                   PopupAnimation="Fade" 
+                   PlacementTarget="{Binding ElementName=girdChioce}" 
+                   Placement="Top"
+                   AllowsTransparency="True" 
+                   StaysOpen="False" 
+                   IsOpen="False">
+            </Popup>
+        </Grid>
+        <Button x:Name="TimeChangeBtn" Command="{Binding Path=TimeChangeCommand,ElementName=mydp}" Visibility="Collapsed"/>
+    </Grid>
+</UserControl>

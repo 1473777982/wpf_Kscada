@@ -1,0 +1,21 @@
+﻿<Page  x:Class="R2R.Page03_yinji"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:R2R"
+      xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+      xmlns:UControl="clr-namespace:R2R.UControl"
+       xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+      mc:Ignorable="d" 
+      d:DesignHeight="945" d:DesignWidth="1920" 
+      Title="Page03_yinji">
+
+   
+    <Grid Background="{StaticResource Color_BackGround}">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="470,352,0,0" VerticalAlignment="Top"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="542,352,0,0" VerticalAlignment="Top" Panel.ZIndex="3"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="542,228,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,24 @@
+﻿<UserControl x:Name="tagSig" x:Class="controls.tagBitSignal"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="20" d:DesignWidth="100" FontSize="15" Background="#FFD6D3D3" Loaded="tagSig_Loaded" Unloaded="tagSig_Unloaded" BorderThickness="1,1,1,1">
+
+    <Grid  x:Name="tagBack" Background="{Binding ElementName=tagSig, Path=Background}"
+           Width="{Binding ElementName=tagSig, Path=Width}"
+           Height="{Binding ElementName=tagSig, Path=Height}">
+        <TextBlock x:Name="TextBlockRecording"
+                   Text="{Binding ElementName=tagSig, Path=Text}" 
+                   TextAlignment="Center" 
+                   Padding="0,0,0,0"                   
+                   FontSize="{Binding ElementName=tagSig, Path=FontSize}" 
+                   Foreground="{Binding ElementName=tagSig, Path=Foreground}" 
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Center" 
+                    >
+        </TextBlock>
+    </Grid>
+</UserControl>

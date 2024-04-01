@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B255D33D-8012-42DE-98D7-0FCF3F8E51F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>R2R</RootNamespace>
+    <AssemblyName>R2R</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Xwindow\Resources\立方体 立体 多面体 方块2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DynamicDataDisplay, Version=0.9.0.0, Culture=neutral, PublicKeyToken=5b7d744a7263923f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>3rdDepen\DynamicDataDisplay\DynamicDataDisplay.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TwinCAT.Ads, Version=4.3.27.0, Culture=neutral, PublicKeyToken=180016cd49e5e8c3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>3rdDepen\TCadsv4.0.30319\TwinCAT.Ads.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Alarm\alarmHis.xaml.cs">
+      <DependentUpon>alarmHis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="helper\bitOpration.cs" />
+    <Compile Include="helper\DialogPosition.cs" />
+    <Compile Include="helper\get_dataGridCell.cs" />
+    <Compile Include="helper\Mysqlhelper.cs" />
+    <Compile Include="helper\NotifyChanged.cs" />
+    <Compile Include="helper\Operations.cs" />
+    <Compile Include="Chart\chartGroups\groupList.xaml.cs">
+      <DependentUpon>groupList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\chartGroups\group_Edit.xaml.cs">
+      <DependentUpon>group_Edit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="helper\autoClose_messgeBox.cs" />
+    <Compile Include="helper\login_monitor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="historyvalues\historyValues.cs" />
+    <Compile Include="helper\sqlClientHelper.cs" />
+    <Compile Include="historyvalues\operation_logs.cs" />
+    <Compile Include="MW_R2RDataSet.cs">
+      <DependentUpon>MW_R2RDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MW_R2RDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MW_R2RDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\Chart.xaml.cs">
+      <DependentUpon>Chart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OperationRecord\operationHis.xaml.cs">
+      <DependentUpon>operationHis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page0_main_copy.xaml.cs">
+      <DependentUpon>Page0_main_copy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\main.xaml.cs">
+      <DependentUpon>main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page0_ViewModle.cs" />
+    <Compile Include="UControl\RobotCtrl.xaml.cs">
+      <DependentUpon>RobotCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\serveControl_rol.xaml.cs">
+      <DependentUpon>serveControl_rol.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\hisChart_Err.xaml.cs">
+      <DependentUpon>hisChart_Err.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\io_force.xaml.cs">
+      <DependentUpon>io_force.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\limitSetting.xaml.cs">
+      <DependentUpon>limitSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page16_chamber_sputter.xaml.cs">
+      <DependentUpon>Page16_chamber_sputter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page19_robot.xaml.cs">
+      <DependentUpon>Page19_robot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page20_around.xaml.cs">
+      <DependentUpon>Page20_around.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="protocols\DeviceDialog_default.xaml.cs">
+      <DependentUpon>DeviceDialog_default.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="protocols\DeviceDialog_modbus.xaml.cs">
+      <DependentUpon>DeviceDialog_modbus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="protocols\OPCMonitor.xaml.cs">
+      <DependentUpon>OPCMonitor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="protocols\proto.xaml.cs">
+      <DependentUpon>proto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="protocols\search.xaml.cs">
+      <DependentUpon>search.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="protocols\tag_monitor.xaml.cs">
+      <DependentUpon>tag_monitor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\code_chart.cs" />
+    <Compile Include="UControl\DataGridHelper.cs" />
+    <Compile Include="hotKey\EHotKeySetting.cs" />
+    <Compile Include="hotKey\EKey.cs" />
+    <Compile Include="hotKey\HotKeyHelper.cs" />
+    <Compile Include="hotKey\HotKeyManager.cs" />
+    <Compile Include="hotKey\HotKeyModel.cs" />
+    <Compile Include="hotKey\HotKeySettingsManager.cs" />
+    <Compile Include="hotKey\HotKeySettingsWindow.xaml.cs">
+      <DependentUpon>HotKeySettingsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\datetimepickerVM.cs" />
+    <Compile Include="UControl\DCCtrl.xaml.cs">
+      <DependentUpon>DCCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\HisChart.xaml.cs">
+      <DependentUpon>HisChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\RealChart.xaml.cs">
+      <DependentUpon>RealChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\RFCtrl.xaml.cs">
+      <DependentUpon>RFCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\serveControl.xaml.cs">
+      <DependentUpon>serveControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\ViewModelBase.cs" />
+    <Compile Include="helper\var_latest.cs" />
+    <Compile Include="protocols\varInfo.xaml.cs">
+      <DependentUpon>varInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page05_dianyuan.xaml.cs">
+      <DependentUpon>Page05_dianyuan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page10_Help.xaml.cs">
+      <DependentUpon>Page10_Help.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page03_yinji.xaml.cs">
+      <DependentUpon>Page03_yinji.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page04_fenzibeng.xaml.cs">
+      <DependentUpon>Page04_fenzibeng.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page06_dianji.xaml.cs">
+      <DependentUpon>Page06_dianji.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page07_peifang.xaml.cs">
+      <DependentUpon>Page07_peifang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page08_MFC.xaml.cs">
+      <DependentUpon>Page08_MFC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page09_SystemParameter.xaml.cs">
+      <DependentUpon>Page09_SystemParameter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page11_NET.xaml.cs">
+      <DependentUpon>Page11_NET.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Alarm\Alarm_active.xaml.cs">
+      <DependentUpon>Alarm_active.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page14_EnergyStatistics.xaml.cs">
+      <DependentUpon>Page14_EnergyStatistics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\box_dialog.xaml.cs">
+      <DependentUpon>box_dialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\gloveBoxCtrl.xaml.cs">
+      <DependentUpon>gloveBoxCtrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\IO.xaml.cs">
+      <DependentUpon>IO.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\maintenance.xaml.cs">
+      <DependentUpon>maintenance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\open_close.xaml.cs">
+      <DependentUpon>open_close.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\robot_operation.xaml.cs">
+      <DependentUpon>robot_operation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\start_stop.xaml.cs">
+      <DependentUpon>start_stop.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Win_cooling.xaml.cs">
+      <DependentUpon>Win_cooling.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\chartGroups\chartGroups.xaml.cs">
+      <DependentUpon>chartGroups.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Win_SP_RP.xaml.cs">
+      <DependentUpon>Win_SP_RP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Win_TP.xaml.cs">
+      <DependentUpon>Win_TP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Xwindow\login.xaml.cs">
+      <DependentUpon>login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Xwindow\SplashWindow.xaml.cs">
+      <DependentUpon>SplashWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Xwindow\timepicker.xaml.cs">
+      <DependentUpon>timepicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Xwindow\Users.xaml.cs">
+      <DependentUpon>Users.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Xwindow\User_manager.xaml.cs">
+      <DependentUpon>User_manager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mainwindow.xaml.cs">
+      <DependentUpon>Mainwindow.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="config.json" />
+    <None Include="log4net.config" />
+    <None Include="MW_R2RDataSet.xsc">
+      <DependentUpon>MW_R2RDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MW_R2RDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MW_R2RDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MW_R2RDataSet.xss">
+      <DependentUpon>MW_R2RDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Resource Include="Xwindow\Resources\NeteaseExample\fontawesome.ttf" />
+    <None Include="Xwindow\Resources\Thumbs.db" />
+    <Resource Include="Xwindow\Resources\NeteaseExample\iconfont.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Alarm\alarmHis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chart\chartGroups\groupList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chart\chartGroups\group_Edit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="hotKey\HotKeySettingsWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Chart\Chart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="OperationRecord\operationHis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Page0_main_copy.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UControl\RobotCtrl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UControl\serveControl_rol.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\hisChart_Err.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\io_force.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\limitSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Page16_chamber_sputter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Page19_robot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Page20_around.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="protocols\DeviceDialog_default.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="protocols\DeviceDialog_modbus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="protocols\OPCMonitor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="protocols\proto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="protocols\search.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="protocols\tag_monitor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UControl\DCCtrl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UControl\HisChart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UControl\RealChart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="protocols\varInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Page05_dianyuan.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Page10_Help.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Page03_yinji.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Page04_fenzibeng.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Page06_dianji.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Page07_peifang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Page08_MFC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Page09_SystemParameter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Page11_NET.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Alarm\Alarm_active.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Page14_EnergyStatistics.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UControl\RFCtrl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UControl\serveControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\box_dialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\gloveBoxCtrl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\IO.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\maintenance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\open_close.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\robot_operation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\start_stop.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Win_cooling.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chart\chartGroups\chartGroups.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Win_SP_RP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Win_TP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Xwindow\login.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Xwindow\Resources\Dictionaray_DataGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Xwindow\Resources\Dictionaray_ScrollView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Xwindow\Resources\Dictionary_MenuItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Xwindow\SplashWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Xwindow\timepicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Xwindow\Users.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Xwindow\User_manager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Mainwindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Xwindow\Resources\Dictionary_GlobalStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Xwindow\Resources\head.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Xwindow\Resources\background.png" />
+    <Resource Include="Xwindow\Resources\Icon\background2.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_add.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_add_tool.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_browse_image.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_capture.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_circle.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_continuous.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_ellipse.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_fit_size.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_line.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_rectangle.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_rectangle_rotated.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_refresh.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_remove.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_remove_tool.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_run.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_run_end.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_save.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_stop.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_work_run.png" />
+    <Resource Include="Xwindow\Resources\Icon\button_work_stop.png" />
+    <Resource Include="Xwindow\Resources\center.jpg" />
+    <Resource Include="Xwindow\Resources\Icon\close.png" />
+    <Resource Include="Xwindow\Resources\Icon\control_save.png" />
+    <Resource Include="Xwindow\Resources\Icon\footer.png" />
+    <Resource Include="Xwindow\Resources\Icon\header.png" />
+    <Resource Include="Xwindow\Resources\Icon\loading.gif" />
+    <Resource Include="Xwindow\Resources\Icon\PageAuthentic.png" />
+    <Resource Include="Xwindow\Resources\Icon\PageControlCenter.png" />
+    <Resource Include="Xwindow\Resources\Icon\PageDataCenter.png" />
+    <Resource Include="Xwindow\Resources\Icon\PageExit.png" />
+    <Resource Include="Xwindow\Resources\Icon\PagePlcManual.png" />
+    <Resource Include="Xwindow\Resources\Icon\PageSettings.png" />
+    <Resource Include="Xwindow\Resources\Icon\PageVisionManual.png" />
+    <Resource Include="Xwindow\Resources\Icon\voice_off.png" />
+    <Resource Include="Xwindow\Resources\Icon\voice_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Xwindow\Resources\Icon\header1.png" />
+    <Resource Include="Xwindow\Resources\Icon\head_logo_hid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Xwindow\Resources\more.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Xwindow\Resources\testchart\DJ65.txt" />
+    <EmbeddedResource Include="Xwindow\Resources\testchart\MICEX.txt" />
+    <EmbeddedResource Include="Xwindow\Resources\testchart\RTS.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Xwindow\Resources\testchart\保存截图 %281%29.png" />
+    <Resource Include="Xwindow\Resources\testchart\保存截图.png" />
+    <Resource Include="Xwindow\Resources\testchart\叉叉 %281%29.png" />
+    <Resource Include="Xwindow\Resources\testchart\叉叉.png" />
+    <Resource Include="Xwindow\Resources\testchart\打开数据 %281%29.png" />
+    <Resource Include="Xwindow\Resources\testchart\打开数据 %282%29.png" />
+    <Resource Include="Xwindow\Resources\testchart\打开数据.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Xwindow\Resources\testchart\日期时间选择器 %281%29.png" />
+    <Resource Include="Xwindow\Resources\testchart\日期时间选择器.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Xwindow\Resources\testchart\开始时间 %281%29.png" />
+    <Resource Include="Xwindow\Resources\testchart\开始时间.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Xwindow\Resources\testchart\结束时间 %281%29.png" />
+    <Resource Include="Xwindow\Resources\testchart\结束时间.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Xwindow\Resources\立方体 立体 多面体 方块2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Xwindow\Resources\testchart\开始 %281%29.png" />
+    <Resource Include="Xwindow\Resources\testchart\开始 %282%29.png" />
+    <Resource Include="Xwindow\Resources\testchart\开始.png" />
+    <Resource Include="Xwindow\Resources\线-不规则-集群.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Xwindow\Resources\testchart\Repressilator.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Xwindow\Resources\testchart\停止.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Xwindow\Resources\testchart\停止_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Xwindow\Resources\testchart\停止 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Xwindow\Resources\立方体 立体 多面体 方块2.ico" />
+    <Resource Include="Xwindow\Resources\scada-iot-app.ico" />
+    <Content Include="Xwindow\Resources\scada-iot-apppng.ico" />
+    <Content Include="Xwindow\Resources\scada-iot-appsvg.ico" />
+    <Resource Include="Xwindow\Resources\img\Activity_16xLG.png" />
+    <Resource Include="Xwindow\Resources\img\brackets_Square_16xMD.png" />
+    <Resource Include="Xwindow\Resources\img\ClassIcon.ico" />
+    <Resource Include="Xwindow\Resources\img\ClassIcon.png" />
+    <Resource Include="Xwindow\Resources\img\Class_489.png" />
+    <Resource Include="Xwindow\Resources\img\Cloud_16xLG.png" />
+    <Resource Include="Xwindow\Resources\img\Copy_6524.png" />
+    <Resource Include="Xwindow\Resources\img\Delegate_8339.png" />
+    <Resource Include="Xwindow\Resources\img\docview_xaml_on_16x16.png" />
+    <Resource Include="Xwindow\Resources\img\Enum_582.png" />
+    <Resource Include="Xwindow\Resources\img\Event_594.png" />
+    <Resource Include="Xwindow\Resources\img\Event_594_exp.png" />
+    <Resource Include="Xwindow\Resources\img\glasses_16xLG.png" />
+    <Resource Include="Xwindow\Resources\img\grid_Data_16xLG.png" />
+    <Resource Include="Xwindow\Resources\img\lightningBolt_16xLG.png" />
+    <Resource Include="Xwindow\Resources\img\ListView_687.png" />
+    <Resource Include="Xwindow\Resources\img\loading.gif" />
+    <Resource Include="Xwindow\Resources\img\Method_636.png" />
+    <Resource Include="Xwindow\Resources\img\Module_648.png" />
+    <Resource Include="Xwindow\Resources\img\RegistryEditor_5838.ico" />
+    <Resource Include="Xwindow\Resources\img\SingleMessage_5727.ico" />
+    <Resource Include="Xwindow\Resources\img\Structure_507.png" />
+    <Resource Include="Xwindow\Resources\img\Table_748.png" />
+    <Resource Include="Xwindow\Resources\img\Tag_7213.png" />
+    <Resource Include="Xwindow\Resources\img\usbcontroller.png" />
+    <Resource Include="Xwindow\Resources\img\UserInterfaceEditor_5845.ico" />
+    <Resource Include="Xwindow\Resources\img\VirtualMachine.png" />
+    <Resource Include="Xwindow\Resources\img\WindowsForm_817.ico" />
+    <Resource Include="Xwindow\Resources\testchart\搜索.png" />
+    <Resource Include="Images\DateTimePicker\close.png" />
+    <Resource Include="Images\DateTimePicker\Date.bmp" />
+    <Resource Include="Images\DateTimePicker\date.png" />
+    <Resource Include="Images\DateTimePicker\date1.bmp" />
+    <Resource Include="Images\DateTimePicker\date2.ico" />
+    <Resource Include="Images\DateTimePicker\DateTimePicker.bmp" />
+    <Resource Include="Images\DateTimePicker\DateTimePicker1.bmp" />
+    <Resource Include="Images\DateTimePicker\ooopic_1501745970.ico" />
+    <Resource Include="Images\DateTimePicker\timer.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="common\common.csproj">
+      <Project>{e85c80d0-7a89-4b78-89ab-3274a62ce5cc}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="communication\communication.csproj">
+      <Project>{29ae5948-e1e3-428e-a1c4-d0119f56cd58}</Project>
+      <Name>communication</Name>
+    </ProjectReference>
+    <ProjectReference Include="controls\controls.csproj">
+      <Project>{32557895-cc1b-43ec-95b6-69fa58fc1b8b}</Project>
+      <Name>controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="DateTimePicker\DateTimePicker.csproj">
+      <Project>{9820ecb1-aa2c-4f83-8c71-8b1b860d1a54}</Project>
+      <Name>DateTimePicker</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework">
+      <Version>6.4.4</Version>
+    </PackageReference>
+    <PackageReference Include="InfluxDB.Client">
+      <Version>4.11.0</Version>
+    </PackageReference>
+    <PackageReference Include="log4net">
+      <Version>2.0.14</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CSharp">
+      <Version>4.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="MiniExcel">
+      <Version>1.28.0</Version>
+    </PackageReference>
+    <PackageReference Include="MySql.Data">
+      <Version>8.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="OpcUaHelper">
+      <Version>2.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Panuon.UI.Silver">
+      <Version>1.1.3.4</Version>
+    </PackageReference>
+    <PackageReference Include="Prism.Core">
+      <Version>8.1.97</Version>
+    </PackageReference>
+    <PackageReference Include="SharpZipLib">
+      <Version>1.3.3</Version>
+    </PackageReference>
+    <PackageReference Include="StackExchange.Redis">
+      <Version>2.2.88</Version>
+    </PackageReference>
+    <PackageReference Include="System.Text.Json">
+      <Version>7.0.2</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

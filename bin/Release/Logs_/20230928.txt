@@ -1,0 +1,8 @@
+2023-09-28 13:41:19,999 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2023/9/28 13:41:19 communicationTag LoadFromFile loaded
+2023-09-28 13:41:21,519 [1] INFO  From R2R.App property:[(null)] addLog - 2023/9/28 13:41:21 mainwindow初始化完成 
+2023-09-28 13:41:21,520 [1] INFO  From R2R.App property:[(null)] addLog - 2023/9/28 13:41:21 AppStart 
+2023-09-28 13:41:25,155 [1] INFO  From R2R.App property:[(null)] yes_Click - 用户登录成功,用户: User
+2023-09-28 13:44:12,924 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2023/9/28 13:44:12 communicationTag LoadFromFile loaded
+2023-09-28 13:44:14,911 [1] INFO  From R2R.App property:[(null)] addLog - 2023/9/28 13:44:14 mainwindow初始化完成 
+2023-09-28 13:44:14,913 [1] INFO  From R2R.App property:[(null)] addLog - 2023/9/28 13:44:14 AppStart 
+2023-09-28 13:44:19,579 [1] INFO  From R2R.App property:[(null)] yes_Click - 用户登录成功,用户: User

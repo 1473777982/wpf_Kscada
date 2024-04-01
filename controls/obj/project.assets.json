@@ -1,0 +1,461 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "log4net/2.0.14": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Web"
+        ],
+        "compile": {
+          "lib/net45/log4net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/log4net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NModbus/3.0.80": {
+        "type": "package",
+        "compile": {
+          "lib/net46/NModbus.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/NModbus.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "common/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "log4net": "2.0.14"
+        },
+        "compile": {
+          "bin/placeholder/common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/common.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "log4net/2.0.14": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Web"
+        ],
+        "compile": {
+          "lib/net45/log4net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/log4net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NModbus/3.0.80": {
+        "type": "package",
+        "compile": {
+          "lib/net46/NModbus.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/NModbus.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "common/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "log4net": "2.0.14"
+        },
+        "compile": {
+          "bin/placeholder/common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/common.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-arm64": {
+      "log4net/2.0.14": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Web"
+        ],
+        "compile": {
+          "lib/net45/log4net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/log4net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NModbus/3.0.80": {
+        "type": "package",
+        "compile": {
+          "lib/net46/NModbus.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/NModbus.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "common/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "log4net": "2.0.14"
+        },
+        "compile": {
+          "bin/placeholder/common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/common.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "log4net/2.0.14": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Web"
+        ],
+        "compile": {
+          "lib/net45/log4net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/log4net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NModbus/3.0.80": {
+        "type": "package",
+        "compile": {
+          "lib/net46/NModbus.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/NModbus.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "common/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "log4net": "2.0.14"
+        },
+        "compile": {
+          "bin/placeholder/common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/common.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "log4net/2.0.14": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Configuration",
+          "System.Web"
+        ],
+        "compile": {
+          "lib/net45/log4net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/log4net.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "NModbus/3.0.80": {
+        "type": "package",
+        "compile": {
+          "lib/net46/NModbus.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/NModbus.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "common/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.7.2",
+        "dependencies": {
+          "log4net": "2.0.14"
+        },
+        "compile": {
+          "bin/placeholder/common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "log4net/2.0.14": {
+      "sha512": "KevyXUuhOyhx7l1jWwq6ZGVlRC2Aetg0qDp6rJpfSZGcDPKQDwfOE6yEuVkVf0kEP08NQqBDn/TQ/TJv4wgyhw==",
+      "type": "package",
+      "path": "log4net/2.0.14",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/log4net.dll",
+        "lib/net20/log4net.xml",
+        "lib/net35-client/log4net.dll",
+        "lib/net35-client/log4net.xml",
+        "lib/net35/log4net.dll",
+        "lib/net35/log4net.xml",
+        "lib/net40-client/log4net.dll",
+        "lib/net40-client/log4net.xml",
+        "lib/net40/log4net.dll",
+        "lib/net40/log4net.xml",
+        "lib/net45/log4net.dll",
+        "lib/net45/log4net.xml",
+        "lib/netstandard1.3/log4net.dll",
+        "lib/netstandard1.3/log4net.xml",
+        "lib/netstandard2.0/log4net.dll",
+        "lib/netstandard2.0/log4net.xml",
+        "log4net.2.0.14.nupkg.sha512",
+        "log4net.nuspec",
+        "package-icon.png"
+      ]
+    },
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "NModbus/3.0.80": {
+      "sha512": "bNwAoNEc3xC6c9jaRlh8T7l5YBHeiIa6qeiSY9GhqGLimZejfMFsAYuTH5gWIjZYk/ni8vqD+RUsxGGuRQ3tVw==",
+      "type": "package",
+      "path": "nmodbus/3.0.80",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net46/NModbus.dll",
+        "lib/net46/NModbus.xml",
+        "lib/net6.0/NModbus.dll",
+        "lib/net6.0/NModbus.xml",
+        "lib/netstandard1.3/NModbus.dll",
+        "lib/netstandard1.3/NModbus.xml",
+        "lib/netstandard2.0/NModbus.dll",
+        "lib/netstandard2.0/NModbus.xml",
+        "nmodbus.3.0.80.nupkg.sha512",
+        "nmodbus.nuspec"
+      ]
+    },
+    "common/1.0.0": {
+      "type": "project",
+      "path": "../common/common.csproj",
+      "msbuildProject": "../common/common.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "NModbus >= 3.0.80",
+      "Newtonsoft.Json >= 13.0.3",
+      "common >= 1.0.0",
+      "log4net >= 2.0.14"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Maxwell\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Maxwell\\Desktop\\R2R_WPF\\controls\\controls.csproj",
+      "projectName": "controls",
+      "projectPath": "C:\\Users\\Maxwell\\Desktop\\R2R_WPF\\controls\\controls.csproj",
+      "packagesPath": "C:\\Users\\Maxwell\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Maxwell\\Desktop\\R2R_WPF\\controls\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Maxwell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {
+            "C:\\Users\\Maxwell\\Desktop\\R2R_WPF\\common\\common.csproj": {
+              "projectPath": "C:\\Users\\Maxwell\\Desktop\\R2R_WPF\\common\\common.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "NModbus": {
+            "target": "Package",
+            "version": "[3.0.80, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
+          },
+          "log4net": {
+            "target": "Package",
+            "version": "[2.0.14, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-arm64": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

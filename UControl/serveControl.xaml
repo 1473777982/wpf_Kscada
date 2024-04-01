@@ -1,0 +1,46 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:R2R.UControl"
+             xmlns:controls="clr-namespace:controls;assembly=controls" xmlns:Silver="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver" x:Class="R2R.UControl.serveControl"
+             mc:Ignorable="d" 
+             Height="250" Width="370" >
+    <Grid Background="{StaticResource Color_BackGround}">
+
+        <TextBlock TextWrapping="Wrap" Text="速度(mm/s)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,42,0,0"/>
+        <controls:tagControl x:Name="speed_value" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="80"  Background="{StaticResource Color_tagCtrl_read}" Margin="123,42,0,0" Format="{}{0:F2}" setAble="False"/>
+        <controls:tagControl x:Name="position_value" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="80"  Background="{StaticResource Color_tagCtrl_read}" Margin="123,65,0,0" Format="{}{0:F2}" setAble="False"/>
+
+        <Button x:Name="button_enable" Width="60" VerticalAlignment="Top" Margin="46,153,0,0" HorizontalAlignment="Left" Content="使能" Click="button_enable_Click"/>
+        <Button x:Name="button_forward" Width="60" VerticalAlignment="Top" Margin="46,177,0,0" HorizontalAlignment="Left" Content="上升" PreviewMouseDown="button_forward_PreviewMouseDown" PreviewMouseUp="button_forward_PreviewMouseUp" IsEnabled="False"/>
+        <Button x:Name="button_backward" Width="60" VerticalAlignment="Top" Margin="116,177,0,0" HorizontalAlignment="Left" Content="下降" PreviewMouseDown="button_backward_PreviewMouseDown" PreviewMouseUp="button_backward_PreviewMouseUp" IsEnabled="False"/>
+        <Button x:Name="button_reset" Width="60" VerticalAlignment="Top" Margin="186,199,0,0" HorizontalAlignment="Left" Content="复位" Click="button_reset_Click"/>
+        <ComboBox x:Name="combo" HorizontalAlignment="Left" VerticalAlignment="Top"
+            Silver:ComboBoxHelper.Header="模式选择 " Width="160" HorizontalContentAlignment="Center" Foreground="Black" Margin="25,125,0,0" SelectionChanged="ComboBox_SelectionChanged" >
+            <ComboBoxItem Content="位置模式"/>
+            <ComboBoxItem Content="jog"/>
+            <ComboBoxItem Content="相对位移"/>
+        </ComboBox>
+        <TextBlock TextWrapping="Wrap" Text="位置(mm)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,65,0,0"/>
+        <Button x:Name="button_jog_p" Width="60" VerticalAlignment="Top" Margin="46,199,0,0" HorizontalAlignment="Left" Content="Jog+" PreviewMouseDown="button_jog_p_PreviewMouseDown" PreviewMouseUp="button_jog_p_PreviewMouseUp" IsEnabled="False" />
+        <Button x:Name="button_jog_n" Width="60" VerticalAlignment="Top" Margin="116,199,0,0" HorizontalAlignment="Left" Content="Jog-" PreviewMouseDown="button_jog_n_PreviewMouseDown" PreviewMouseUp="button_jog_n_PreviewMouseUp" IsEnabled="False" />
+        <Button x:Name="button_stop" Width="60" VerticalAlignment="Top" Margin="186,177,0,0" HorizontalAlignment="Left" Content="停止" Click="button_stop_Click"/>
+        <TextBlock TextWrapping="Wrap" Text="运行状态" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="296,15,0,0"/>
+        <TextBlock x:Name="state0" TextWrapping="Wrap" Text="Standstill" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="298,39,0,0"/>
+        <TextBlock x:Name="state1" TextWrapping="Wrap" Text="Stopping" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="298,59,0,0"/>
+        <TextBlock x:Name="state2" TextWrapping="Wrap" Text="Error" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="298,79,0,0"/>
+        <TextBlock x:Name="state3" TextWrapping="Wrap" Text="Couple" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="298,99,0,0"/>
+        <TextBlock x:Name="state4" TextWrapping="Wrap" Text="Moving" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="298,119,0,0"/>
+        <TextBlock x:Name="state5" TextWrapping="Wrap" Text="Positive" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="298,139,0,0"/>
+        <TextBlock x:Name="state6" TextWrapping="Wrap" Text="Negative" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="298,159,0,0"/>
+        <Button x:Name="button_start" Width="60" VerticalAlignment="Top" Margin="186,153,0,0" HorizontalAlignment="Left" Content="启动" IsEnabled="False" PreviewMouseUp="button_start_PreviewMouseUp" PreviewMouseDown="button_start_PreviewMouseDown"/>
+        <TextBlock TextWrapping="Wrap" Text="相对位移(mm)" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,89,0,0" FontSize="14"/>
+        <controls:tagControl x:Name="distance" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="80"  Background="{StaticResource Color_tagCtrl_write}" Margin="123,89,0,0" Format="{}{0:F2}"/>
+        <TextBlock TextWrapping="Wrap" Text="轴信息" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,15,0,0"/>
+        <controls:tagControl x:Name="stateStr" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="172"  Background="{StaticResource Color_tagCtrl_read}" Margin="83,15,0,0" Format="{}{0:F2}" setAble="False" FontStyle="Italic"/>
+        <Button x:Name="button_gear" Width="60" VerticalAlignment="Top" Margin="116,153,0,0" HorizontalAlignment="Left" Content="耦合" Click="button_gear_Click"/>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "k3D0pWRYFPd0owVFz+RAwseijX00xa7VHKN2eM9M76rextLEcRF+FHofl/cuz/JdauLbHTaDqAM+jA1zw+jrkw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Maxwell\\Desktop\\R2R_WPF\\controls\\controls.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Maxwell\\.nuget\\packages\\log4net\\2.0.14\\log4net.2.0.14.nupkg.sha512",
+    "C:\\Users\\Maxwell\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Maxwell\\.nuget\\packages\\nmodbus\\3.0.80\\nmodbus.3.0.80.nupkg.sha512"
+  ],
+  "logs": []
+}

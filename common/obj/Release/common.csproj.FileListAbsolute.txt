@@ -1,0 +1,11 @@
+C:\Users\Maxwell\Desktop\R2R_WPF\common\bin\Release\common.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\common\bin\Release\common.pdb
+C:\Users\Maxwell\Desktop\R2R_WPF\common\bin\Release\log4net.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\common\bin\Release\Newtonsoft.Json.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\common\bin\Release\TwinCAT.Ads.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\common\bin\Release\TwinCAT.Ads.xml
+C:\Users\Maxwell\Desktop\R2R_WPF\common\obj\Release\common.csproj.AssemblyReference.cache
+C:\Users\Maxwell\Desktop\R2R_WPF\common\obj\Release\common.csproj.CoreCompileInputs.cache
+C:\Users\Maxwell\Desktop\R2R_WPF\common\obj\Release\common.csproj.CopyComplete
+C:\Users\Maxwell\Desktop\R2R_WPF\common\obj\Release\common.dll
+C:\Users\Maxwell\Desktop\R2R_WPF\common\obj\Release\common.pdb

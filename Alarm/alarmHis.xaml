@@ -1,0 +1,25 @@
+﻿<Window x:Class="R2R.Alarm.alarmHis"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:R2R.Alarm"
+        xmlns:View="clr-namespace:DateTimePicker;assembly=DateTimePicker"
+        mc:Ignorable="d"
+        Title="alarmHis"  d:DesignHeight="945" d:DesignWidth="1920" Background="{x:Null}"  Icon="/Xwindow/Resources/立方体 立体 多面体 方块2.png">
+    <Grid Background ="{StaticResource Color_BackGround}" >
+
+        <DataGrid x:Name="dataGrid_alarmhis" ItemsSource="{Binding}" Margin="10,102,10,10" Background="{x:Null}" />
+        <Button Content="查询" HorizontalAlignment="Left" Margin="669,46,0,0" VerticalAlignment="Top" Click="query_Click" Height="20" Width="30"/>
+        <TextBlock HorizontalAlignment="Left" Margin="69,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="zh-cn" Text="开始"/></TextBlock>
+        <View:DateTimePicker_view x:Name="Tpicker1" HorizontalAlignment="Left" Margin="115,44,0,0" VerticalAlignment="Top" Width="220" Background="#FFDFE3E3" ToolTip="开始时间" Height="25"/>
+        <View:DateTimePicker_view x:Name="Tpicker2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="220" Background="#FFDFE3E3" ToolTip="结束时间" Margin="406,44,0,0" Height="25"/>
+        <TextBlock HorizontalAlignment="Left" Margin="362,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="15" Width="24"><Run Language="zh-cn" Text="结束"/><LineBreak/><Run Language="zh-cn"/></TextBlock>
+        <ComboBox HorizontalAlignment="Left" Margin="754,48,0,0" VerticalAlignment="Top" Width="120" Background="{x:Null}" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="15min"/>
+            <ComboBoxItem Content="1hour"/>
+            <ComboBoxItem Content="1day"/>
+        </ComboBox>
+
+    </Grid>
+</Window>

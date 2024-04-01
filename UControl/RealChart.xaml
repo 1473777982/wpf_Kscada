@@ -1,0 +1,95 @@
+﻿<UserControl x:Class="R2R.UControl.RealChart"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+             xmlns:Chart="http://research.microsoft.com/DynamicDataDisplay/1.0"
+             xmlns:local="clr-namespace:R2R.UControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="800" Unloaded="UserControl_Unloaded">
+    <UserControl.Resources>
+        <!--表格格式需引用Panuon.UI-->
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Panuon.UI.Silver;component/Control.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <DockPanel x:Name="dockPanel_RealChart" Visibility="Visible" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Grid x:Name="grid_Rchart"  HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="4"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" DockPanel.Dock="Top" Height="20" Panel.ZIndex="3" Background="#FFF6F6F6" Orientation="Horizontal">
+                    <Button Content="Button" HorizontalAlignment="Left" Margin="20,0,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Width="20" Padding="1,1,1,1" ScrollViewer.CanContentScroll="True" Click="savePng_Click_realchart" ToolTip="保存截图" VerticalAlignment="Center" Height="20">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/R2R;component/Xwindow/Resources/testchart/保存截图.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button HorizontalAlignment="Left" Margin="20,0,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Width="20" Padding="1,1,1,1" ScrollViewer.CanContentScroll="True" ToolTip="移除曲线" Click="removeAll_Click_realchart" VerticalAlignment="Center" Height="20">
+                        <Button.Background>
+                            <ImageBrush ImageSource="/R2R;component/Xwindow/Resources/testchart/叉叉.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="button_start" HorizontalAlignment="Left" Margin="20,0,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Width="20" Padding="1,1,1,1" ScrollViewer.CanContentScroll="True"  Click="startchart_Click" VerticalAlignment="Center" Height="20" Background="{x:Null}">
+                        <TextBlock Text="&#xf04b;" Foreground="#FF6D6D6D" FontSize="20"   HorizontalAlignment="Left" FontFamily="{StaticResource FontAwesome}" TextAlignment="Center" ToolTip="开始监控"/>
+                    </Button>
+                    <Button x:Name="button_stop" HorizontalAlignment="Left" Margin="20,0,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Width="20" Padding="1,1,1,1" ScrollViewer.CanContentScroll="True"  Click="stopchart_Click" VerticalAlignment="Center" Height="20" Background="{x:Null}">
+                        <TextBlock Text="&#xf04d;" Foreground="#FF6D6D6D" FontSize="20"   HorizontalAlignment="Left" FontFamily="{StaticResource FontAwesome}" TextAlignment="Center" ToolTip="停止监控"/>
+                    </Button>
+                    <Button  HorizontalAlignment="Left" Margin="20,0,0,0" BorderBrush="Black" Foreground="{x:Null}" Width="20" Padding="1,1,1,1" ScrollViewer.CanContentScroll="True" Click="saveExcel_Click_realchart" Background="{x:Null}" VerticalAlignment="Center" Height="20">
+                        <TextBlock x:Name="button_export" Text="&#xF0CE;" Foreground="#FF6D6D6D" FontSize="20"   HorizontalAlignment="Center" FontFamily="{StaticResource FontAwesome}" TextAlignment="Center" ToolTip="导出Excel" Height="20" Width="20"/>
+                    </Button>
+                    <Button  HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Center" Click="Button_Click_FitToView" Width="20" Background="{x:Null}" Height="20">
+                        <TextBlock Text="&#xf0b2;" Foreground="#FF6D6D6D" FontSize="20"   HorizontalAlignment="Left" FontFamily="{StaticResource FontAwesome}" TextAlignment="Center" ToolTip="fit to view"/>
+                    </Button>
+                </StackPanel>
+                <Grid  Grid.Row="1" x:Name="grid_chart_real" DockPanel.Dock="Top"  d:DesignHeight="660">
+
+                    <Chart:ChartPlotter x:Name="plotter_real" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Loaded="plotter_real_Loaded" MouseMove="plotter_MouseMove_realChart">
+                        <Chart:ChartPlotter.MainHorizontalAxis>
+                            <Chart:HorizontalDateTimeAxis x:Name="dateAxis_real"/>
+                        </Chart:ChartPlotter.MainHorizontalAxis>
+                        <Chart:VerticalLine x:Name="verticalLine_real" StrokeThickness="2" Stroke="Violet" StrokeDashArray="4,5"/>
+                    </Chart:ChartPlotter>
+
+                    <TextBlock  x:Name="tb_real" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Grid>
+                <GridSplitter  Grid.Row="2" HorizontalAlignment="Stretch"  Background="DarkGray"/>
+                <Grid Grid.Row="3" >
+                    <DataGrid x:Name="DgCustom_real"
+                              ItemsSource="{Binding }"
+                              BorderThickness="1"
+                              BorderBrush="{x:Null}"
+                              CanUserAddRows="False" 
+                              Foreground="Black" 
+                              Visibility="Visible" 
+                              VerticalAlignment="Stretch" 
+                              HorizontalAlignment="Stretch">
+                        <pu:DataGridHelper.AutoGenerateCheckBoxStyle>
+                            <Style TargetType="{x:Type CheckBox}"
+                                   BasedOn="{StaticResource {x:Type CheckBox}}">
+                                <Setter Property="pu:CheckBoxHelper.CheckBoxStyle"
+                                        Value="Switch" />
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding (pu:CheckBoxHelper.CheckBoxStyle), RelativeSource={RelativeSource Self}}"
+                                                 Value="Switch">
+                                        <Setter Property="pu:CheckBoxHelper.CheckedBackground"
+                                                Value="#72C81F" />
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </pu:DataGridHelper.AutoGenerateCheckBoxStyle>
+                    </DataGrid>
+                </Grid>
+            </Grid>
+
+
+        </DockPanel>
+    </Grid>
+</UserControl>

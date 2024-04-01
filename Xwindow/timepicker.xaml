@@ -1,0 +1,21 @@
+﻿<Window x:Class="R2R.Xwindow.timepicker"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+        xmlns:local="clr-namespace:R2R.Xwindow"
+        mc:Ignorable="d"
+        Title="时间选择" Height="260" Width="400" Background="{x:Null}" Icon="/Xwindow/Resources/立方体 立体 多面体 方块2.png">
+    <Grid Background="{StaticResource Color_BackGround}">
+        <TextBlock HorizontalAlignment="Left" Margin="19,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="zh-cn" Text="开始时间"/><LineBreak/><Run Language="zh-cn"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="19,52,0,0" TextWrapping="Wrap" Text="结束时间" VerticalAlignment="Top" RenderTransformOrigin="0.479,1.651"/>
+        <Button x:Name="no" Content="取消"
+            Width="100" Height="30" Margin="37,153,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="no_Click"  />
+        <Button x:Name="yes" Content="确定"
+            Width="100" Height="30" Margin="223,153,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="yes_Click"  />
+        <pu:DateTimePicker x:Name="DateTimePicker1" HorizontalAlignment="Left" Margin="87,18,0,0" VerticalAlignment="Top" Width="201" DateTimePickerMode="DateTime"/>
+        <pu:DateTimePicker x:Name="DateTimePicker2" HorizontalAlignment="Left" Margin="87,51,0,0" VerticalAlignment="Top" Width="201" DateTimePickerMode="DateTime"/>
+
+    </Grid>
+</Window>

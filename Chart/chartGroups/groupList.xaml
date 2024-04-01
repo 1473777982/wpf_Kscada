@@ -1,0 +1,46 @@
+﻿<Page x:Class="R2R.Chart.groupList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:R2R.Chart"
+        mc:Ignorable="d"
+        Title="groupList">
+    <Page.Resources>
+        <local:DelegateCommand x:Key="AddCommand" ExecuteDelegate="AddCommand_OnExecute" ></local:DelegateCommand>
+        <local:DelegateCommand x:Key="EditCommand" ExecuteDelegate="EditCommand_OnExecute" ></local:DelegateCommand>
+        <local:DelegateCommand x:Key="DeleteCommand" ExecuteDelegate="DeleteCommand_OnExecute" ></local:DelegateCommand>
+        <DataTemplate x:Key="ValueTemplate_groupNames">
+            <DockPanel>
+                <TextBlock Text="{Binding groupName}"  />
+            </DockPanel>
+        </DataTemplate>
+        <ContextMenu  x:Key="listViewContextMenu">
+            <MenuItem Header="添加" Command="{StaticResource AddCommand}" CommandParameter="{Binding}" Background="#FFF7F7F7" Margin="10,0,0,0"></MenuItem>
+            <MenuItem Header="编辑" Command="{StaticResource EditCommand}" CommandParameter="{Binding}" Background="#FFF7F7F7" Margin="10,0,0,0" Visibility="Collapsed"></MenuItem>
+            <MenuItem Header="删除" Command="{StaticResource DeleteCommand}" CommandParameter="{Binding}" Background="#FFF7F7F7" Margin="10,0,0,0" Visibility="Collapsed"></MenuItem>
+        </ContextMenu>
+    </Page.Resources>
+    <Grid Background="{StaticResource Color_BackGround}" >
+        <ListView Name="listView_groupName" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Height="300" SelectionChanged="listView_key_SelectionChanged" Background="{x:Null}" PreviewMouseRightButtonDown="listView_groupName_PreviewMouseRightButtonDown"  >
+            <ListView.Style>
+                <Style TargetType="{x:Type ListView}">
+                    <Setter Property="ContextMenu" Value="{StaticResource listViewContextMenu}"/>
+                </Style>
+            </ListView.Style>
+            <ListView.ContextMenu>
+                <ContextMenu x:Name="contMenu" >
+                    <MenuItem Header="添加" Command="{StaticResource AddCommand}" CommandParameter="{Binding}" Background="#FFF7F7F7" Margin="10,0,0,0"></MenuItem>
+                    <MenuItem Header="编辑" Command="{StaticResource EditCommand}" CommandParameter="{Binding}" Background="#FFF7F7F7" Margin="10,0,0,0" Visibility="Collapsed"></MenuItem>
+                    <MenuItem Header="删除" Command="{StaticResource DeleteCommand}" CommandParameter="{Binding}" Background="#FFF7F7F7" Margin="10,0,0,0" Visibility="Collapsed"></MenuItem>
+                </ContextMenu>
+            </ListView.ContextMenu>
+            <ListView.View>
+                    <GridView>
+                    <GridViewColumn CellTemplate="{StaticResource ValueTemplate_groupNames}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        <ListBox x:Name="listbox"  Margin="200,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="239" Height="300" Background="{x:Null}"/>
+    </Grid>
+</Page>

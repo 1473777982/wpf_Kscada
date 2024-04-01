@@ -1,0 +1,169 @@
+2024-01-26 09:47:21,537 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 9:47:21 communicationTag LoadFromFile loaded
+2024-01-26 09:47:21,810 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 9:47:21 ADS:连接PLC失败169.254.139.30.1.1851
+2024-01-26 09:47:21,821 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 9:47:21 ADS:连接PLC失败169.254.139.30.1.1851
+2024-01-26 09:47:26,724 [1] INFO  From R2R.App property:[(null)] addLog - 2024/1/26 9:47:26 mainwindow初始化完成 
+2024-01-26 09:47:26,726 [1] INFO  From R2R.App property:[(null)] addLog - 2024/1/26 9:47:26 AppStart 
+2024-01-26 09:47:27,748 [1] INFO  From R2R.App property:[(null)] yes_Click - 用户登录成功,用户: User
+2024-01-26 10:00:31,456 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 10:00:31 communicationTag LoadFromFile loaded
+2024-01-26 10:00:31,564 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 10:00:31 ADS:连接PLC失败169.254.139.30.1.1851
+2024-01-26 10:00:31,568 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 10:00:31 ADS:连接PLC失败169.254.139.30.1.1851
+2024-01-26 10:00:35,726 [1] INFO  From R2R.App property:[(null)] addLog - 2024/1/26 10:00:35 mainwindow初始化完成 
+2024-01-26 10:00:35,727 [1] INFO  From R2R.App property:[(null)] addLog - 2024/1/26 10:00:35 AppStart 
+2024-01-26 10:00:36,731 [1] INFO  From R2R.App property:[(null)] yes_Click - 用户登录成功,用户: User
+2024-01-26 10:00:54,112 [1] INFO  From R2R.App property:[(null)] addLog - 2024/1/26 10:00:54 导入PLC变量 User
+2024-01-26 10:01:03,421 [1] INFO  From R2R.App property:[(null)] addLog - 2024/1/26 10:01:03 通讯设置：保存json完成 User
+2024-01-26 10:01:03,478 [1] INFO  From R2R.App property:[(null)] addLog - 2024/1/26 10:01:03 通讯设置：保存至SQLopc2完成 User
+2024-01-26 10:16:45,124 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 10:16:45 communicationTag LoadFromFile loaded
+2024-01-26 10:16:45,526 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 10:16:45 ADS:连接PLC失败169.254.139.30.1.1851
+2024-01-26 10:16:45,548 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 10:16:45 ADS:连接PLC失败169.254.139.30.1.1851
+2024-01-26 10:16:49,802 [1] INFO  From R2R.App property:[(null)] addLog - 2024/1/26 10:16:49 mainwindow初始化完成 
+2024-01-26 10:16:49,803 [1] INFO  From R2R.App property:[(null)] addLog - 2024/1/26 10:16:49 AppStart 
+2024-01-26 10:16:51,504 [1] INFO  From R2R.App property:[(null)] yes_Click - 用户登录成功,用户: User
+2024-01-26 10:58:41,123 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 10:58:41 communicationTag LoadFromFile loaded
+2024-01-26 10:58:41,590 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 10:58:41 ADS:连接PLC失败169.254.139.30.1.1851
+2024-01-26 10:58:41,608 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 10:58:41 ADS:连接PLC失败169.254.139.30.1.1851
+2024-01-26 10:58:45,811 [1] INFO  From R2R.App property:[(null)] addLog - 2024/1/26 10:58:45 mainwindow初始化完成 
+2024-01-26 10:58:45,813 [1] INFO  From R2R.App property:[(null)] addLog - 2024/1/26 10:58:45 AppStart 
+2024-01-26 10:58:48,070 [1] INFO  From R2R.App property:[(null)] yes_Click - 用户登录成功,用户: User
+2024-01-26 11:18:43,306 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 11:18:43 communicationTag LoadFromFile loaded
+2024-01-26 11:18:43,754 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 11:18:43 ADS:连接PLC失败169.254.139.30.1.1851
+2024-01-26 11:18:43,772 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 11:18:43 ADS:连接PLC失败169.254.139.30.1.1851
+2024-01-26 11:18:48,046 [1] INFO  From R2R.App property:[(null)] addLog - 2024/1/26 11:18:48 mainwindow初始化完成 
+2024-01-26 11:18:48,049 [1] INFO  From R2R.App property:[(null)] addLog - 2024/1/26 11:18:48 AppStart 
+2024-01-26 11:18:50,359 [1] INFO  From R2R.App property:[(null)] yes_Click - 用户登录成功,用户: User
+2024-01-26 14:29:11,129 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 14:29:11 communicationTag LoadFromFile loaded
+2024-01-26 14:29:11,401 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 14:29:11 ADS:连接PLC失败169.254.139.30.1.1851
+2024-01-26 14:29:11,410 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 14:29:11 ADS:连接PLC失败169.254.139.30.1.1851
+2024-01-26 14:29:16,245 [1] INFO  From R2R.App property:[(null)] addLog - 2024/1/26 14:29:16 mainwindow初始化完成 
+2024-01-26 14:29:16,246 [1] INFO  From R2R.App property:[(null)] addLog - 2024/1/26 14:29:16 AppStart 
+2024-01-26 14:29:17,349 [1] INFO  From R2R.App property:[(null)] yes_Click - 用户登录成功,用户: User
+2024-01-26 15:21:02,424 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 15:21:02 communicationTag LoadFromFile loaded
+2024-01-26 15:21:02,676 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 15:21:02 ADS:连接PLC失败169.254.139.30.1.1851
+2024-01-26 15:21:02,682 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 15:21:02 ADS:连接PLC失败169.254.139.30.1.1851
+2024-01-26 15:21:05,507 [1] INFO  From R2R.App property:[(null)] addLog - 2024/1/26 15:21:05 mainwindow初始化完成 
+2024-01-26 15:21:05,509 [1] INFO  From R2R.App property:[(null)] addLog - 2024/1/26 15:21:05 AppStart 
+2024-01-26 15:21:07,304 [1] INFO  From R2R.App property:[(null)] yes_Click - 用户登录成功,用户: User
+2024-01-26 16:52:15,492 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,499 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,500 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,502 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,502 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,503 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,503 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,504 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,504 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,506 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,510 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,512 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,512 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,514 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,515 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,516 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,517 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,518 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,518 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,519 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,520 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,521 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,522 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,523 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,524 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,525 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,529 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,531 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,532 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,533 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,535 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,536 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,537 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,538 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,540 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,541 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,543 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,546 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,547 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,549 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,551 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,552 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,554 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,556 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,557 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,561 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,571 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,574 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,576 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,577 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,579 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,580 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,582 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,586 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,588 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,589 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,592 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,594 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,596 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,601 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,603 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,606 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,608 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,610 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,613 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,617 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,620 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,623 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,627 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,632 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,636 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,639 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,642 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,645 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,648 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,650 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,655 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,657 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,659 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,662 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,668 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,672 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,675 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,678 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,681 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,688 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,694 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,699 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,703 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,709 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,712 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,715 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,718 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,724 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,728 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,731 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,735 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,742 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,745 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,749 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,752 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,758 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,762 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,766 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,796 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,805 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,812 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,817 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,824 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,828 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,832 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,837 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,845 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,849 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,853 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,861 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,866 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,869 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,876 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,882 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,887 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,896 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,900 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected
+2024-01-26 16:52:15,905 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/1/26 16:52:15 [正常]  2024-01-26 16:52:15  Disconnected

@@ -1,0 +1,27 @@
+﻿<UserControl x:Name="Control_tag"
+             x:Class="controls.tagControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:controls"
+             mc:Ignorable="d" 
+             Unloaded="tagContro_Unloaded" Loaded="tagContro_Loaded" >
+    <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Width="auto">
+        <TextBox x:Name="TbCustom"   
+                 x:FieldModifier="public"
+                 Width="{Binding ElementName=Control_tag, Path=Width}"
+                 Cursor="IBeam"                
+                 BorderThickness="0,0,0,0" 
+                 FontSize="{Binding ElementName=Control_tag, Path=FontSize}" 
+                 Text="0.00" 
+                 Foreground="{Binding ElementName=Control_tag, Path=Foreground}" 
+                 TextAlignment="Center" 
+                 Padding="0,0,0,0"
+                 Background="{Binding ElementName=Control_tag, Path=Background}" 
+                 BorderBrush="{Binding ElementName=Control_tag, Path=BorderBrush}"                      
+                 SelectionBrush="{x:Null}" HorizontalContentAlignment="Center" 
+                 PreviewMouseDown="TextBox_MouseDown" IsReadOnly="True"
+                 />
+    </Grid>
+</UserControl>

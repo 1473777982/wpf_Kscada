@@ -1,0 +1,12 @@
+2024-02-07 13:36:24,519 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/2/7 13:36:24 communicationTag LoadFromFile loaded
+2024-02-07 13:36:26,233 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/2/7 13:36:26 ADS:连接PLC失败169.254.139.30.1.1851
+2024-02-07 13:36:26,276 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/2/7 13:36:26 ADS:连接PLC失败169.254.139.30.1.1851
+2024-02-07 13:36:33,146 [1] INFO  From R2R.App property:[(null)] addLog - 2024/2/7 13:36:33 mainwindow初始化完成 
+2024-02-07 13:36:33,149 [1] INFO  From R2R.App property:[(null)] addLog - 2024/2/7 13:36:33 AppStart 
+2024-02-07 13:36:40,252 [1] INFO  From R2R.App property:[(null)] yes_Click - 用户登录成功,用户: User
+2024-02-07 14:42:55,830 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/2/7 14:42:55 communicationTag LoadFromFile loaded
+2024-02-07 14:42:56,059 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/2/7 14:42:56 ADS:连接PLC失败169.254.139.30.1.1851
+2024-02-07 14:42:56,072 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2024/2/7 14:42:56 ADS:连接PLC失败169.254.139.30.1.1851
+2024-02-07 14:43:00,864 [1] INFO  From R2R.App property:[(null)] addLog - 2024/2/7 14:43:00 mainwindow初始化完成 
+2024-02-07 14:43:00,865 [1] INFO  From R2R.App property:[(null)] addLog - 2024/2/7 14:43:00 AppStart 
+2024-02-07 14:43:01,879 [1] INFO  From R2R.App property:[(null)] yes_Click - 用户登录成功,用户: User

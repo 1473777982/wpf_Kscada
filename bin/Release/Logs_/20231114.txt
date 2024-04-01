@@ -1,0 +1,6 @@
+2023-11-14 17:23:56,651 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2023/11/14 17:23:56 communicationTag LoadFromFile loaded
+2023-11-14 17:23:58,880 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2023/11/14 17:23:58 ADS:连接PLC失败192.168.1.78.1.1851
+2023-11-14 17:24:00,903 [1] INFO  From common.helper.logHepler property:[(null)] addLog_common - 2023/11/14 17:24:00 ADS:连接PLC失败192.168.1.78.1.1851
+2023-11-14 17:24:01,862 [1] INFO  From R2R.App property:[(null)] addLog - 2023/11/14 17:24:01 mainwindow初始化完成 
+2023-11-14 17:24:01,863 [1] INFO  From R2R.App property:[(null)] addLog - 2023/11/14 17:24:01 AppStart 
+2023-11-14 17:24:03,936 [1] INFO  From R2R.App property:[(null)] yes_Click - 用户登录成功,用户: User

@@ -1,0 +1,23 @@
+﻿{
+    "mysql":
+    {
+        "server":"127.0.0.1",
+        "dbName":"mydb1",
+        "uid":"root",
+        "pwd":"mysqlMW"
+    },
+    "influx":
+    {
+        "org":"org_R2R",
+        "bucket":"bucket_R2R",
+        "measurement":"mem_history",
+        "username":"R2R",
+        "password":"influx_R2R",
+        "Token":"lL37-FHqNGcA6sW9we40-7NUuVhm4VJuXHZlm1a2uxZH-gq25CpHMW5ploxvmB203kzRsGiF8wJ8qctBFbX2HA=="
+    },
+    "usertimeout":
+    {
+        "time":"60000"
+    }
+    
+}

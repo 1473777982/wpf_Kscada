@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B255D33D-8012-42DE-98D7-0FCF3F8E51F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>R2R</RootNamespace>
+    <AssemblyName>R2R</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="helper\ADS_TagData_option.cs" />
+    <Compile Include="helper\jsonFile.cs" />
+    <Compile Include="helper\var_latest.cs" />
+    <Compile Include="historyvalues\historyValues.cs" />
+    <Compile Include="helper\sqlClientHelper.cs" />
+    <Compile Include="historyvalues\operation_logs.cs" />
+    <Compile Include="MW_R2RDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MW_R2RDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\BaseChannel.cs" />
+    <Compile Include="UControl\code_chart.cs" />
+    <Compile Include="UControl\DataGridHelper.cs" />
+    <Compile Include="hotKey\EHotKeySetting.cs" />
+    <Compile Include="hotKey\EKey.cs" />
+    <Compile Include="hotKey\HotKeyHelper.cs" />
+    <Compile Include="hotKey\HotKeyManager.cs" />
+    <Compile Include="hotKey\HotKeyModel.cs" />
+    <Compile Include="hotKey\HotKeySettingsManager.cs" />
+    <Compile Include="hotKey\HotKeySettingsWindow.xaml.cs">
+      <DependentUpon>HotKeySettingsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\datetimepickerVM.cs" />
+    <Compile Include="UControl\HisChart.xaml.cs">
+      <DependentUpon>HisChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\IChannel.cs" />
+    <Compile Include="UControl\plugin.cs" />
+    <Compile Include="UControl\RealChart.xaml.cs">
+      <DependentUpon>RealChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\tagControl.xaml.cs">
+      <DependentUpon>tagControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\tagSignal.xaml.cs">
+      <DependentUpon>tagSignal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UControl\tag_manager.cs" />
+    <Compile Include="UControl\ViewModelBase.cs" />
+    <Compile Include="Xwindow\ADSclient_varInfo.xaml.cs">
+      <DependentUpon>ADSclient_varInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page04_1.xaml.cs">
+      <DependentUpon>Page04_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page04_2.xaml.cs">
+      <DependentUpon>Page04_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page04_3.xaml.cs">
+      <DependentUpon>Page04_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page04_4.xaml.cs">
+      <DependentUpon>Page04_4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page05_dianyuan.xaml.cs">
+      <DependentUpon>Page05_dianyuan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page10_Help.xaml.cs">
+      <DependentUpon>Page10_Help.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page01_zonglan.xaml.cs">
+      <DependentUpon>Page01_zonglan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page02_zhenkong.xaml.cs">
+      <DependentUpon>Page02_zhenkong.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page03_yinji.xaml.cs">
+      <DependentUpon>Page03_yinji.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page04_fenzibeng.xaml.cs">
+      <DependentUpon>Page04_fenzibeng.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page06_dianji.xaml.cs">
+      <DependentUpon>Page06_dianji.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page07_peifang.xaml.cs">
+      <DependentUpon>Page07_peifang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page08_MFC.xaml.cs">
+      <DependentUpon>Page08_MFC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page09_SystemParameter.xaml.cs">
+      <DependentUpon>Page09_SystemParameter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page11_EtherCAT.xaml.cs">
+      <DependentUpon>Page11_EtherCAT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page12_Alarm.xaml.cs">
+      <DependentUpon>Page12_Alarm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page13_OperationRecord.xaml.cs">
+      <DependentUpon>Page13_OperationRecord.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Page14_EnergyStatistics.xaml.cs">
+      <DependentUpon>Page14_EnergyStatistics.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ADSclinet.xaml.cs">
+      <DependentUpon>ADSclinet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pages\Page15_cooling.xaml.cs">
+      <DependentUpon>Page15_cooling.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Xwindow\login.xaml.cs">
+      <DependentUpon>login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Xwindow\SplashWindow.xaml.cs">
+      <DependentUpon>SplashWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Xwindow\timepicker.xaml.cs">
+      <DependentUpon>timepicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Xwindow\Users.xaml.cs">
+      <DependentUpon>Users.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Xwindow\User_manager.xaml.cs">
+      <DependentUpon>User_manager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Xwindow\VAR_monitor.xaml.cs">
+      <DependentUpon>VAR_monitor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Xwindow\Xwindow.xaml.cs">
+      <DependentUpon>Xwindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mainwindow.xaml.cs">
+      <DependentUpon>Mainwindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Xwindow\MacLikeWindow.xaml.cs">
+      <DependentUpon>MacLikeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Xwindow\NavbarWindow.xaml.cs">
+      <DependentUpon>NavbarWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Xwindow\NeteaseMusicWindow.xaml.cs">
+      <DependentUpon>NeteaseMusicWindow.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="MW_R2RDataSet.xsc">
+      <DependentUpon>MW_R2RDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MW_R2RDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MW_R2RDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MW_R2RDataSet.xss">
+      <DependentUpon>MW_R2RDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mylog4net.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Xwindow\Resources\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Xwindow\Resources\testchart\DJ65.txt" />
+    <EmbeddedResource Include="Xwindow\Resources\testchart\MICEX.txt" />
+    <EmbeddedResource Include="Xwindow\Resources\testchart\RTS.txt" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Xwindow\Resources\testchart\Repressilator.txt" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MW_R2R.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MW_R2R_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>MW_R2R.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <ItemGroup>
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\CsvHelper.30.0.1\lib\net47\CsvHelper.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\DynamicDataDisplay\DynamicDataDisplay.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\SharpZipLib.1.3.3\lib\net45\ICSharpCode.SharpZipLib.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\InfluxDB.Client.Core.4.11.0\lib\netstandard2.0\InfluxDB.Client.Core.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\InfluxDB.Client.4.11.0\lib\netstandard2.0\InfluxDB.Client.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\JsonSubTypes.2.0.1\lib\net47\JsonSubTypes.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\log4net.2.0.14\lib\net45\log4net.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\Microsoft.Extensions.ObjectPool.7.0.2\lib\net462\Microsoft.Extensions.ObjectPool.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\Microsoft.Extensions.Primitives.2.2.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\Microsoft.Net.Http.Headers.2.2.8\lib\netstandard2.0\Microsoft.Net.Http.Headers.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\Microsoft.Practices.Prism.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\MiniExcel.1.28.0\lib\net45\MiniExcel.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\NodaTime.3.1.6\lib\netstandard2.0\NodaTime.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\NodaTime.Serialization.JsonNet.3.0.1\lib\netstandard2.0\NodaTime.Serialization.JsonNet.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\Panuon.UI.Silver.1.1.3.4\lib\net45\Panuon.UI.Silver.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\Pipelines.Sockets.Unofficial.2.2.0\lib\net472\Pipelines.Sockets.Unofficial.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\PresentationCore.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\PresentationFramework.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\R2R_MySqlHelper\R2R_Mysqlhelper.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\RestSharp.108.0.3\lib\netstandard2.0\RestSharp.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\StackExchange.Redis.2.2.88\lib\net472\StackExchange.Redis.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\System.Collections.Immutable.6.0.0\lib\net461\System.Collections.Immutable.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.ComponentModel.DataAnnotations.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\System.ComponentModel.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\System.Configuration.ConfigurationManager.6.0.1\lib\net461\System.Configuration.ConfigurationManager.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Configuration.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Configuration.Install.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.OracleClient.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\System.Diagnostics.PerformanceCounter.5.0.0\lib\net461\System.Diagnostics.PerformanceCounter.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.IO.Compression.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\System.IO.Pipelines.5.0.0\lib\net461\System.IO.Pipelines.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Management.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Numerics.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\System.Reactive.5.0.0\lib\net472\System.Reactive.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Runtime.Serialization.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\System.Security.AccessControl.6.0.0\lib\net461\System.Security.AccessControl.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Security.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\System.Security.Permissions.6.0.0\lib\net461\System.Security.Permissions.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.ServiceProcess.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\System.Text.Encodings.Web.7.0.0\lib\net462\System.Text.Encodings.Web.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\System.Text.Json.7.0.2\lib\net462\System.Text.Json.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\System.Threading.Channels.5.0.0\lib\net461\System.Threading.Channels.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Transactions.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Web.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xaml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\packages\TCadsv4.0.30319\TwinCAT.Ads.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\WindowsBase.dll" />
+    <ReferencePath Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\UControl\WPF_DateTimePicker.UserControls.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\netstandard.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\hotKey\HotKeySettingsWindow.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\UControl\HisChart.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\UControl\RealChart.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\UControl\tagControl.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\UControl\tagSignal.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Xwindow\ADSclient_varInfo.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page04_1.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page04_2.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page04_3.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page04_4.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page05_dianyuan.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page10_Help.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page01_zonglan.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page02_zhenkong.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page03_yinji.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page04_fenzibeng.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page06_dianji.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page07_peifang.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page08_MFC.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page09_SystemParameter.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page11_EtherCAT.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page12_Alarm.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page13_OperationRecord.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\ADSclinet.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page14_EnergyStatistics.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Pages\Page15_cooling.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Xwindow\login.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Xwindow\SplashWindow.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Xwindow\timepicker.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Xwindow\Users.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Xwindow\User_manager.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Xwindow\VAR_monitor.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Xwindow\Xwindow.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Mainwindow.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Xwindow\MacLikeWindow.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Xwindow\NavbarWindow.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\Xwindow\NeteaseMusicWindow.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\App.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\R2R_Content.g.cs" />
+    <Compile Include="C:\Users\Maxwell\Desktop\R2R_WPF_intall\obj\Release\GeneratedInternalTypeHelper.g.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,443 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:R2R.Pages"
+      xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+      xmlns:controls="clr-namespace:controls;assembly=controls"       
+      xmlns:UControl="clr-namespace:R2R.UControl" x:Class="R2R.Pages.Page16_chamber_sputter"       
+      mc:Ignorable="d" 
+      d:DesignHeight="1945" d:DesignWidth="1920"     
+      Title="Page16_chamber_sputter">
+
+    <Grid  x:Name="Page16" Background="#FFF1F2F3">
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Width="388" Margin="56,39,0,0">
+            <GroupBox x:Name="serve_SLP" Header="水冷盘" Background="{x:Null}" BorderBrush="LightGray">
+                <UControl:serveControl x:Name="Uctrl_serve_SLP" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </GroupBox>
+            <GroupBox x:Name="serve_FZB" Header="分子泵盖板" Background="{x:Null}" BorderBrush="LightGray">
+                <UControl:serveControl x:Name="Uctrl_serve_FZB" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </GroupBox>
+            <GroupBox x:Name="serve_XZ" Header="旋转" Background="{x:Null}" BorderBrush="LightGray">
+                <UControl:serveControl_rol x:Name="Uctrl_serve_XZ" HorizontalAlignment="Left"/>
+            </GroupBox>
+            <GroupBox x:Name="ChamberLid" Header="开腔" Background="{x:Null}" Height="144">
+                <Grid>
+                    <controls:tagSignal x:Name="LidEnable" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Text="腔盖操作许可" Background="{StaticResource Color_tagCtrl_read}" FontSize="14" Height="20" varName="TagName"/>
+                    <Button x:Name="bt_en" Content="腔盖使能" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Click="Button_QG_enable_Click" Height="20" Width="80"/>
+                    <TextBlock x:Name="state_QG" HorizontalAlignment="Left" Margin="12,6,0,0" TextWrapping="Wrap" Text="运行状态" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock TextWrapping="Wrap" Text="开腔条件" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="146,2,0,0"/>
+                    <controls:tagBitSignal x:Name="Lid_limit_bit0" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="146,25,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="真空度" bitIndex="0"/>
+                    <controls:tagBitSignal x:Name="Lid_limit_bit2" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="146,50,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="外部条件2" bitIndex="1"/>
+                    <controls:tagBitSignal x:Name="Lid_limit_bit3" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="146,75,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="外部条件3" bitIndex="2"/>
+                    <controls:tagBitSignal x:Name="Lid_limit_bit4" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="231,25,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="外部条件4" bitIndex="3"/>
+                    <controls:tagBitSignal x:Name="Lid_limit_bit5" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="231,50,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="内部限制" bitIndex="5"/>
+                    <controls:tagBitSignal x:Name="Lid_limit_bit6" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="231,74,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="I/O反馈" bitIndex="6"/>
+                </Grid>
+            </GroupBox>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" Margin="460,39,0,0">
+            <GroupBox x:Name="ADL" Header="ADL" Background="{x:Null}">
+                <UControl:DCCtrl x:Name="Uctrl_ADL"/>
+            </GroupBox>
+            <GroupBox x:Name="RF" Header="RF电源" Background="{x:Null}">
+                <UControl:RFCtrl x:Name="Uctrl_RF"/>
+            </GroupBox>
+            <GroupBox x:Name="DC1" Header="DC1" Background="{x:Null}">
+                <Grid Height="300">
+                    <TextBlock TextWrapping="Wrap" Text="U(V)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,64,0,0"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="86,64,0,0" VerticalAlignment="Top" FontSize="14" Width="60"  Background="{StaticResource Color_tagCtrl_write}" Format="{}{0:F2}" varName="CA4_set_DC1_VoltageSetpoint"/>
+                    <TextBlock TextWrapping="Wrap" Text="设定" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="102,41,0,0"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="182,64,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False" varName="CA4_value_DC1_ActiveVoltage"/>
+                    <TextBlock TextWrapping="Wrap" Text="实际" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="198,41,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="I(A)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,87,0,0"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="86,87,0,0" VerticalAlignment="Top" FontSize="14" Width="60"  Background="{StaticResource Color_tagCtrl_write}" Format="{}{0:F2}" varName="CA4_set_DC1_CurrentSetpoint"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="182,87,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False" varName="CA4_value_DC1_ActiveCurrent"/>
+                    <TextBlock TextWrapping="Wrap" Text="P(W)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,110,0,0"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="86,110,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_write}" Format="{}{0:F2}" varName="CA4_set_DC1_PowerSetPoint"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="182,110,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False" varName="CA4_value_DC1_ActivePower"/>
+                    <ComboBox x:Name="combo_DC1" HorizontalAlignment="Left" VerticalAlignment="Top" pu:ComboBoxHelper.Header="模式选择 " Width="160" HorizontalContentAlignment="Center" Foreground="Black" Margin="10,10,0,0" SelectionChanged="ComboBox_SelectionChanged" SelectedIndex="-1" >
+                        <ComboBoxItem Content="系统模式"/>
+                        <ComboBoxItem Content="普通模式"/>
+                        <ComboBoxItem Content="梯度模式"/>
+                    </ComboBox>
+                    <Button x:Name="on_DC1" Content="启动" HorizontalAlignment="Left" Margin="195,262,0,0" VerticalAlignment="Top" Width="60" Click="on_Click" Tag="DC1"/>
+                    <Button x:Name="off_DC1" Content="停止" HorizontalAlignment="Left" Margin="259,262,0,0" VerticalAlignment="Top" Width="60" Click="off_Click" Tag="DC1"/>
+                    <Button x:Name="reset_DC1" Content="复位" HorizontalAlignment="Left" Margin="325,262,0,0" VerticalAlignment="Top" Width="60" Click="reset_Click" Tag="DC1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="184,149,0,0" TextWrapping="Wrap" Text="运行时间" VerticalAlignment="Top" FontSize="14"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="251,149,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False" varName="CA4_value_DC1_EvPowerRunTime"/>
+                    <TextBlock TextWrapping="Wrap" Text="实际模式" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,10,0,0"/>
+                    <controls:tagControl x:Name="DC1_actMode" HorizontalAlignment="Left" Margin="241,10,0,0" VerticalAlignment="Top" FontSize="14" Width="80" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="过电压" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,149,0,0"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="86,149,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_write}" varName="CA4_set_DC1_OverVoltage"/>
+                    <TextBlock TextWrapping="Wrap" Text="过电流" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,171,0,0"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="86,171,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_write}" varName="CA4_set_DC1_OverCurrent"/>
+                    <TextBlock TextWrapping="Wrap" Text="过功率" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,194,0,0"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="86,194,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_write}" varName="CA4_set_DC1_OverPower"/>
+                    <TextBlock TextWrapping="Wrap" Text="电压斜率" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,217,0,0"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="86,217,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_write}" varName="CA4_set_DC1_PowerRamp"/>
+                    <TextBlock TextWrapping="Wrap" Text="电流斜率" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,240,0,0"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="86,240,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_write}" varName="CA4_set_DC1_CurrentRamp"/>
+                    <TextBlock TextWrapping="Wrap" Text="内阻" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,263,0,0"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="86,263,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_write}" varName="CA4_set_DC1_ResistanceSetPoint"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="184,172,0,0" TextWrapping="Wrap" Text="错误信息" VerticalAlignment="Top" FontSize="14"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="251,172,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False" varName="CA4_value_DC1_ErrorInfo"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox x:Name="DC2" Header="DC2" Background="{x:Null}">
+                <Grid Height="300">
+                    <TextBlock TextWrapping="Wrap" Text="U(V)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,64,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="设定" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="102,41,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="实际" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="198,41,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="I(A)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,87,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="P(W)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,110,0,0"/>
+                    <ComboBox x:Name="combo_DC2" HorizontalAlignment="Left" VerticalAlignment="Top" pu:ComboBoxHelper.Header="模式选择 " Width="160" HorizontalContentAlignment="Center" Foreground="Black" Margin="10,10,0,0" SelectionChanged="ComboBox_SelectionChanged" SelectedIndex="-1" >
+                        <ComboBoxItem Content="系统模式"/>
+                        <ComboBoxItem Content="普通模式"/>
+                        <ComboBoxItem Content="梯度模式"/>
+                    </ComboBox>
+                    <Button Content="启动" HorizontalAlignment="Left" Margin="195,262,0,0" VerticalAlignment="Top" Width="60" Click="on_Click" Tag="DC2"/>
+                    <Button Content="停止" HorizontalAlignment="Left" Margin="259,262,0,0" VerticalAlignment="Top" Width="60" Click="off_Click" Tag="DC2"/>
+                    <Button Content="复位" HorizontalAlignment="Left" Margin="325,262,0,0" VerticalAlignment="Top" Width="60" Click="reset_Click" Tag="DC2"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="184,149,0,0" TextWrapping="Wrap" Text="运行时间" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBlock TextWrapping="Wrap" Text="实际模式" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,10,0,0"/>
+                    <controls:tagControl x:Name="DC2_actMode" HorizontalAlignment="Left" Margin="241,10,0,0" VerticalAlignment="Top" FontSize="14" Width="80" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False"/>
+                    <TextBlock TextWrapping="Wrap" Text="过电压" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,149,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="过电流" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,171,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="过功率" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,194,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="电压斜率" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,217,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="电流斜率" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,240,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="内阻" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,263,0,0"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="184,172,0,0" TextWrapping="Wrap" Text="错误信息" VerticalAlignment="Top" FontSize="14"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="86,64,0,0" VerticalAlignment="Top" FontSize="14" Width="60"  Background="{StaticResource Color_tagCtrl_write}" Format="{}{0:F2}" varName="CA4_set_DC2_VoltageSetpoint"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="182,64,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False" varName="CA4_value_DC2_ActiveVoltage"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="86,87,0,0" VerticalAlignment="Top" FontSize="14" Width="60"  Background="{StaticResource Color_tagCtrl_write}" Format="{}{0:F2}" varName="CA4_set_DC2_CurrentSetpoint"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="182,87,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False" varName="CA4_value_DC2_ActiveCurrent"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="86,110,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_write}" Format="{}{0:F2}" varName="CA4_set_DC2_PowerSetPoint"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="182,110,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False" varName="CA4_value_DC2_ActivePower"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="251,149,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False" varName="CA4_value_DC2_EvPowerRunTime"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="86,149,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_write}" varName="CA4_set_DC2_OverVoltage"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="86,171,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_write}" varName="CA4_set_DC2_OverCurrent"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="86,194,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_write}" varName="CA4_set_DC2_OverPower"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="86,217,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_write}" varName="CA4_set_DC2_PowerRamp"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="86,240,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_write}" varName="CA4_set_DC2_CurrentRamp"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="86,263,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_write}" varName="CA4_set_DC2_ResistanceSetPoint"/>
+                    <controls:tagControl HorizontalAlignment="Left" Margin="251,172,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False" varName="CA4_value_DC2_ErrorInfo"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox x:Name="tempe" Header="温度" Background="{x:Null}">
+                <Grid Height="30" Margin="0,-5,0,0">
+                    <controls:tagControl x:Name="heater_tempe复制__C_" HorizontalAlignment="Left" FontSize="14" Width="80" VerticalAlignment="Top" Margin="111,5,0,0" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False" varName="CA4_value_tempe_1"/>
+                    <TextBlock TextWrapping="Wrap" Text="蒸发温度1(℃)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,5,0,0"/>
+                    <controls:tagControl x:Name="heater_tempe复制__C_1" HorizontalAlignment="Left" FontSize="14" Width="80" VerticalAlignment="Top" Margin="318,5,0,0" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False" varName="CA4_value_tempe_2"/>
+                    <TextBlock TextWrapping="Wrap" Text="蒸发温度2(℃)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="230,5,0,0"/>
+                </Grid>
+            </GroupBox>
+        </StackPanel>
+        <GroupBox Header="真空" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="946,43,0,0" Background="{x:Null}" Height="199" Width="400">
+            <Grid HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30,0,0,0">
+                <TextBlock TextWrapping="Wrap" Text="MPG" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,18,0,0"/>
+                <TextBlock TextWrapping="Wrap" Text="CDG" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,52,0,0"/>
+                <TextBlock TextWrapping="Wrap" Text="PSG" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,85,0,0"/>
+                <TextBlock TextWrapping="Wrap" Text="GV(破空阀)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,121,0,0"/>
+                <controls:tagControl x:Name="value_MPG" HorizontalAlignment="Left" Margin="110,18,0,0" VerticalAlignment="Top" FontSize="14" Width="100"  Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:#.##E+0}" setAble="False"/>
+                <controls:tagControl x:Name="value_CDG" HorizontalAlignment="Left" Margin="110,52,0,0" VerticalAlignment="Top" FontSize="14" Width="100"  Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:#.##E+0}" setAble="False"/>
+                <controls:tagControl x:Name="value_PSG" HorizontalAlignment="Left" Margin="110,85,0,0" VerticalAlignment="Top" FontSize="14" Width="100"  Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:#.##E+0}" setAble="False"/>
+                <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="40" RenderTransformOrigin="0.5,0.5" Margin="33,7,0,0">
+                    <Canvas.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Canvas.RenderTransform>
+                    <Ellipse x:Name="Ell_MPG" Stretch="Fill" Fill="#FFFFFFFF" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" Width="40" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" PreviewMouseLeftButtonDown="Ell_MPG_PreviewMouseLeftButtonDown"/>
+                    <Line X1="0" Y1="0" X2="7" Y2="25" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="7" VerticalAlignment="Top" />
+                    <Line Y2="25" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" X1="7" HorizontalAlignment="Left" Canvas.Left="22" Canvas.Top="7" VerticalAlignment="Top"/>
+                    <Line X2="20" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="28" VerticalAlignment="Top" >
+                        <Line.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Line.RenderTransform>
+                    </Line>
+                    <Line X2="20" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="22" VerticalAlignment="Top" >
+                        <Line.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Line.RenderTransform>
+                    </Line>
+                </Canvas>
+                <Canvas x:Name="Canvas_GV" Width="30"  Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,117,0,0">
+                    <Rectangle Height="2" Canvas.Left="9" Canvas.Top="16" Width="12" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="-1" ScaleY="-1"/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                        <Rectangle.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Black"/>
+                                <GradientStop Color="#FFEAEEEF" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Path Data="M31,22L31,55 35,55 35,22 31,22z" Stretch="Fill" Fill="#FF7F7F7F" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Width="4" Height="9" RenderTransformOrigin="0.5,0.5"  Canvas.Left="13.742" Canvas.Top="1.343" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Path Data="M32,22L32,55 34,55 34,22 32,22z" Stretch="Fill" Fill="#FFE5E5E5" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Width="2" Height="9" RenderTransformOrigin="0.5,0.5"  Canvas.Left="14.742" Canvas.Top="1.343" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Path Data="M33,22L33,55 33,55 33,22 33,22z" Stretch="Fill" Fill="#FFFFFFFF" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Width="0" Height="33" RenderTransformOrigin="0.5,0.5"  Canvas.Left="15.742" Canvas.Top="1.343" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Path Data="M31,55L31,22" Stretch="Fill" Stroke="#FFC0C0C0" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Width="1" Height="9" RenderTransformOrigin="0.5,0.5"  Canvas.Left="14.052" Canvas.Top="0.67" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Path Data="M59,2L7,2 7,22 59,22 59,2z" Stretch="Fill" Fill="#FFFFFFFF" Stroke="#FFC0C0C0" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Width="20" Height="14" RenderTransformOrigin="0.5,0.5"  Canvas.Left="5.043" Canvas.Top="-2.028" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Path x:Name="Path_GV" Data="M64,70L64,39 2,70 2,39 64,70" Stretch="Fill" Fill="#FFFFFFFF" Stroke="#FFC0C0C0" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Width="30" Height="10" RenderTransformOrigin="0.5,0.5"  Canvas.Left="0.066" Canvas.Top="17.592" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Path Data="M35,22L35,55" Stretch="Fill" Stroke="#FFC0C0C0" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeLineJoin="Round" Width="1" Height="22" RenderTransformOrigin="0.5,0.5"  Canvas.Left="14.494" Canvas.Top="-6.064" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="122.81"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                </Canvas>
+                <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="40" Margin="33,73,0,0" RenderTransformOrigin="0.5,0.5">
+                    <Canvas.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Canvas.RenderTransform>
+                    <Ellipse x:Name="Ell_PSG" Stretch="Fill" Fill="#FFFFFFFF" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" Width="40" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Line X1="0" Y1="0" X2="7" Y2="25" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="7" VerticalAlignment="Top" />
+                    <Line Y2="25" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" X1="7" HorizontalAlignment="Left" Canvas.Left="22" Canvas.Top="7" VerticalAlignment="Top"/>
+                    <Line X2="20" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="28" VerticalAlignment="Top" >
+                        <Line.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Line.RenderTransform>
+                    </Line>
+                </Canvas>
+                <Canvas HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Height="40" Margin="33,40,0,0" RenderTransformOrigin="0.5,0.5">
+                    <Canvas.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Canvas.RenderTransform>
+                    <Ellipse x:Name="Ell_CDG" Stretch="Fill" Fill="#FFFFFFFF" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" Width="40" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Line X1="0" Y1="0" X2="7" Y2="25" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="7" VerticalAlignment="Top" />
+                    <Line Y2="25" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" X1="7" HorizontalAlignment="Left" Canvas.Left="22" Canvas.Top="7" VerticalAlignment="Top"/>
+                    <Line X2="20" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="28" VerticalAlignment="Top" >
+                        <Line.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Line.RenderTransform>
+                    </Line>
+                    <Line X2="20" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="22" VerticalAlignment="Top" >
+                        <Line.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Line.RenderTransform>
+                    </Line>
+                    <Line X2="20" Stroke="#FF797A97" StrokeThickness="1" RenderTransformOrigin="0.5,0.5"  Panel.ZIndex="0" HorizontalAlignment="Left" Canvas.Left="10" Canvas.Top="16" VerticalAlignment="Top" >
+                        <Line.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Line.RenderTransform>
+                    </Line>
+                </Canvas>
+                <TextBlock TextWrapping="Wrap" Text="mbar" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="215,18,0,0"/>
+                <TextBlock TextWrapping="Wrap" Text="mbar" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="215,52,0,0"/>
+                <TextBlock TextWrapping="Wrap" Text="mbar" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="215,85,0,0"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="TP" Header="分子泵" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="946,247,0,0" Background="{x:Null}" Height="336" Width="400">
+            <Grid Margin="0,-10,0,0">
+                <controls:tagSignal x:Name="signal_TPM_TX" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" Text="通讯状态" FontSize="13" Width="60" Background="{StaticResource Color_tagCtrl_read}" FontStyle="Italic"/>
+                <TextBlock TextWrapping="Wrap" Text="实际速度" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,102,0,0"/>
+                <TextBlock TextWrapping="Wrap" Text="实际电流" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,78,0,0"/>
+                <controls:tagControl x:Name="value_TPM_I" HorizontalAlignment="Left" Margin="120,78,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+                <controls:tagControl x:Name="value_TPM_speed" HorizontalAlignment="Left" Margin="120,102,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+                <Button Content="ON" HorizontalAlignment="Left" Margin="23,220,0,0" VerticalAlignment="Top" Width="60" Click="Button_FZB_Click"/>
+                <Button Content="LowSpd" HorizontalAlignment="Left" Margin="23,250,0,0" VerticalAlignment="Top" Width="60" Click="Button_FZB_Click"/>
+                <Button Content="OFF" HorizontalAlignment="Left" Margin="92,220,0,0" VerticalAlignment="Top" Width="60" Click="Button_FZB_Click"/>
+                <Button Content="Reset" HorizontalAlignment="Left" Margin="165,250,0,0" VerticalAlignment="Top" Width="60" Click="Button_FZB_Click"/>
+                <Button Content="Para" HorizontalAlignment="Left" Margin="165,220,0,0" VerticalAlignment="Top" Width="60" Click="Button_FZB_Click"/>
+                <TextBlock TextWrapping="Wrap" Text="实际温度" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,124,0,0"/>
+                <controls:tagControl x:Name="value_TPM_tempe" HorizontalAlignment="Left" Margin="120,124,0,0" VerticalAlignment="Top" FontSize="14" Width="60" Background="{StaticResource Color_tagCtrl_read}" setAble="False"/>
+                <Button Content="HiSpd" HorizontalAlignment="Left" Margin="91,250,0,0" VerticalAlignment="Top" Width="60" Click="Button_FZB_Click"/>
+                <TextBlock x:Name="tblock_FZB_state" HorizontalAlignment="Left" Margin="120,32,0,0" TextWrapping="Wrap" Text="运行状态" VerticalAlignment="Top" Background="{StaticResource Color_tagCtrl_read}" FontStyle="Italic"/>
+                <TextBlock TextWrapping="Wrap" Text="故障信息" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,55,0,0"/>
+                <TextBlock x:Name="tb_name" HorizontalAlignment="Left" Margin="26,145,0,0" TextWrapping="Wrap" Text="启动限值" VerticalAlignment="Top"/>
+                <TextBlock x:Name="tb_name复制__C_复制__C_1" HorizontalAlignment="Left" Margin="187,145,0,0" TextWrapping="Wrap" Text="mbar" VerticalAlignment="Top"/>
+                <controls:tagControl Background="{StaticResource Color_tagCtrl_write}" x:Name="tagCtr_starLimit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" FontSize="14" setAble="True" Margin="120,145,0,0"/>
+                <TextBlock x:Name="tb_name复制__C_复制__C_1复制__C_" HorizontalAlignment="Left" Margin="187,124,0,0" TextWrapping="Wrap" Text="℃" VerticalAlignment="Top"/>
+                <TextBlock x:Name="tb_name复制__C_复制__C_1复制__C_1" HorizontalAlignment="Left" Margin="187,102,0,0" TextWrapping="Wrap" Text="r/min" VerticalAlignment="Top"/>
+                <TextBlock x:Name="tb_name复制__C_复制__C_1复制__C_2" HorizontalAlignment="Left" Margin="187,78,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top"/>
+                <TextBlock TextWrapping="Wrap" Text="运行状态" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,32,0,0"/>
+                <controls:tagControl x:Name="tagCtr_errMessage" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" setAble="False" Margin="120,55,0,0" Foreground="#FFB18C28" FontStyle="Italic"/>
+                <controls:tagBitSignal x:Name="FZB_limit_bit0" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="268,52,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="真空度" bitIndex="0"/>
+                <controls:tagBitSignal x:Name="FZB_limit_bit1" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="268,77,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="前级泵组" bitIndex="1"/>
+                <controls:tagBitSignal x:Name="FZB_limit_bit3" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="268,102,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="外部条件3" bitIndex="2"/>
+                <controls:tagBitSignal x:Name="FZB_limit_bit4" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="268,128,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="外部条件4" bitIndex="3"/>
+                <controls:tagBitSignal x:Name="FZB_limit_bit5" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="268,153,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="外部条件5" bitIndex="4"/>
+                <controls:tagBitSignal x:Name="FZB_limit_bit6" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="268,178,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="内部限制" bitIndex="6"/>
+                <controls:tagBitSignal x:Name="FZB_limit_bit7" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" Margin="268,203,0,0" VerticalAlignment="Top" Width="80" FontSize="14" Text="I/O反馈" bitIndex="7"/>
+                <TextBlock TextWrapping="Wrap" Text="启动条件" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="268,30,0,0"/>
+                <TextBlock x:Name="tb_name复制__C_" HorizontalAlignment="Left" Margin="26,166,0,0" TextWrapping="Wrap" Text="低速设定" VerticalAlignment="Top"/>
+                <TextBlock x:Name="tb_name复制__C_复制__C_1复制__C_3" HorizontalAlignment="Left" Margin="187,166,0,0" TextWrapping="Wrap" Text="r/min" VerticalAlignment="Top"/>
+                <controls:tagControl Background="{StaticResource Color_tagCtrl_write}" x:Name="lowSpeed_set" HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" FontSize="14" setAble="True" Margin="120,166,0,0"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="MFC" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="946,588,0,0" Background="{x:Null}" Width="400">
+            <StackPanel VerticalAlignment="Center" Width="396">
+                <Grid Height="18" Width="360">
+                    <TextBlock TextWrapping="Wrap" Text="设定(sccm)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="185,0,0,0" RenderTransformOrigin="0.38,0.456"/>
+                    <TextBlock TextWrapping="Wrap" Text="实际(sccm)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="280,0,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="阀门" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid x:Name="MFC_Ar" Height="25" Width="350" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="NoWrap" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"><Run Text="Ar" FontSize="12" /><LineBreak /><Run x:Name="MFC_Ar_text" Text="200sccm" FontSize="10" /></TextBlock>
+                    <Button x:Name="MFC_Ar_on" Content="打开" HorizontalAlignment="Left" Width="60" VerticalAlignment="Center" Margin="45,0,0,0" Click="MFC_on_Click"/>
+                    <controls:tagControl x:Name="set_MFC_Ar" HorizontalAlignment="Left" FontSize="14" Width="80" VerticalAlignment="Center" Margin="175,0,0,0"  Background="{StaticResource Color_tagCtrl_write}" Format="{}{0:F2}"/>
+                    <controls:tagControl x:Name="value_MFC_Ar" HorizontalAlignment="Left" FontSize="14" Width="80" VerticalAlignment="Center" Margin="270,0,0,0" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False"/>
+                    <Button x:Name="MFC_Ar_off" Content="关闭" HorizontalAlignment="Left" Width="60" VerticalAlignment="Center" Margin="110,0,0,0" Click="MFC_off_Click"/>
+
+                </Grid>
+                <Grid x:Name="MFC_O2" Height="25" Width="350" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"><Run Text="O2" FontSize="12" /><LineBreak /><Run Text="200sccm" FontSize="10" /></TextBlock>
+                    <Button x:Name="MFC_O2_on" Content="打开" HorizontalAlignment="Left" Width="60" VerticalAlignment="Center" Margin="45,0,0,0"  Click="MFC_on_Click"/>
+                    <controls:tagControl x:Name="set_MFC_O2" HorizontalAlignment="Left" FontSize="14" Width="80" VerticalAlignment="Center" Margin="175,0,0,0" Background="{StaticResource Color_tagCtrl_write}" Format="{}{0:F2}"/>
+                    <controls:tagControl x:Name="value_MFC_O2" HorizontalAlignment="Left" FontSize="14" Width="80" VerticalAlignment="Center" Margin="270,0,0,0" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False"/>
+                    <Button x:Name="MFC_O2_off" Content="关闭" HorizontalAlignment="Left" Width="60" VerticalAlignment="Center" Margin="110,0,0,0" Click="MFC_off_Click"/>
+
+                </Grid>
+                <Grid x:Name="MFC_N2" Height="25" Width="350" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"><Run Text="N2" FontSize="12" /><LineBreak /><Run Text="200sccm" FontSize="10" /></TextBlock>
+                    <Button x:Name="MFC_N2_on" Content="打开" HorizontalAlignment="Left" Width="60" VerticalAlignment="Center" Margin="45,0,0,0" Click="MFC_on_Click"/>
+                    <controls:tagControl x:Name="set_MFC_N2" HorizontalAlignment="Left" FontSize="14" Width="80" VerticalAlignment="Center" Margin="175,0,0,0"  Background="{StaticResource Color_tagCtrl_write}" Format="{}{0:F2}"/>
+                    <controls:tagControl x:Name="value_MFC_N2" HorizontalAlignment="Left" FontSize="14" Width="80" VerticalAlignment="Center" Margin="270,0,0,0" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False"/>
+                    <Button x:Name="MFC_N2_off" Content="关闭" HorizontalAlignment="Left" Width="60" VerticalAlignment="Center" Margin="110,0,0,0" Click="MFC_off_Click"/>
+
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="heater" Header="加热盘" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="946,756,0,0" Width="400">
+            <Grid>
+                <Button x:Name="heater_on" Content="打开" HorizontalAlignment="Left" Width="60" VerticalAlignment="Top" Margin="88,30,0,0" Click="heater_on_Click"/>
+                <Button x:Name="heater_off" Content="关闭" HorizontalAlignment="Left" Width="60" VerticalAlignment="Top" Margin="157,30,0,0" Click="heater_off_Click"/>
+                <controls:tagControl x:Name="heater_tempe" HorizontalAlignment="Left" FontSize="14" Width="80" VerticalAlignment="Top" Margin="111,5,0,0" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False" varName="CA2_value_heater_tempe"/>
+                <TextBlock TextWrapping="Wrap" Text="实际温度(℃)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,5,0,0"/>
+                <Button x:Name="heater_reset" Content="复位" HorizontalAlignment="Left" Width="60" VerticalAlignment="Top" Margin="226,30,0,0" Click="heater_reset_Click"/>
+                <TextBlock x:Name="heater_state" TextWrapping="Wrap" Text="运行状态" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="230,5,0,0" Background="{StaticResource Color_tagCtrl_read}"/>
+            </Grid>
+        </GroupBox>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1367,43,0,0">
+            <GroupBox Header="气缸" Background="{x:Null}">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid x:Name="cylinder_CBF复制__C_" Height="18">
+                        <TextBlock TextWrapping="Wrap" Text="名称" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        <TextBlock TextWrapping="Wrap" Text="关" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="73,0,0,0"/>
+                        <TextBlock TextWrapping="Wrap" Text="开" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="139,0,0,0"/>
+                        <TextBlock TextWrapping="Wrap" Text="条件" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="211,0,0,0"/>
+                    </Grid>
+                    <Grid x:Name="cylinder_CBF" Margin="0,10,0,0">
+                        <TextBlock TextWrapping="Wrap" Text="插板阀" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        <Button x:Name="CBF_home" Content="关闭" HorizontalAlignment="Left" Margin="51,0,0,0" VerticalAlignment="Center" Width="60" Click="cylinder_Click"/>
+                        <Button x:Name="CBF_work" Content="打开" HorizontalAlignment="Left" Margin="117,0,0,0" VerticalAlignment="Center" Width="60" Click="cylinder_Click"/>
+                        <controls:tagBitSignal x:Name="CBF_limit_bit0" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="181" FontSize="14" Text="Robot home 位" bitIndex="0" Margin="188,0,0,0"/>
+                        <controls:tagBitSignal x:Name="CBF_limit_bit1" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="181" FontSize="14" Text="插板阀两侧真产度压差允许" bitIndex="1" Margin="188,25,0,0"/>
+                    </Grid>
+                    <Grid x:Name="cylinder_HB" Margin="0,10,0,0" VerticalAlignment="Top">
+                        <TextBlock TextWrapping="Wrap" Text="插板阀&#xA;盖板" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        <Button x:Name="HB_home" Content="关闭" HorizontalAlignment="Left" Margin="51,0,0,0" VerticalAlignment="Center" Width="60" Click="cylinder_Click"/>
+                        <Button x:Name="HB_work" Content="打开" HorizontalAlignment="Left" Margin="117,0,0,0" VerticalAlignment="Center" Width="60" Click="cylinder_Click"/>
+                        <controls:tagBitSignal x:Name="HB_limit_bit0" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="181" FontSize="14" Text="Robot home 位" bitIndex="0" Margin="188,0,0,0"/>
+                        <controls:tagBitSignal x:Name="HB_limit_bit1" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="181" FontSize="14" Text="外部条件2" bitIndex="1" Margin="188,25,0,0"/>
+                    </Grid>
+                    <Grid x:Name="cylinder_GG1" Margin="0,10,0,0" VerticalAlignment="Top">
+                        <TextBlock TextWrapping="Wrap" Text="阻蒸1" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        <Button x:Name="GG1_home" Content="关闭" HorizontalAlignment="Left" Margin="51,0,0,0" VerticalAlignment="Center" Width="60" Click="cylinder_Click"/>
+                        <Button x:Name="GG1_work" Content="打开" HorizontalAlignment="Left" Margin="117,0,0,0" VerticalAlignment="Center" Width="60" Click="cylinder_Click"/>
+                        <controls:tagBitSignal x:Name="GG1_limit_bit0" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" FontSize="14" Text="外部条件1" bitIndex="0" Margin="188,0,0,0"/>
+                        <controls:tagBitSignal x:Name="GG1_limit_bit1" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80.1" FontSize="14" Text="外部条件2" bitIndex="1" Margin="273,0,0,0"/>
+                        <controls:tagBitSignal x:Name="GG1_limit_bit2" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" FontSize="14" Text="外部条件3" bitIndex="2" Margin="358,0,0,0"/>
+                        <controls:tagBitSignal x:Name="GG1_limit_bit3" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Center" Width="80" FontSize="14" Text="外部条件4" bitIndex="3" Margin="188,25,0,0"/>
+                        <controls:tagBitSignal x:Name="GG1_limit_bit5" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Center" Width="80.1" FontSize="14" Text="内部限制" bitIndex="5" Margin="273,25,0,0"/>
+                        <controls:tagBitSignal x:Name="GG1_limit_bit6" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Center" Width="80" FontSize="14" Text="I/O反馈" bitIndex="6" Margin="358,25,0,0"/>
+                    </Grid>
+                    <Grid x:Name="cylinder_GG2" Margin="0,10,0,0" VerticalAlignment="Top">
+                        <TextBlock TextWrapping="Wrap" Text="阻蒸2" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        <Button x:Name="GG2_home" Content="关闭" HorizontalAlignment="Left" Margin="51,0,0,0" VerticalAlignment="Center" Width="60" Click="cylinder_Click"/>
+                        <Button x:Name="GG2_work" Content="打开" HorizontalAlignment="Left" Margin="117,0,0,0" VerticalAlignment="Center" Width="60" Click="cylinder_Click"/>
+                        <controls:tagBitSignal x:Name="GG2_limit_bit0" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" FontSize="14" Text="外部条件1" bitIndex="0" Margin="188,0,0,0"/>
+                        <controls:tagBitSignal x:Name="GG2_limit_bit1" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80.1" FontSize="14" Text="外部条件2" bitIndex="1" Margin="273,0,0,0"/>
+                        <controls:tagBitSignal x:Name="GG2_limit_bit2" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" FontSize="14" Text="外部条件3" bitIndex="2" Margin="358,0,0,0"/>
+                        <controls:tagBitSignal x:Name="GG2_limit_bit3" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Center" Width="80" FontSize="14" Text="外部条件4" bitIndex="3" Margin="188,25,0,0"/>
+                        <controls:tagBitSignal x:Name="GG2_limit_bit5" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Center" Width="80.1" FontSize="14" Text="内部限制" bitIndex="5" Margin="273,25,0,0"/>
+                        <controls:tagBitSignal x:Name="GG2_limit_bit6" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Center" Width="80" FontSize="14" Text="I/O反馈" bitIndex="6" Margin="358,25,0,0"/>
+                    </Grid>
+                    <Grid x:Name="cylinder_FZB" VerticalAlignment="Top" Margin="0,10,0,0" Height="NaN">
+                        <TextBlock TextWrapping="Wrap" Text="分子泵&#xA;前级阀" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        <Button x:Name="FZB_home" Content="关闭" HorizontalAlignment="Left" Margin="51,0,0,0" VerticalAlignment="Center" Width="60" Click="cylinder_Click"/>
+                        <Button x:Name="FZB_work" Content="打开" HorizontalAlignment="Left" Margin="117,0,0,0" VerticalAlignment="Center" Width="60" Click="cylinder_Click"/>
+                        <controls:tagBitSignal  x:Name="FZBQJ_limit_bit0" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" FontSize="14" Text="外部条件1" bitIndex="0" Margin="188,0,0,0"/>
+                        <controls:tagBitSignal  x:Name="FZBQJ_limit_bit1" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80.1" FontSize="14" Text="外部条件2" bitIndex="1" Margin="273,0,0,0"/>
+                        <controls:tagBitSignal  x:Name="FZBQJ_limit_bit2" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" FontSize="14" Text="外部条件3" bitIndex="2" Margin="358,0,0,0"/>
+                        <controls:tagBitSignal  x:Name="FZBQJ_limit_bit3" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" FontSize="14" Text="外部条件4" bitIndex="3" Margin="188,25,0,0"/>
+                        <controls:tagBitSignal  x:Name="FZBQJ_limit_bit5" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80.1" FontSize="14" Text="内部限制" bitIndex="5" Margin="273,25,0,0"/>
+                        <controls:tagBitSignal  x:Name="FZBQJ_limit_bit6" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" FontSize="14" Text="I/O反馈" bitIndex="6" Margin="358,25,0,0"/>
+                    </Grid>
+                    <Grid x:Name="cylinder_PKF" Height="NaN" Margin="0,10,0,0">
+                        <TextBlock TextWrapping="Wrap" Text="破空阀" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        <Button x:Name="PKF_home" Content="关闭" HorizontalAlignment="Left" Margin="51,0,0,0" VerticalAlignment="Center" Width="60" Click="cylinder_Click"/>
+                        <Button x:Name="PKF_work" Content="打开" HorizontalAlignment="Left" Margin="117,0,0,0" VerticalAlignment="Center" Width="60" Click="cylinder_Click"/>
+                        <controls:tagBitSignal  x:Name="PKF_limit_bit0" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" FontSize="14" Text="插板阀关闭" bitIndex="0" Margin="188,0,0,0"/>
+                        <controls:tagBitSignal  x:Name="PKF_limit_bit1" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="165" FontSize="14" Text="分子泵停止+前级阀关闭" bitIndex="1" Margin="273,0,0,0"/>
+                        <controls:tagBitSignal  x:Name="PKF_limit_bit2" Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" FontSize="14" Text="真空度到达" bitIndex="2" Margin="188,25,0,0"/>
+                    </Grid>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox x:Name="serve_HB1" Header="护板电机1" Background="{x:Null}" BorderBrush="LightGray" Height="290">
+                <UControl:serveControl x:Name="Uctrl_serve_HB1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </GroupBox>
+            <GroupBox x:Name="serve_HB2" Header="护板电机2" Background="{x:Null}" BorderBrush="LightGray" Height="290">
+                <UControl:serveControl x:Name="Uctrl_serve_HB2" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            </GroupBox>
+        </StackPanel>
+        <!--<Button  Content=" ssss &#13;dddd" HorizontalAlignment="Left" Width="133" VerticalAlignment="Top" Margin="746,851,0,0" Height="64"/>-->
+
+
+    </Grid>
+</Page>

@@ -1,0 +1,41 @@
+﻿<Page x:Class="R2R.Alarm.Alarm_active"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:R2R.Alarm"
+      xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+      mc:Ignorable="d" 
+      d:DesignHeight="945" d:DesignWidth="1920" 
+      Title="Alarm">
+
+    <Grid x:Name="gridAlarm" Height="945" Width="1920" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{StaticResource Color_BackGround}">
+        <TabControl
+                        Margin="10,56,10,10"
+                        pu:TabControlHelper.ItemHeight="30"
+                        pu:TabControlHelper.ItemPadding="20,0"
+                        pu:TabControlHelper.SelectedForeground="#FF1869BB"
+                        pu:TabControlHelper.ItemsAlignment="Center" Background="{x:Null}" >
+            <TabItem Header="报警" FontSize="14">
+                <Grid Margin="0,5,0,0">
+                    <DataGrid x:Name="dataGrid_Alarm" ItemsSource="{Binding alarmTable_UI }" 
+                    Margin="5,0,5,5" Background="{x:Null}" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="警告" FontSize="14">
+                <Grid Margin="0,5,0,0">
+                    <DataGrid x:Name="dataGrid_Warn" ItemsSource="{Binding warnTable_UI}"
+                    Margin="5,0,5,5" Background="{x:Null}" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button Content="报警确认"
+            BorderThickness="0,0,0,0" Margin="41,16,1779,889" FontSize="14" Click="conform_Click" />
+        <Button Content="报警复位"
+            Margin="143,16,1677,889" FontSize="14" Click="reset_Click" />
+        <Button Content="消音"
+            Margin="245,16,1575,889" FontSize="14" Click="mute_Click" />
+        <Button Content="报警记录"
+            Margin="1777,16,43,889" FontSize="14" Click="Button_his" />
+    </Grid>
+</Page>

@@ -1,0 +1,318 @@
+﻿<Window x:Name="win2" x:Class="R2R.Mwin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+        xmlns:local="clr-namespace:R2R"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+            Height="1080" Width="1920"
+            BorderThickness="0"
+            Visibility="Visible" 
+            Icon="/Xwindow/Resources/立方体 立体 多面体 方块2.png"
+            Closed="win2_Closed" Background="{x:Null}"  
+        WindowStyle="None"
+        WindowState="Maximized"
+            >
+    <!--Background="#FF303336"-->
+
+    <Grid Margin="0,0,0,0" Visibility="Visible" Background="{StaticResource Color_BackGround}">
+        <DockPanel Margin="0,0,0,40" >
+            <Viewbox Height="80" Stretch="Fill" DockPanel.Dock="Top">
+                <Grid Height="80" Width="1920">
+                    <DockPanel LastChildFill="False" Background="#FF303336" Margin="0,0,0,40">
+                        <TextBlock TextWrapping="Wrap" FontSize="14" Padding="0,11,0,0" FontWeight="Bold" FontFamily="Microsoft YaHei" Width="60" Foreground="White" Margin="5,0,0,0"><Run Language="zh-cn" Text="系统时间"/></TextBlock>
+                        <TextBlock x:Name="FrontTime" TextWrapping="Wrap" Text="FrontTime" Foreground="White" Padding="0,11,0,0" ScrollViewer.CanContentScroll="True" FontSize="14" FontFamily="Microsoft YaHei UI" FontStyle="Italic" Width="156" Margin="5,0,0,0"/>
+                        <TextBlock TextWrapping="Wrap" FontSize="14" Foreground="#FFFFFFFF" Padding="0,11,0,0" FontWeight="Bold" FontFamily="Microsoft YaHei" Width="60" Margin="5,0,0,0"><Run Language="zh-cn" Text="当前用户"/></TextBlock>
+                        <TextBlock x:Name="UserName" TextWrapping="Wrap" Text="{Binding Username}" Foreground="White" Width="100" Padding="0,11,0,0" ScrollViewer.CanContentScroll="True" FontSize="14" FontFamily="Microsoft YaHei UI" FontStyle="Italic" Margin="5,0,0,0"/>
+                        <TextBlock TextWrapping="Wrap" FontSize="14" Foreground="#FFFFFFFF" Padding="0,11,0,0" FontWeight="Bold" FontFamily="Microsoft YaHei" Width="60" Margin="5,0,0,0"><Run Language="zh-cn" Text="当前料号"/></TextBlock>
+                        <TextBlock x:Name="liaohao" TextWrapping="Wrap" Text="liaohao" Foreground="White" Padding="0,11,0,0" ScrollViewer.CanContentScroll="True" FontSize="14" FontFamily="Microsoft YaHei UI" FontStyle="Italic" Width="79" Margin="5,0,0,0"/>
+                        <TextBlock TextWrapping="Wrap" FontSize="14" Foreground="#FFFFFFFF" Padding="0,11,0,0" FontWeight="Bold" FontFamily="Microsoft YaHei" Width="60" Margin="5,0,0,0"><Run Language="zh-cn" Text="生产"/><Run Text="单号"/></TextBlock>
+                        <TextBlock x:Name="danhao" TextWrapping="Wrap" Text="danhao" Foreground="White" Padding="0,11,0,0" ScrollViewer.CanContentScroll="True" FontSize="14" FontFamily="Microsoft YaHei UI" FontStyle="Italic" Width="79" Margin="5,0,0,0"/>
+                        <TextBlock TextWrapping="Wrap" FontSize="14" Foreground="#FFFFFFFF" FontWeight="Bold" FontFamily="Microsoft YaHei" Width="923" Text="" Margin="5,0,0,0"/>
+                    </DockPanel>
+                    <DockPanel LastChildFill="False" Background="#FF303336" Margin="0,40,0,0">
+
+                        <TextBlock TextWrapping="Wrap" FontSize="14" Foreground="#FFFFFFFF" Padding="0,11,0,0" FontWeight="Bold" FontFamily="Microsoft YaHei" Width="60" Text="系统状态" Margin="5,0,0,0"/>
+                        <TextBlock x:Name="Status" TextWrapping="Wrap" Text="Status" Foreground="White" Padding="0,11,0,0" ScrollViewer.CanContentScroll="True" FontSize="14" FontFamily="Microsoft YaHei UI" FontStyle="Italic" Width="78" Margin="5,0,0,0"/>
+
+                        <TextBlock x:Name="tb_larm_cont" TextWrapping="Wrap" FontSize="14" Foreground="#FFFFFFFF" Padding="0,11,0,0" FontWeight="Bold" FontFamily="Microsoft YaHei" Margin="5,0,0,0" Text="当前报警:"/>
+                        <TextBlock x:Name="tb_Alarm" TextWrapping="Wrap" Text="AlarmText" Foreground="Red" Padding="0,11,0,0" FontSize="14" Width="711" Margin="5,0,0,0"/>
+                        <StackPanel Orientation="Vertical" Width="100" Margin="5,0,0,0">
+                            <TextBlock Text="工艺速度"
+                                FontSize="14"
+                                HorizontalAlignment="Center" FontFamily="Microsoft YaHei" FontWeight="Bold" Foreground="#FFFFFFFF"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Width="100" Margin="5,0,0,0">
+                            <TextBlock Text="实际速度"
+                                FontSize="14"
+                                HorizontalAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#FFFFFFFF" FontWeight="Bold"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Width="100" Margin="5,0,0,0">
+                            <TextBlock Text="进水压力"
+                                FontSize="14"
+                                HorizontalAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#FFFFFFFF" FontWeight="Bold"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Width="100" Margin="5,0,0,0">
+                            <TextBlock Text="出水压力"
+                                FontSize="14"
+                                HorizontalAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#FFFFFFFF" FontWeight="Bold"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Width="100" Margin="5,0,0,0">
+                            <TextBlock Text="进水温度"
+                                FontSize="14"
+                                HorizontalAlignment="Center" FontFamily="Microsoft YaHei" Foreground="#FFFFFFFF" FontWeight="Bold"/>
+                        </StackPanel>
+                    </DockPanel>
+                </Grid>
+            </Viewbox>
+            <Viewbox DockPanel.Dock="Top">
+                <Frame x:Name="MainFrame" Content="" NavigationUIVisibility="Hidden" Panel.ZIndex="3" Height="960" Width="1920" />
+            </Viewbox>
+        </DockPanel>
+        <Viewbox Height="40" VerticalAlignment="Bottom" Stretch="Fill">
+            <DockPanel OpacityMask="Black" Background="#00000000" Panel.ZIndex="5" Height="40" Width="1920">
+                <Button x:Name="More" Click="Button_Click_More" Height="40" Width="50" Background="#FF303336" >
+                    <Button.ContextMenu>
+                        <ContextMenu x:Name="menual"  pu:IconHelper.Width="45"
+                            pu:ContextMenuHelper.CornerRadius="5"
+                            Padding="0,5"
+                            Width="300"
+                            FontSize="12" Background="{StaticResource Color_BackGround}">
+                            <MenuItem Style="{StaticResource MenuItem_NonStyle}"
+                                Height="260">
+                                <MenuItem.Header>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <Button  
+                                            x:Name="systemInfo"
+                                            Background="Transparent"
+                                            Foreground="#3E3E32"
+                                            VerticalAlignment="Stretch"
+                                            HorizontalAlignment="Stretch"
+                                            Click="BtnWindow_Click">
+                                            <StackPanel Orientation="Vertical"
+                                                VerticalAlignment="Center">
+                                                <TextBlock Text="&#xF2DC;"
+                                                    FontSize="25"
+                                                    HorizontalAlignment="Center"
+                                                    FontFamily="{StaticResource FontAwesome}" />
+                                                <TextBlock Text="系统参数"
+                                                    FontSize="12"
+                                                    HorizontalAlignment="Center" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button Grid.Row="1"   
+                                            x:Name = "alarm"    
+                                            Background="Transparent"
+                                            Foreground="#3E3E32"
+                                            VerticalAlignment="Stretch"
+                                            HorizontalAlignment="Stretch"
+                                            Click="BtnWindow_Click"
+                                                            >
+                                            <StackPanel Orientation="Vertical"
+                                                VerticalAlignment="Center">
+                                                <TextBlock Text="&#xF2DC;"
+                                                    FontSize="25"
+                                                    HorizontalAlignment="Center"
+                                                    FontFamily="{StaticResource FontAwesome}" />
+                                                <TextBlock Text="报警"
+                                                    FontSize="12"
+                                                    HorizontalAlignment="Center" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button Grid.Row="2"
+                                            x:Name = "network"   
+                                            Background="Transparent"
+                                            Foreground="#3E3E33"
+                                            VerticalAlignment="Stretch"
+                                            HorizontalAlignment="Stretch"
+                                            Click="BtnWindow_Click">
+                                            <StackPanel Orientation="Vertical"
+                                                VerticalAlignment="Center">
+                                                <TextBlock Text="&#xF2DC;"
+                                                    FontSize="25"
+                                                    HorizontalAlignment="Center"
+                                                    FontFamily="{StaticResource FontAwesome}" />
+                                                <TextBlock Text="Net Layout"
+                                                    FontSize="12"
+                                                    HorizontalAlignment="Center" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button Grid.Row="3"
+                                            x:Name = "IO"   
+                                            Background="Transparent"
+                                            Foreground="#3E3E33"
+                                            VerticalAlignment="Stretch"
+                                            HorizontalAlignment="Stretch"
+                                            Click="BtnWindow_Click">
+                                            <StackPanel Orientation="Vertical"
+                                                VerticalAlignment="Center">
+                                                <TextBlock Text="&#xF2DC;"
+                                                    FontSize="25"
+                                                    HorizontalAlignment="Center"
+                                                    FontFamily="{StaticResource FontAwesome}" />
+                                                <TextBlock Text="I/O"
+                                                    FontSize="12"
+                                                    HorizontalAlignment="Center" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button Grid.Column="1" 
+                                            x:Name="operationHis"
+                                            Background="Transparent"
+                                            Foreground="#3E3E3E"
+                                            VerticalAlignment="Stretch"
+                                            HorizontalAlignment="Stretch"
+                                            Click="BtnWindow_Click">
+                                            <StackPanel Orientation="Vertical"
+                                                VerticalAlignment="Center">
+                                                <TextBlock Text="&#xF2DC;"
+                                                    FontSize="25"
+                                                    HorizontalAlignment="Center"
+                                                    FontFamily="{StaticResource FontAwesome}" />
+                                                <TextBlock Text="操作记录"
+                                                    FontSize="12"
+                                                    HorizontalAlignment="Center" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button Grid.Column="1" 
+                                            Grid.Row="1"
+                                            x:Name="maintenance"    
+                                            Background="Transparent"
+                                            Foreground="#3E3E3E"
+                                            VerticalAlignment="Stretch"
+                                            HorizontalAlignment="Stretch"
+                                            Click="BtnWindow_Click">
+                                            <StackPanel Orientation="Vertical"
+                                                VerticalAlignment="Center">
+                                                <TextBlock Text="&#xF2DC;"
+                                                    FontSize="25"
+                                                    HorizontalAlignment="Center"
+                                                    FontFamily="{StaticResource FontAwesome}" />
+                                                <TextBlock Text="保养"
+                                                    FontSize="12"
+                                                    HorizontalAlignment="Center" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button Grid.Column="1" Grid.Row="2" x:Name="limit"  Background="Transparent" Foreground="#3E3E3E" 
+                                                VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="BtnWindow_Click">
+                                            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                                                <TextBlock Text="&#xF2DC;"  FontSize="25" HorizontalAlignment="Center" FontFamily="{StaticResource FontAwesome}" TextAlignment="Center"/>
+                                                <TextBlock Text="阈值设置" FontSize="12" HorizontalAlignment="Center" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button Grid.Column="2" 
+                                            x:Name="tags"     
+                                            Background="Transparent"
+                                            Foreground="#3E3E3E"
+                                            VerticalAlignment="Stretch"
+                                            HorizontalAlignment="Stretch"
+                                            Click="BtnWindow_Click">
+                                            <StackPanel Orientation="Vertical"
+                                                VerticalAlignment="Center">
+                                                <TextBlock Text="&#xF2DC;"
+                                                    FontSize="25"
+                                                    HorizontalAlignment="Center"
+                                                    FontFamily="{StaticResource FontAwesome}" TextAlignment="Center"/>
+                                                <TextBlock Text="通讯设置"
+                                                    FontSize="12"
+                                                    HorizontalAlignment="Center" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button Grid.Column="2" 
+                                            Grid.Row="1"
+                                            x:Name="peifang"    
+                                            Background="Transparent"
+                                            Foreground="#3E3E3E"
+                                            VerticalAlignment="Stretch"
+                                            HorizontalAlignment="Stretch"
+                                            Click="BtnWindow_Click">
+                                            <StackPanel Orientation="Vertical"
+                                                VerticalAlignment="Center">
+                                                <TextBlock Text="&#xF2DC;"
+                                                    FontSize="25"
+                                                    HorizontalAlignment="Center"
+                                                    FontFamily="{StaticResource FontAwesome}" TextAlignment="Center"/>
+                                                <TextBlock Text="配方管理"
+                                                    FontSize="12"
+                                                    HorizontalAlignment="Center" />
+                                            </StackPanel>
+                                        </Button>
+                                        <Button Grid.Column="2" 
+                                            Grid.Row="2"
+                                            x:Name="chart"    
+                                            Background="Transparent"
+                                            Foreground="#3E3E3E"
+                                            VerticalAlignment="Stretch"
+                                            HorizontalAlignment="Stretch"
+                                            Click="BtnWindow_Click">
+                                            <StackPanel Orientation="Vertical"
+                                                VerticalAlignment="Center">
+                                                <TextBlock Text="&#xF2DC;"
+                                                    FontSize="25"
+                                                    HorizontalAlignment="Center"
+                                                    FontFamily="{StaticResource FontAwesome}" TextAlignment="Center"/>
+                                                <TextBlock Text="曲线"
+                                                    FontSize="12"
+                                                    HorizontalAlignment="Center" />
+                                            </StackPanel>
+                                        </Button>
+                                    </Grid>
+                                </MenuItem.Header>
+                            </MenuItem>
+                            <Separator />
+                            <!--<MenuItem Header="Link"  
+                                    Icon="&#xF0C1;"/>
+                                <MenuItem Header="Delete"
+                                    Icon="&#xF1F8;"/>-->
+                            <MenuItem Header="HotKey"
+                                Icon="&#xF044;" Click="MenuItem_Click_hotkey"/>
+                            <Separator />
+                            <!--<MenuItem Header="Option1"
+                                    IsCheckable="True"
+                                    IsChecked="True"/>
+                                <MenuItem Header="Option2"
+                                    IsCheckable="True"/>
+                                <MenuItem Header="Option3"
+                                    IsCheckable="True"/>-->
+                            <MenuItem Header="用户登录"  Icon="&#xF2BD;" Click="MenuItem_Click"/>
+                            <MenuItem Header="用户退出"  Icon="&#xF08B;" Click="MenuItem_Click"/>
+                            <MenuItem Header="用户管理"  Icon="&#xF05A;" Click="MenuItem_Click"/>
+                            <MenuItem Header="退出程序"  Icon="&#xF011;" Click="MenuItem_Click"/>
+                            <Separator />
+                            <MenuItem Header="More Settings"
+                                Icon="&#xF013;">
+                                <MenuItem Header="变量监控"  Icon="&#xF03A;" Click="MenuItem_Click_monitor"/>
+                            </MenuItem>
+                        </ContextMenu>
+                    </Button.ContextMenu>
+                    <TextBlock Text="&#xF03C;"
+                        FontSize="25"
+                        HorizontalAlignment="Center"
+                        FontFamily="{StaticResource FontAwesome}" Foreground="White" />
+                </Button>
+                <RadioButton pu:RadioButtonHelper.RadioButtonStyle="Button" pu:RadioButtonHelper.CheckedBackground="#FF7DA6CE" pu:RadioButtonHelper.CornerRadius="0" x:Name="button_mian" Content="主界面" Background="#FF303336"  Foreground="White"  Click="Button_Click_Front" Width="200" BorderBrush="{x:Null}" GroupName="group_mianBottom" />
+                <RadioButton pu:RadioButtonHelper.RadioButtonStyle="Button" pu:RadioButtonHelper.CheckedBackground="#FF7DA6CE" pu:RadioButtonHelper.CornerRadius="0" x:Name="button_zk" Content="CA1" Background="#FF303336" Foreground="White"  Click="Button_Click_Front" Width="200" GroupName="group_mianBottom"/>
+                <RadioButton pu:RadioButtonHelper.RadioButtonStyle="Button" pu:RadioButtonHelper.CheckedBackground="#FF7DA6CE" pu:RadioButtonHelper.CornerRadius="0" x:Name="button_yj" Content="CA2" Background="#FF303336" Foreground="White"  Click="Button_Click_Front" Width="200" GroupName="group_mianBottom"/>
+                <RadioButton pu:RadioButtonHelper.RadioButtonStyle="Button" pu:RadioButtonHelper.CheckedBackground="#FF7DA6CE" pu:RadioButtonHelper.CornerRadius="0" x:Name="button_fzb" Content="CA3" Background="#FF303336" Foreground="White"  Click="Button_Click_Front" Width="200" GroupName="group_mianBottom" />
+                <RadioButton pu:RadioButtonHelper.RadioButtonStyle="Button" pu:RadioButtonHelper.CheckedBackground="#FF7DA6CE" pu:RadioButtonHelper.CornerRadius="0" x:Name="button_dy" Content="CA4" Background="#FF303336" Foreground="White"  Click="Button_Click_Front" Width="200" GroupName="group_mianBottom"/>
+                <RadioButton pu:RadioButtonHelper.RadioButtonStyle="Button" pu:RadioButtonHelper.CheckedBackground="#FF7DA6CE" pu:RadioButtonHelper.CornerRadius="0" x:Name="button_dj" Content="CA5" Background="#FF303336" Foreground="White"  Click="Button_Click_Front" Width="200" GroupName="group_mianBottom" />
+                <RadioButton pu:RadioButtonHelper.RadioButtonStyle="Button" pu:RadioButtonHelper.CheckedBackground="#FF7DA6CE" pu:RadioButtonHelper.CornerRadius="0" x:Name="button_chart" Content="ROBOT" Background="#FF303336" Foreground="White"  Click="Button_Click_Front" Width="200" GroupName="group_mianBottom" />
+                <RadioButton pu:RadioButtonHelper.RadioButtonStyle="Button" pu:RadioButtonHelper.CheckedBackground="#FF7DA6CE" pu:RadioButtonHelper.CornerRadius="0" x:Name="button_alarm" Content="外围" Background="#FF303336" Foreground="White"  Click="Button_Click_Front" Width="200" GroupName="group_mianBottom"/>
+                <RadioButton pu:RadioButtonHelper.RadioButtonStyle="Button" pu:RadioButtonHelper.CheckedBackground="#FF7DA6CE" pu:RadioButtonHelper.CornerRadius="0" x:Name="button_login" Content="用户登录" Background="#FF303336" Foreground="White"  Click="Button_Click_Front" GroupName="group_mianBottom" />
+
+            </DockPanel>
+        </Viewbox>
+    </Grid>
+</Window>

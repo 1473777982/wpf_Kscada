@@ -1,0 +1,42 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:R2R.UControl"
+             xmlns:controls="clr-namespace:controls;assembly=controls" xmlns:Silver="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver" x:Class="R2R.UControl.RobotCtrl"
+             mc:Ignorable="d" Width="497" Height="250">
+    <Grid Background="{StaticResource Color_BackGround}">
+
+        <controls:tagControl HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" FontSize="14" Background="#FFD3D5DE" Margin="99,49,0,0" varName="Robot_value_MPG" Format="{}{0:F2}" setAble="False"/>
+        <TextBlock FontFamily="宋体" FontWeight="Normal" FontSize="15" Foreground="#FF000000" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Opacity="1"   HorizontalAlignment="Left" VerticalAlignment="Top" Text="robor伸缩" Margin="26,49,0,0"/>
+        <controls:tagControl HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" FontSize="14" Background="#FFD3D5DE" Margin="99,24,0,0" varName="Robot_value_MPG" Format="{}{0:F2}" setAble="False"/>
+        <TextBlock FontFamily="宋体" FontWeight="Normal" FontSize="15" Foreground="#FF000000" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Opacity="1"   HorizontalAlignment="Left" VerticalAlignment="Top" Text="robor角度" Margin="26,24,0,0"/>
+        <TextBlock FontFamily="宋体" FontWeight="Normal" FontSize="15" Foreground="#FF000000" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Opacity="1"   HorizontalAlignment="Left" VerticalAlignment="Top" Text="mm" Margin="184,49,0,0"/>
+        <TextBlock FontFamily="宋体" FontWeight="Normal" FontSize="15" Foreground="#FF000000" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Opacity="1"   HorizontalAlignment="Left" VerticalAlignment="Top" Text="旋转" Margin="26,106,0,0"/>
+        <TextBlock FontFamily="宋体" FontWeight="Normal" FontSize="15" Foreground="#FF000000" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Opacity="1"   HorizontalAlignment="Left" VerticalAlignment="Top" Text="伸缩" Margin="26,147,0,0"/>
+        <Button Content="启动" HorizontalAlignment="Left" Margin="298,107,0,0" VerticalAlignment="Top" Width="60"/>
+        <controls:tagSignal HorizontalAlignment="Left" Margin="259,24,0,0" VerticalAlignment="Top" Text="腔室光电" FontSize="13" Width="60"  Background="{StaticResource Color_tagCtrl_read}"/>
+        <Button Content="停止" HorizontalAlignment="Left" Margin="293,147,0,0" VerticalAlignment="Top" Width="60"/>
+        <Button Content="复位" HorizontalAlignment="Left" Margin="374,147,0,0" VerticalAlignment="Top" Width="60"/>
+        <controls:tagSignal HorizontalAlignment="Left" Margin="259,49,0,0" VerticalAlignment="Top" Text="状态" FontSize="13" Width="60"  Background="{StaticResource Color_tagCtrl_read}"/>
+        <TextBlock FontFamily="宋体" FontWeight="Normal" FontSize="15" Foreground="#FF000000" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Opacity="1"   HorizontalAlignment="Left" VerticalAlignment="Top" Text="报警信息" Margin="259,73,0,0"/>
+        <controls:tagControl x:Name="tagCtr_errMessage" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" setAble="False" Margin="331,73,0,0" Foreground="#FFB18C28" FontStyle="Italic"/>
+
+
+        <ComboBox x:Name="combo" HorizontalAlignment="Left" VerticalAlignment="Top"
+        Silver:ComboBoxHelper.Header="目标腔室选择 " Width="160" HorizontalContentAlignment="Center" 
+                  Foreground="Black" Margin="121,106,0,0"  >
+            <ComboBoxItem Content="CA0"/>
+            <ComboBoxItem Content="CA1"/>
+            <ComboBoxItem Content="CA2"/>
+            <ComboBoxItem Content="CA3"/>
+            <ComboBoxItem Content="CA4"/>
+            <ComboBoxItem Content="CA5"/>
+        </ComboBox>
+        <Button Content="伸出" HorizontalAlignment="Left" Margin="121,147,0,0" VerticalAlignment="Top" Width="60"/>
+        <Button Content="收回" HorizontalAlignment="Left" Margin="196,147,0,0" VerticalAlignment="Top" Width="60"/>
+
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,35 @@
+2023-03-29 10:02:42,940 [1] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:42 连接PLC成功 
+2023-03-29 10:02:43,929 [1] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:43 mainwindow初始化完成 
+2023-03-29 10:02:43,930 [1] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:43 AppStart 
+2023-03-29 10:02:46,991 [1] INFO  From R2R.App property:[(null)] yes_Click - 用户登录成功,用户: User
+2023-03-29 10:02:47,372 [14] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:47 PLC连接断开 User
+2023-03-29 10:02:47,376 [3] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:47 PLC连接断开 User
+2023-03-29 10:02:47,376 [4] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:47 PLC连接断开 User
+2023-03-29 10:02:47,477 [16] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:47 PLC连接断开 User
+2023-03-29 10:02:47,586 [3] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:47 PLC连接断开 User
+2023-03-29 10:02:47,687 [15] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:47 PLC连接断开 User
+2023-03-29 10:02:47,788 [14] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:47 PLC连接断开 User
+2023-03-29 10:02:47,883 [3] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:47 PLC连接断开 User
+2023-03-29 10:02:47,897 [14] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:47 PLC连接断开 User
+2023-03-29 10:02:47,998 [16] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:47 PLC连接断开 User
+2023-03-29 10:02:48,100 [4] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:48 PLC连接断开 User
+2023-03-29 10:02:48,203 [15] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:48 PLC连接断开 User
+2023-03-29 10:02:48,305 [3] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:48 PLC连接断开 User
+2023-03-29 10:02:48,399 [4] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:48 PLC连接断开 User
+2023-03-29 10:02:48,399 [3] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:48 PLC连接断开 User
+2023-03-29 10:02:48,436 [14] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:48 PLC连接断开 User
+2023-03-29 10:02:48,591 [3] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:48 PLC连接断开 User
+2023-03-29 10:02:48,730 [3] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:48 PLC连接断开 User
+2023-03-29 10:02:48,841 [3] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:48 PLC连接断开 User
+2023-03-29 10:02:48,955 [14] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:48 PLC连接断开 User
+2023-03-29 10:02:49,056 [16] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:49 PLC连接断开 User
+2023-03-29 10:02:49,072 [3] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:49 PLC连接断开 User
+2023-03-29 10:02:49,164 [14] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:49 PLC连接断开 User
+2023-03-29 10:02:49,273 [3] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:49 PLC连接断开 User
+2023-03-29 10:02:49,381 [4] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:49 PLC连接断开 User
+2023-03-29 10:02:49,480 [15] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:49 PLC连接断开 User
+2023-03-29 10:02:49,490 [16] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:49 PLC连接断开 User
+2023-03-29 10:02:49,585 [4] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:49 PLC连接断开 User
+2023-03-29 10:02:49,606 [14] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:49 PLC连接断开 User
+2023-03-29 10:02:49,715 [16] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:49 PLC连接断开 User
+2023-03-29 10:02:49,823 [3] INFO  From R2R.App property:[(null)] addLog - 2023/3/29 10:02:49 PLC连接断开 User

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LZg4Pn+d83C+1K+i+cdrYMeLYcOrBx2eUm2GXy8ZsY5zG1dhq3RtXAmA9EkE6CvWRN8ovF4nqcenT9HytfWrgg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Maxwell\\Desktop\\R2R_WPF\\common\\common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Maxwell\\.nuget\\packages\\log4net\\2.0.14\\log4net.2.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

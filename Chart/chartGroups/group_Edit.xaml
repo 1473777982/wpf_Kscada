@@ -1,0 +1,28 @@
+﻿<Window  x:Class="R2R.Chart.group_Edit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Silver="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+        xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+        mc:Ignorable="d" Height="300" 
+        Title="group_Edit" Background="{x:Null}" Icon="/Xwindow/Resources/立方体 立体 多面体 方块2.png" Width="500">
+    <Grid Loaded="Grid_Loaded" Background="{StaticResource Color_BackGround}">
+        <TextBox x:Name="tb_gpName" HorizontalAlignment="Left" Margin="90,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_vars" HorizontalAlignment="Left" Margin="90,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="289" Height="102" VerticalContentAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="37,26,0,0" TextWrapping="Wrap" Text="曲线组：" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="37,65,0,0" TextWrapping="Wrap" Text="变量：" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="90,173,0,0" TextWrapping="Wrap" Text="说明：变量之间用英文逗号间隔" VerticalAlignment="Top"/>
+
+        <Button Content="取消"
+            Height="20" Width="80"
+            HorizontalAlignment="Left" VerticalAlignment="Top"
+            Margin="280,227,0,0" Click="click_cancel" />
+        <Button Content="确定"
+            Height="20" Width="80"
+            HorizontalAlignment="Left" VerticalAlignment="Top"
+            Margin="374,227,0,0" Click="click_OK" />
+        <CheckBox x:Name="cbox" Content="启用对数坐标" HorizontalAlignment="Left" Margin="234,26,0,0" VerticalAlignment="Top" pu:CheckBoxHelper.CheckedBackground="#165490"/>
+
+    </Grid>
+</Window>

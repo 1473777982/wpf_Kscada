@@ -1,0 +1,18 @@
+﻿<Window x:Class="R2R.Windows.open_close"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:R2R.Windows"
+        mc:Ignorable="d"
+        Title="" Height="100" Width="100"
+        ResizeMode="NoResize" Icon="/Xwindow/Resources/立方体 立体 多面体 方块2.png">
+    <Grid x:Name="grid" Background="{StaticResource Color_BackGround}">
+        <Viewbox HorizontalAlignment="Center" Height="37" Stretch="Fill" VerticalAlignment="Center" Width="60">
+            <Grid Height="37" Width="60">
+                <Button x:Name="open" Content="打开" HorizontalAlignment="Center" VerticalAlignment="Top" Width="60" Click="open_Click" Height="17"/>
+                <Button x:Name="close" Content="关闭" HorizontalAlignment="Center" VerticalAlignment="Top" Width="60" Margin="0,20,0,0" Click="close_Click" Height="17"/>
+            </Grid>
+        </Viewbox>
+    </Grid>
+</Window>

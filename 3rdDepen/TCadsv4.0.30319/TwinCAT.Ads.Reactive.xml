@@ -1,0 +1,786 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TwinCAT.Ads.Reactive</name>
+    </assembly>
+    <members>
+        <member name="T:TwinCAT.Ads.Reactive.AdsClientExtensions">
+            <summary>
+            Extension class for <see cref="T:TwinCAT.Ads.TcAdsClient"/> respective <see cref="T:TwinCAT.Ads.IAdsConnection"/> to provide reactive ADS extensions.
+            </summary>
+            <remarks>
+            Reactive Extensions (Rx) are a library for composing asynchronous and event-based programs using observable sequences and LINQ-style
+            query operators. Using Rx, developers represent asynchronous data streams with Observables, query asynchronous data streams using LINQ
+            operators, and parameterize the concurrency in the asynchronous data streams using Schedulers. Simply put, Rx = Observables + LINQ + Schedulers.
+            The ADS reactive extensions are build on top of this library to enable ADS Symbol and State Observables, seamlessly bound to the reactive
+            extensions. To use the ADS reactive extensions the TwinCAT.Ads.Reactive Nuget package (or the included TwinCAT.Ads.Reactive.dll) must be referenced.
+            (<a href="https://www.nuget.org/packages/Beckhoff.TwinCAT.Ads.Reactive/">Beckhoff.TwinCAT.Ads.Reactive package on Nuget</a>).
+            </remarks>
+            <example>
+            The following sample shows how observe Value changed Notifications with the reactive <see cref="T:TwinCAT.Ads.Reactive.AdsClientExtensions"/>
+            <code language="C#" title="Observe changing ADS Symbols with reactive extensions." source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_SYMBOLS" />
+            </example>
+            <example>
+            The following sample shows how observe <see cref="T:TwinCAT.Ads.AdsState"/> changed Notifications with the reactive <see cref="T:TwinCAT.Ads.Reactive.AdsClientExtensions"/>
+            <code language="C#" title="Observe changing ADS states with reactive extensions." source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_STATECHANGE" />
+            </example>
+            <seealso cref="T:TwinCAT.Ads.Reactive.AnyTypeExtensions"/>
+            <seealso cref="T:TwinCAT.Ads.Reactive.ValueSymbolExtensions"/>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenNotificationEx(TwinCAT.Ads.IAdsNotifications)">
+            <summary>
+            Gets an observable sequence of <see cref="T:TwinCAT.Ads.AdsNotificationExEventArgs"/>.
+            </summary>
+            <param name="connection">The client.</param>
+            <returns>IObservable&lt;AdsNotificationExEventArgs&gt;.</returns>
+            <exclude/>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenNotification(TwinCAT.Ads.IAdsNotifications)">
+            <summary>
+            Gets an observable sequence of <see cref="T:TwinCAT.Ads.Reactive.Notification"/>s.
+            </summary>
+            <param name="connection">The client.</param>
+            <returns>IObservable&lt;NotificationValue&gt;.</returns>
+            <exclude/>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenNotification(TwinCAT.Ads.IAdsNotifications,System.UInt32[])">
+            <summary>
+            Gets an observable sequence of <see cref="T:TwinCAT.Ads.Reactive.Notification"/>s.
+            </summary>
+            <param name="connection">The client.</param>
+            <param name="handles">The handles.</param>
+            <returns>IObservable&lt;NotificationValue&gt;.</returns>
+            <exclude/>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenAdsStateChanges(TwinCAT.Ads.IAdsConnection)">
+            <summary>
+            Gets an observable sequence of <see cref="T:TwinCAT.Ads.AdsState"/>s.
+            </summary>
+            <param name="connection">The client.</param>
+            <returns>IObservable&lt;AdsState&gt;.</returns>
+            <example>
+            The following sample shows how observe <see cref="T:TwinCAT.Ads.AdsState"/> changed Notifications with the reactive <see cref="T:TwinCAT.Ads.Reactive.AdsClientExtensions"/>
+            <code language="C#" title="Observe changing ADS States with reactive extensions." source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_STATECHANGE" />
+            </example>
+            <seealso cref="M:TwinCAT.Ads.Reactive.AdsClientExtensions.PollAdsState(TwinCAT.Ads.IAdsConnection,System.IObservable{System.Reactive.Unit})"/>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenSymbolVersionChanges(TwinCAT.Ads.IAdsConnection)">
+            <summary>
+            Gets an observable sequence of SymbolVersion changed counts.
+            </summary>
+            <param name="connection">The connection.</param>
+            <returns>Counter, unique only within the <see cref="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenSymbolVersionChanges(TwinCAT.Ads.IAdsConnection)"/> observable.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenSymbolVersionChanges(TwinCAT.Ads.IAdsConnection,System.Reactive.Concurrency.IScheduler)">
+            <summary>
+            Gets an observable sequence of SymbolVersion changed counts.
+            </summary>
+            <param name="connection">The client.</param>
+            <param name="scheduler">The scheduler.</param>
+            <returns>Counter, unique only within the <see cref="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenSymbolVersionChanges(TwinCAT.Ads.IAdsConnection,System.Reactive.Concurrency.IScheduler)"/> observable.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AdsClientExtensions.PollAdsState(TwinCAT.Ads.IAdsConnection,System.IObservable{System.Reactive.Unit})">
+             <summary>
+             Gets an observable sequence of <see cref="T:TwinCAT.Ads.AdsState" />s via Polling.
+             </summary>
+             <param name="connection">The client.</param>
+             <param name="trigger">The polling trigger</param>
+             <returns>IObservable&lt;AdsState&gt;.</returns>
+             <example>
+            The following sample shows how observe <see cref="T:TwinCAT.Ads.AdsState" /> via polling with the reactive <see cref="T:TwinCAT.Ads.Reactive.AdsClientExtensions" /><code language="C#" title="Observe changing ADS States with reactive extensions." source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_STATECHANGEPOLLING" /></example>
+            <seealso cref="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenAdsStateChanges(TwinCAT.Ads.IAdsConnection)"/>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AdsClientExtensions.PollAdsState(TwinCAT.Ads.IAdsConnection,System.TimeSpan)">
+             <summary>
+             Gets an observable sequence of <see cref="T:TwinCAT.Ads.AdsState" />s via Polling.
+             </summary>
+             <param name="connection">The client.</param>
+             <param name="period">The period.</param>
+             <returns>IObservable&lt;AdsState&gt;.</returns>
+             <example>
+            The following sample shows how observe <see cref="T:TwinCAT.Ads.AdsState" /> via polling with the reactive <see cref="T:TwinCAT.Ads.Reactive.AdsClientExtensions" /><code language="C#" title="Observe changing ADS States with reactive extensions." source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_STATECHANGEPOLLING" />
+            </example>
+            <seealso cref="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenAdsStateChanges(TwinCAT.Ads.IAdsConnection)"/>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenNotification(TwinCAT.Ads.IAdsConnection,TwinCAT.TypeSystem.ISymbol,TwinCAT.Ads.NotificationSettings)">
+            <summary>
+            Gets an observable sequence of <see cref="T:TwinCAT.Ads.Reactive.Notification" />s.
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="symbol">The symbol to observe.</param>
+            <param name="settings">Notification settings.</param>
+            <returns>IObservable&lt;NotificationValue&gt;.</returns>
+            <exception cref="T:System.ArgumentNullException">symbol</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">Symbol is not an IValueSymbol - symbol</exception>
+            <seealso cref="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenNotification(TwinCAT.Ads.IAdsConnection,TwinCAT.TypeSystem.ISymbolCollection,TwinCAT.Ads.NotificationSettings)" />
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenNotification(TwinCAT.Ads.IAdsConnection,TwinCAT.TypeSystem.ISymbol)">
+            <summary>
+            Gets an observable sequence of <see cref="T:TwinCAT.Ads.Reactive.Notification"/>s.
+            </summary>
+            <param name="connection">The client.</param>
+            <param name="symbol">The symbol.</param>
+            <returns>IObservable&lt;NotificationValue&gt;.</returns>
+            <seealso cref="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenNotification(TwinCAT.Ads.IAdsConnection,TwinCAT.TypeSystem.ISymbolCollection,TwinCAT.Ads.NotificationSettings)"/>
+            <seealso cref="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenNotification(TwinCAT.Ads.IAdsConnection,TwinCAT.TypeSystem.ISymbol,TwinCAT.Ads.NotificationSettings)"/>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenNotification(TwinCAT.Ads.IAdsConnection,TwinCAT.TypeSystem.ISymbolCollection,TwinCAT.Ads.NotificationSettings)">
+            <summary>
+            Gets an observable sequence of <see cref="T:TwinCAT.Ads.Reactive.Notification" /> objects.
+            </summary>
+            <param name="connection">The client.</param>
+            <param name="symbols">The symbols to observe.</param>
+            <param name="settings">The Notification settings.</param>
+            <returns>IObservable&lt;NotificationValue&gt;.</returns>
+            <example>
+            The following sample shows how observe Value changed Notifications with the reactive <see cref="T:TwinCAT.Ads.Reactive.AdsClientExtensions" /><code language="C#" title="Observe changing ADS Symbols with reactive extensions." source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_SYMBOLS" /></example>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenNotificationEx(TwinCAT.Ads.IAdsConnection,System.Collections.Generic.IList{TwinCAT.TypeSystem.AnySymbolSpecifier},TwinCAT.Ads.NotificationSettings,System.Object)">
+            <summary>
+            Gets an observable sequence of <see cref="T:TwinCAT.Ads.Reactive.Notification" /> objects.
+            </summary>
+            <param name="connection">The client.</param>
+            <param name="symbols">The symbols to observe.</param>
+            <param name="settings">The Notification settings.</param>
+            <param name="userData">The user data.</param>
+            <returns>IObservable&lt;NotificationValue&gt;.</returns>
+            <exception cref="T:System.ArgumentNullException">symbols</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">Symbols list is empty! - symbols</exception>
+            <exclude/>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenNotificationEx(TwinCAT.Ads.IAdsConnection,TwinCAT.TypeSystem.AnySymbolSpecifier,TwinCAT.Ads.NotificationSettings,System.Object)">
+            <summary>
+            Gets an observable sequence of <see cref="T:TwinCAT.Ads.Reactive.Notification" /> objects.
+            </summary>
+            <param name="connection">The client.</param>
+            <param name="symbol">Symbol specifier.</param>
+            <param name="settings">The Notification settings.</param>
+            <param name="userData">The user data.</param>
+            <returns>IObservable&lt;NotificationValue&gt;.</returns>
+            <exception cref="T:System.ArgumentNullException">symbols</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">Symbols list is empty! - symbols</exception>
+            <exclude/>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenNotification(TwinCAT.Ads.IAdsConnection,TwinCAT.TypeSystem.ISymbolCollection)">
+            <summary>
+            Gets an observable sequence of <see cref="T:TwinCAT.Ads.Reactive.Notification"/> objects.
+            </summary>
+            <param name="client">The client.</param>
+            <param name="symbols">The symbols.</param>
+            <returns>IObservable&lt;NotificationValue&gt;.</returns>
+            <example>
+            The following sample shows how observe Value changed Notifications with the reactive <see cref="T:TwinCAT.Ads.Reactive.AdsClientExtensions"/>
+            <code language="C#" title="Observe changing ADS Symbols with reactive extensions." source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_SYMBOLS" />
+            </example>
+            <seealso cref="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenNotification(TwinCAT.Ads.IAdsConnection,TwinCAT.TypeSystem.ISymbol,TwinCAT.Ads.NotificationSettings)"/>
+        </member>
+        <member name="T:TwinCAT.Ads.Reactive.NotificationBase">
+            <summary>
+            Base class for Notifications transported by observables bound to ADS Notifications.
+            </summary>
+        </member>
+        <member name="F:TwinCAT.Ads.Reactive.NotificationBase.timeStamp">
+            <summary>
+            Notification Time Stamp
+            </summary>
+        </member>
+        <member name="F:TwinCAT.Ads.Reactive.NotificationBase.userData">
+            <summary>
+            User Data
+            </summary>
+        </member>
+        <member name="F:TwinCAT.Ads.Reactive.NotificationBase.notificationHandle">
+            <summary>
+            Notification Handle
+            </summary>
+        </member>
+        <member name="F:TwinCAT.Ads.Reactive.NotificationBase.val">
+            <summary>
+            The unmarshalled value.
+            </summary>
+        </member>
+        <member name="P:TwinCAT.Ads.Reactive.NotificationBase.TimeStamp">
+            <summary>
+            Gets the timestamp of this <see cref="T:TwinCAT.Ads.AdsNotificationEventArgs">Notification.</see>
+            </summary>
+        </member>
+        <member name="P:TwinCAT.Ads.Reactive.NotificationBase.UserData">
+            <summary>
+            Gets the user object. This object is passed by to AddDeviceNotification and can
+            be used to store data.
+            </summary>
+        </member>
+        <member name="P:TwinCAT.Ads.Reactive.NotificationBase.NotificationHandle">
+            <summary>
+            Gets the handle of the connection.
+            </summary>
+        </member>
+        <member name="P:TwinCAT.Ads.Reactive.NotificationBase.Value">
+            <summary>
+            Gets the value of the <see cref="T:TwinCAT.Ads.Reactive.NotificationBase">Notification</see>.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:TwinCAT.Ads.Reactive.Notification">
+            <summary>
+            Notification object streamed by IObservables of ADS Notifications
+            </summary>
+            <seealso cref="E:TwinCAT.Ads.IAdsNotifications.AdsNotification"/>
+            <seealso cref="o:AdsClientExtensions.WhenNotification"/>
+        </member>
+        <member name="F:TwinCAT.Ads.Reactive.Notification._bytes">
+            <summary>
+            Raw Data
+            </summary>
+        </member>
+        <member name="P:TwinCAT.Ads.Reactive.Notification.RawValue">
+            <summary>
+            Streams that holds the notification data.
+            </summary>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.Notification.#ctor(TwinCAT.Ads.AdsNotificationEventArgs)">
+            <summary>
+            Initializes a new instance of the AdsStream class AdsSyncNotificationEventArgs.
+            </summary>
+            <param name="args">The <see cref="T:TwinCAT.Ads.AdsNotificationEventArgs"/> instance containing the event data.</param>
+            <remarks>The TwinCAT realtime target system (even when working locally) has its own TimeSystem which is synchronized with
+            the Desktop/User time at TwinCAT Start. From this moment on the Desktop/User time can drift from the local Realtime/Target time.
+            can differ.
+            The TimeStamp can be converted to a .NET DateTime Object with <see cref="M:System.DateTime.FromFileTimeUtc(System.Int64)" /> or
+            <see cref="M:System.DateTime.FromFileTime(System.Int64)" /></remarks>
+        </member>
+        <member name="T:TwinCAT.Ads.Reactive.SymbolNotification">
+            <summary>
+            Provides data for AdsNotificationEvent of the class <seealso cref="T:TwinCAT.Ads.TcAdsClient"/>
+            </summary>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.SymbolNotification.#ctor(TwinCAT.Ads.AdsNotificationEventArgs,TwinCAT.TypeSystem.ISymbol,TwinCAT.ValueAccess.IAccessorValueFactory)">
+            <summary>
+            Initializes a new instance of the AdsStream class AdsSyncNotificationEventArgs.
+            </summary>
+            <param name="args">The <see cref="T:TwinCAT.Ads.AdsNotificationEventArgs" /> instance containing the event data.</param>
+            <param name="symbol">The symbol.</param>
+            <param name="valueFactory">The value factory.</param>
+            <remarks>The TwinCAT realtime target system (even when working locally) has its own TimeSystem which is synchronized with
+            the Desktop/User time at TwinCAT Start. From this moment on the Desktop/User time can drift from the local Realtime/Target time.
+            can differ.
+            The TimeStamp can be converted to a .NET DateTime Object with <see cref="M:System.DateTime.FromFileTimeUtc(System.Int64)" /> or
+            <see cref="M:System.DateTime.FromFileTime(System.Int64)" /></remarks>
+        </member>
+        <member name="F:TwinCAT.Ads.Reactive.SymbolNotification._valueFactory">
+            <summary>
+            The internal value factory.
+            </summary>
+        </member>
+        <member name="P:TwinCAT.Ads.Reactive.SymbolNotification.Symbol">
+            <summary>
+            Gets the symbol of the <see cref="T:TwinCAT.Ads.Reactive.SymbolNotification"/>.
+            </summary>
+            <value>The value symbol.</value>
+        </member>
+        <member name="F:TwinCAT.Ads.Reactive.SymbolNotification._valCreated">
+            <summary>
+            Indicates that the Value is created.
+            </summary>
+        </member>
+        <member name="P:TwinCAT.Ads.Reactive.SymbolNotification.Value">
+            <summary>
+            Gets the value of the <see cref="T:TwinCAT.Ads.Reactive.SymbolNotification">Notification</see>.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="T:TwinCAT.Ads.Reactive.NotificationEx">
+            <summary>
+            Notification data object created by Observables that are binding on the <see cref="E:TwinCAT.Ads.IAdsNotifications.AdsNotificationEx"/> event.
+            </summary>
+            <seealso cref="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenNotificationEx(TwinCAT.Ads.IAdsNotifications)"/>
+            <seealso cref="E:TwinCAT.Ads.IAdsNotifications.AdsNotificationEx"/>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.NotificationEx.#ctor(TwinCAT.Ads.AdsNotificationExEventArgs)">
+            <summary>
+            Initializes a new instance of the AdsStream class AdsSyncNotificationEventArgs.
+            </summary>
+            <param name="args">The <see cref="T:TwinCAT.Ads.AdsNotificationEventArgs" /> instance containing the event data.</param>
+            <exception cref="T:System.ArgumentNullException">args</exception>
+            <remarks>The TwinCAT realtime target system (even when working locally) has its own TimeSystem which is synchronized with
+            the Desktop/User time at TwinCAT Start. From this moment on the Desktop/User time can drift from the local Realtime/Target time.
+            can differ.
+            The TimeStamp can be converted to a .NET DateTime Object with <see cref="M:System.DateTime.FromFileTimeUtc(System.Int64)" /> or
+            <see cref="M:System.DateTime.FromFileTime(System.Int64)" /></remarks>
+        </member>
+        <member name="T:TwinCAT.Ads.Reactive.AnySymbolNotification">
+            <summary>
+            Notification data object created by Observables that are binding on the <see cref="E:TwinCAT.Ads.IAdsNotifications.AdsNotificationEx"/> event with specified symbol.
+            </summary>
+            <seealso cref="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenNotificationEx(TwinCAT.Ads.IAdsConnection,TwinCAT.TypeSystem.AnySymbolSpecifier,TwinCAT.Ads.NotificationSettings,System.Object)"/>
+            <seealso cref="M:TwinCAT.Ads.Reactive.AdsClientExtensions.WhenNotificationEx(TwinCAT.Ads.IAdsConnection,System.Collections.Generic.IList{TwinCAT.TypeSystem.AnySymbolSpecifier},TwinCAT.Ads.NotificationSettings,System.Object)"/>
+            <seealso cref="E:TwinCAT.Ads.IAdsNotifications.AdsNotificationEx"/>
+        </member>
+        <member name="F:TwinCAT.Ads.Reactive.AnySymbolNotification._specifier">
+            <summary>
+            The symbol specifier.
+            </summary>
+        </member>
+        <member name="P:TwinCAT.Ads.Reactive.AnySymbolNotification.SymbolSpecifier">
+            <summary>
+            Gets the bound symbol specification of the notification.
+            </summary>
+            <value>The symbol specifier.</value>
+        </member>
+        <member name="P:TwinCAT.Ads.Reactive.AnySymbolNotification.InstancePath">
+            <summary>
+            Gets the instance path of the Notification bound symbol.
+            </summary>
+            <value>The instance path.</value>
+        </member>
+        <member name="P:TwinCAT.Ads.Reactive.AnySymbolNotification.Type">
+            <summary>
+            Gets the Notification bound data type.
+            </summary>
+            <value>The type.</value>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnySymbolNotification.#ctor(TwinCAT.Ads.AdsNotificationExEventArgs,TwinCAT.TypeSystem.AnySymbolSpecifier)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TwinCAT.Ads.Reactive.AnySymbolNotification"/> class.
+            </summary>
+            <param name="args">The <see cref="T:TwinCAT.Ads.AdsNotificationExEventArgs"/> instance containing the event data.</param>
+            <param name="anySymbol">Any symbol.</param>
+            <exception cref="T:System.ArgumentNullException">anySymbol</exception>
+        </member>
+        <member name="T:TwinCAT.Ads.Reactive.AnyTypeExtensions">
+            <summary>
+            Extension class for <see cref="T:TwinCAT.Ads.TcAdsClient"/> respective <see cref="T:TwinCAT.Ads.IAdsConnection"/> to provide reactive ADS extensions (accessing symbol value sequences with the ANY_TYPE concept)
+            </summary>
+            <remarks>
+            Reactive Extensions (Rx) are a library for composing asynchronous and event-based programs using observable sequences and LINQ-style
+            query operators. Using Rx, developers represent asynchronous data streams with Observables, query asynchronous data streams using LINQ
+            operators, and parameterize the concurrency in the asynchronous data streams using Schedulers. Simply put, Rx = Observables + LINQ + Schedulers.
+            The ADS reactive extensions are build on top of this library to enable ADS Symbol and State Observables, seamlessly bound to the reactive
+            extensions. To use the ADS reactive extensions the TwinCAT.Ads.Reactive Nuget package (or the included TwinCAT.Ads.Reactive.dll) must be referenced.
+            (<a href="https://www.nuget.org/packages/Beckhoff.TwinCAT.Ads.Reactive/">Beckhoff.TwinCAT.Ads.Reactive package on Nuget</a>).
+            </remarks>
+            <example>
+            Example1: Observe Value changed Notifications with the reactive <see cref="T:TwinCAT.Ads.Reactive.AnyTypeExtensions"/>
+            <code language="C#" title="Observe a single changing ADS Symbols (Extended AdsNotifications, ANY_TYPE)" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_ANYTYPE" />
+            </example>
+            <example>
+            Example2: Polling ANY_TYPE values.
+            <code language="C#" title="Observe changing ADS Symbols by polling (Read Polling) (ANY_TYPE)" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_POLLANYTYPE" />
+            </example>
+            <example>
+            Write values sequentially.
+            <code language="C#" title="Write sequences of values to the target (ANY_TYPE)" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_WRITEANYTYPE" />
+            </example>
+            <seealso cref="T:TwinCAT.Ads.Reactive.AdsClientExtensions"/>
+            <seealso cref="T:TwinCAT.Ads.Reactive.ValueSymbolExtensions"/>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.WhenNotification(TwinCAT.Ads.IAdsConnection,System.Collections.Generic.IDictionary{System.String,System.Type},TwinCAT.Ads.NotificationSettings,System.Object)">
+            <summary>
+            Creates an observable sequence of values
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="symbols">InstancePath/Value Type mapping (ANYTYPE rules)</param>
+            <param name="settings">The settings.</param>
+            <param name="userData">The user data.</param>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+            <remarks>The values will be cast to the specified type. The .NET type must fit the Symbol type like all ANYTYPES.</remarks>
+            <example>
+            Observe multiple ANY_TYPES via reactive sequence.
+            <code language="C#" title="Observe multiple ANY_TYPES  via reactive sequence." source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_ANYTYPES" />
+            </example>
+            <exclude/>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.WhenNotification``1(TwinCAT.Ads.IAdsConnection,System.String,TwinCAT.Ads.NotificationSettings)">
+            <summary>
+            Creates an observable sequence of values that are created by ADS Notifications.
+            </summary>
+            <typeparam name="T">The .NET Type representation of the specified symbols type.</typeparam>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="settings">The settings.</param>
+            <returns>IObservable&lt;T&gt;.</returns>
+            <remarks>The values will be cast to the specified type. The .NET type must fit the Symbol type like all ANYTYPES.</remarks>
+            <example>
+            The following sample shows how to observe Value changed Notifications with the reactive <see cref="T:TwinCAT.Ads.Reactive.AnyTypeExtensions"/>
+            <code language="C#" title="Observe changing ADS Symbols with reactive extensions (Extended AdsNotification, ANY_TYPE)" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_ANYTYPE" />
+            </example>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.WhenNotification(TwinCAT.Ads.IAdsConnection,System.String,System.Type,TwinCAT.Ads.NotificationSettings)">
+            <summary>
+            Creates an observable sequence of values that are created by ADS Notifications.
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="type">The type.</param>
+            <param name="settings">The settings.</param>
+            <returns>IObservable&lt;T&gt;.</returns>
+            <remarks>The values will be cast to the specified type. The .NET type must fit be one of the compatible 'ANYTYPES'.</remarks>
+            <example>
+            The following sample shows how to observe Value changed Notifications with the reactive <see cref="T:TwinCAT.Ads.Reactive.AnyTypeExtensions"/>
+            <code language="C#" title="Observe changing ADS Symbols with reactive extensions (Extended AdsNotifications, ANY_TYPE)" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_ANYTYPE" />
+            </example>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.WriteValues``1(TwinCAT.Ads.IAdsConnection,System.String,System.IObservable{``0},System.Action{System.Exception})">
+            <summary>
+            Writes the sequence of values to the symbol specified by the instance path.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="valueSequence">Value sequence (Any type).</param>
+            <param name="errorHandler">The error handler.</param>
+            <returns>IDisposable.</returns>
+            <example>
+            Write values sequentially.
+            <code language="C#" title="Write sequences of values to the target (ANY_TYPE)" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_WRITEANYTYPE" />
+            </example>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.WriteValues``1(TwinCAT.Ads.IAdsConnection,System.String,System.IObservable{``0})">
+            <summary>
+            Writes the sequence of values to the symbol specified by the instance path.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="valueSequence">Value sequence (Any type).</param>
+            <returns>IDisposable.</returns>
+            <example>
+            Write values sequentially.
+            <code language="C#" title="Write sequences of values to the target (ANY_TYPE)" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_WRITEANYTYPE" />
+            </example>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.PollValues(TwinCAT.Ads.IAdsConnection,System.String,System.Type,System.Int32[],System.IObservable{System.Reactive.Unit},System.Func{System.Exception,System.Object})">
+            <summary>
+            Polls the symbol values on time points where the polling observable streams data / triggers
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="type">The data type of the symbol (ANY_TYPE)</param>
+            <param name="args">The ANY_TYPE arguments.</param>
+            <param name="trigger">The Polling trigger</param>
+            <param name="errorHandler">The error handler.</param>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.PollValues(TwinCAT.Ads.IAdsConnection,System.String,System.Type,System.Int32[],System.TimeSpan,System.Func{System.Exception,System.Object})">
+            <summary>
+            Polls the symbol as value sequence of object values with a specified period time.
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="type">The data type of the symbol (ANY_TYPE)</param>
+            <param name="args">The ANY_TYPE arguments.</param>
+            <param name="period">The period.</param>
+            <param name="errorHandler">The error handler.</param>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.PollValues(TwinCAT.Ads.IAdsConnection,System.String,System.Type,System.Int32[],System.TimeSpan)">
+            <summary>
+            Polls the symbol as value sequence of object values with a specified period time.
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="type">The data type of the symbol (ANY_TYPE)</param>
+            <param name="args">The ANY_TYPE arguments.</param>
+            <param name="period">The period.</param>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.PollValues(TwinCAT.Ads.IAdsConnection,System.String,System.Type,System.IObservable{System.Reactive.Unit},System.Func{System.Exception,System.Object})">
+            <summary>
+            Polls the symbol values on timepoints where the polling observable streams data / triggers
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="type">The data type of the symbol (ANY_TYPE)</param>
+            <param name="trigger">The Polling trigger</param>
+            <param name="errorHandler">The error handler.</param>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.PollValues(TwinCAT.Ads.IAdsConnection,System.String,System.Type,System.IObservable{System.Reactive.Unit})">
+            <summary>
+            Polls the symbol values on timepoints where the polling observable streams data / triggers
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="type">The data type of the symbol (ANY_TYPE)</param>
+            <param name="trigger">The Polling trigger</param>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.PollValues(TwinCAT.Ads.IAdsConnection,System.String,System.Type,System.TimeSpan,System.Func{System.Exception,System.Object})">
+            <summary>
+            Polls the symbol as value sequence of object values with a specified period time.
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="type">The data type of the symbol (ANY_TYPE)</param>
+            <param name="period">The period.</param>
+            <param name="errorHandler">The error handler.</param>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.PollValues(TwinCAT.Ads.IAdsConnection,System.String,System.Type,System.TimeSpan)">
+            <summary>
+            Polls the symbol as value sequence of object values with a specified period time.
+            </summary>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="type">The data type of the symbol (ANY_TYPE)</param>
+            <param name="period">The period.</param>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.PollValues``1(TwinCAT.Ads.IAdsConnection,System.String,System.IObservable{System.Reactive.Unit},System.Func{System.Exception,``0})">
+            <summary>
+            Polls the symbol values on timepoints where the polling observable streams data / triggers
+            </summary>
+            <typeparam name="T">The ANY_TYPE compatible .NET Type.</typeparam>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="trigger">The Polling trigger</param>
+            <param name="errorHandler">The error handler.</param>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.PollValues``1(TwinCAT.Ads.IAdsConnection,System.String,System.IObservable{System.Reactive.Unit})">
+            <summary>
+            Polls the symbol values on timepoints where the polling observable streams data / triggers
+            </summary>
+            <typeparam name="T">The ANY_TYPE compatible .NET Type.</typeparam>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="trigger">The Polling trigger</param>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.PollValues``1(TwinCAT.Ads.IAdsConnection,System.String,System.TimeSpan,System.Func{System.Exception,``0})">
+            <summary>
+            Polls the symbol as value sequence of object values with a specified period time.
+            </summary>
+            <typeparam name="T">The ANY_TYPE compatible .NET Type.</typeparam>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="period">The period.</param>
+            <param name="errorHandler">The error handler.</param>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.PollValues``1(TwinCAT.Ads.IAdsConnection,System.String,System.TimeSpan)">
+            <summary>
+            Polls the symbol as value sequence of object values with a specified period time.
+            </summary>
+            <typeparam name="T">The ANY_TYPE compatible .NET Type.</typeparam>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="period">The period.</param>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.PollValues``1(TwinCAT.Ads.IAdsConnection,System.String,System.Int32[],System.IObservable{System.Reactive.Unit},System.Func{System.Exception,``0})">
+            <summary>
+            Polls the symbol values on timepoints where the polling observable streams data / triggers
+            </summary>
+            <typeparam name="T">The ANY_TYPE compatible .NET Type.</typeparam>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="args">ANY_TYPE arguments</param>
+            <param name="trigger">The Polling trigger</param>
+            <param name="errorHandler">The error handler.</param>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.PollValues``1(TwinCAT.Ads.IAdsConnection,System.String,System.Int32[],System.IObservable{System.Reactive.Unit})">
+            <summary>
+            Polls the symbol values on time points where the polling observable streams data / triggers
+            </summary>
+            <typeparam name="T">The ANY_TYPE compatible .NET Type.</typeparam>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="args">ANY_TYPE arguments</param>
+            <param name="trigger">The Polling trigger</param>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.PollValues``1(TwinCAT.Ads.IAdsConnection,System.String,System.Int32[],System.TimeSpan,System.Func{System.Exception,``0})">
+            <summary>
+            Polls the symbol as value sequence of object values with a specified period time.
+            </summary>
+            <typeparam name="T">The ANY_TYPE compatible .NET Type.</typeparam>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="args">ANY_TYPE arguments.</param>
+            <param name="period">The period.</param>
+            <param name="errorHandler">The error handler.</param>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+            <example>
+            Polling ANY_TYPE values.
+            <code language="C#" title="Observe changing ADS Symbols by polling (Read Polling) (ANY_TYPE)" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_POLLANYTYPE" />
+            </example>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.AnyTypeExtensions.PollValues``1(TwinCAT.Ads.IAdsConnection,System.String,System.Int32[],System.TimeSpan)">
+            <summary>
+            Polls the symbol as value sequence of object values with a specified period time.
+            </summary>
+            <typeparam name="T">The ANY_TYPE compatible .NET Type.</typeparam>
+            <param name="connection">The connection.</param>
+            <param name="instancePath">The instance path.</param>
+            <param name="args">ANY_TYPE arguments.</param>
+            <param name="period">The period.</param>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+            <example>
+            Polling ANY_TYPE values.
+            <code language="C#" title="Observe changing ADS Symbols by polling (Read Polling) (ANY_TYPE)" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_POLLANYTYPE" />
+            </example>
+        </member>
+        <member name="T:TwinCAT.Ads.Reactive.ValueSymbolExtensions">
+            <summary>
+            Extension class for <see cref="T:TwinCAT.Ads.TcAdsClient"/> respective <see cref="T:TwinCAT.Ads.IAdsConnection"/> to provide reactive ADS extensions for accessing symbols that are loaded by the <see cref="T:TwinCAT.Ads.IAdsSymbolLoaderFactory"/>
+            </summary>
+            <remarks>
+            Reactive Extensions (Rx) are a library for composing asynchronous and event-based programs using observable sequences and LINQ-style
+            query operators. Using Rx, developers represent asynchronous data streams with Observables, query asynchronous data streams using LINQ
+            operators, and parameterize the concurrency in the asynchronous data streams using Schedulers. Simply put, Rx = Observables + LINQ + Schedulers.
+            The ADS reactive extensions are build on top of this library to enable ADS Symbol and State Observables, seamlessly bound to the reactive
+            extensions. To use the ADS reactive extensions the TwinCAT.Ads.Reactive Nuget package (or the included TwinCAT.Ads.Reactive.dll) must be referenced from
+            All types within are contained in the ADS companion package "Beckhoff.TwinCAT.Ads.Reactive" which must be referenced separately.
+            (<a href="https://www.nuget.org/packages/Beckhoff.TwinCAT.Ads.Reactive/">Beckhoff.TwinCAT.Ads.Reactive package on Nuget</a>).
+            </remarks>
+            <example>
+            The following sample shows how to observe Value changed Notifications with the reactive <see cref="T:TwinCAT.Ads.Reactive.ValueSymbolExtensions"/> from an <see cref="T:TwinCAT.TypeSystem.IValueSymbol"/>.
+            <code language="C#" title="Observe a single changing ADS Symbol (ADS Notifications)" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_READSYMBOL" />
+            </example>
+            <example>
+            The following sample shows how to observe Value changed Notifications with the reactive <see cref="T:TwinCAT.Ads.Reactive.ValueSymbolExtensions"/> from an <see cref="T:TwinCAT.TypeSystem.DynamicSymbol"/>.
+            <code language="C#" title="Observe a single changing ADS Symbol (ADS Notifications) with the dynamic language runtime (.NET DLR)" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_READSYMBOL" />
+            </example>
+            <example>
+            The same for more than one <see cref="T:TwinCAT.TypeSystem.IValueSymbol"/>.
+            <code language="C#" title="Observe changing ADS Symbols (ADS Notifications)" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_READSYMBOLS" />
+            </example>
+            <example>
+            Here, the values are polled in a specific time period and sequential Reads are triggered (in opposite to ADS Notification in the latter example)
+            <code language="C#" title="Observe changing ADS Symbols by polling (Read Polling)" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_POLLSYMBOLS" />
+            </example>
+            <example>
+            In the following example it is demonstrated how to write Values sequentially to a <see cref="T:TwinCAT.TypeSystem.IValueSymbol"/> with the help of the reactive extensions.
+            <code language="C#" title="Write sequences of values to the target" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_WRITESYMBOLS" />
+            </example>   
+            <seealso cref="T:TwinCAT.Ads.Reactive.AdsClientExtensions"/>
+            <seealso cref="T:TwinCAT.Ads.Reactive.AnyTypeExtensions"/>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.ValueSymbolExtensions.WhenValueChangedAnnotated(System.Collections.Generic.IEnumerable{TwinCAT.TypeSystem.ISymbol})">
+            <summary>
+            Observable sequence of  Value changed events driven by ADS Notifications on the specified symbol.
+            </summary>
+            <param name="symbols">The symbols to observe.</param>
+            <returns>IObservable&lt;ValueChangedArgs&gt;.</returns>
+            <seealso cref="T:System.Reactive.Linq.Observable" />
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.ValueSymbolExtensions.WhenValueChanged(System.Collections.Generic.IEnumerable{TwinCAT.TypeSystem.ISymbol})">
+            <summary>
+            Observable sequence of  Values driven by ADS Notifications on the specified symbol.
+            </summary>
+            <param name="symbols">The symbols to observe.</param>
+            <returns>IObservable&lt;ValueChangedArgs&gt;.</returns>
+            <seealso cref="T:System.Reactive.Linq.Observable" />
+            <example>
+            The same for more than one <see cref="T:TwinCAT.TypeSystem.IValueSymbol" />.
+            <code language="C#" title="Observe changing ADS Symbols (ADS Notifications)" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_READSYMBOLS" /></example>
+            <example>
+            The following sample shows how to observe Value changed Notifications with the reactive <see cref="T:TwinCAT.Ads.Reactive.ValueSymbolExtensions" /> from an <see cref="T:TwinCAT.TypeSystem.DynamicSymbol" />.
+            <code language="C#" title="Observe a single changing ADS Symbol (ADS Notifications) with the dynamic language runtime (.NET DLR)" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_READSYMBOL" /></example>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.ValueSymbolExtensions.WhenValueChanged(TwinCAT.TypeSystem.IValueSymbol)">
+            <summary>
+            Gets an observable sequence when the value of the <see cref="T:TwinCAT.TypeSystem.IValueSymbol"/> has changed.
+            </summary>
+            <param name="symbol">The symbol.</param>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+            <example>
+            The following sample shows how to observe Value changed Notifications with the reactive <see cref="T:TwinCAT.Ads.Reactive.ValueSymbolExtensions"/> from an <see cref="T:TwinCAT.TypeSystem.IValueSymbol"/>.
+            <code language="C#" title="Observe a single changing ADS Symbols (ADS Notifications)" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_READSYMBOL" />
+            </example>
+            <see cref="M:TwinCAT.Ads.Reactive.ValueSymbolExtensions.WhenValueChangedAnnotated(TwinCAT.TypeSystem.IValueSymbol)"/>
+            <see cref="E:TwinCAT.Ads.IAdsNotifications.AdsNotification"/>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.ValueSymbolExtensions.WhenValueChangedAnnotated(TwinCAT.TypeSystem.IValueSymbol)">
+            <summary>
+            Gets an observable sequence when the value of the <see cref="T:TwinCAT.TypeSystem.IValueSymbol"/> has changed.
+            </summary>
+            <param name="symbol">The symbol.</param>
+            <returns>IObservable&lt;ValueChangedArgs&gt;.</returns>
+            <exclude/>
+            <remarks>In addition to the sequence of the pure values (like in <see cref="M:TwinCAT.Ads.Reactive.ValueSymbolExtensions.WhenValueChanged(TwinCAT.TypeSystem.IValueSymbol)"/>) the sequence contains
+            <see cref="T:TwinCAT.TypeSystem.ValueChangedArgs"/> objects that contain additional notification timestamps.</remarks>
+            <seealso cref="M:TwinCAT.Ads.Reactive.ValueSymbolExtensions.WhenValueChanged(TwinCAT.TypeSystem.IValueSymbol)"/>
+            <seealso cref="E:TwinCAT.Ads.IAdsNotifications.AdsNotification"/>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.ValueSymbolExtensions.WriteValues(TwinCAT.TypeSystem.IValueSymbol,System.IObservable{System.Object})">
+            <summary>
+            Subscribes the <see cref="T:TwinCAT.TypeSystem.IValueSymbol" /> to an observable sequence of values and writes them to the <see cref="T:TwinCAT.TypeSystem.IValueSymbol" />.
+            </summary>
+            <param name="symbol">The symbol.</param>
+            <param name="valueObservable">Observable of Values.</param>
+            <returns>IDisposable.</returns>
+            <example>
+            In the following example it is demonstrated how to write Values sequentially to a <see cref="T:TwinCAT.TypeSystem.IValueSymbol"/> with the help of the reactive extensions.
+            <code language="C#" title="Write sequences of values to the target" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_WRITESYMBOLS" />
+            </example>   
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.ValueSymbolExtensions.WriteValues(TwinCAT.TypeSystem.IValueSymbol,System.IObservable{System.Object},System.Action{System.Exception})">
+            <summary>
+            Subscribes the <see cref="T:TwinCAT.TypeSystem.IValueSymbol" /> to an observable sequence of values and writes them to the <see cref="T:TwinCAT.TypeSystem.IValueSymbol" />.
+            </summary>
+            <param name="symbol">The symbol.</param>
+            <param name="valueObservable">Observable of Values.</param>
+            <param name="errorHandler">The error handler or NULL.</param>
+            <returns>IDisposable.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.ValueSymbolExtensions.WriteValues(TwinCAT.TypeSystem.IValueSymbol,System.IObservable{System.Object},System.Threading.CancellationToken)">
+            <summary>
+            Subscribes the <see cref="T:TwinCAT.TypeSystem.IValueSymbol" /> to an observable sequence of values and writes them to the <see cref="T:TwinCAT.TypeSystem.IValueSymbol" />.
+            </summary>
+            <param name="symbol">The symbol.</param>
+            <param name="valueObservable">Observable of Values.</param>
+            <param name="cancel">The cancellation token.</param>
+            <returns>IDisposable.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.ValueSymbolExtensions.WriteValues(TwinCAT.TypeSystem.IValueSymbol,System.IObservable{System.Object},System.Action{System.Exception},System.Threading.CancellationToken)">
+            <summary>
+            Subscribes the <see cref="T:TwinCAT.TypeSystem.IValueSymbol" /> to an observable sequence of values and writes them to the <see cref="T:TwinCAT.TypeSystem.IValueSymbol" />.
+            </summary>
+            <param name="symbol">The symbol.</param>
+            <param name="valueObservable">Observable of Values.</param>
+            <param name="errorHandler">The error handler.</param>
+            <param name="cancel">The cancellation token.</param>
+            <returns>IDisposable.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.ValueSymbolExtensions.PollValues(TwinCAT.TypeSystem.IValueSymbol,System.IObservable{System.Reactive.Unit})">
+            <summary>
+            Polls the symbol values on time points where the polling observable/trigger streams data
+            </summary>
+            <param name="symbol">The symbol.</param>
+            <param name="trigger">The Polling trigger</param>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+            <exclude/>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.ValueSymbolExtensions.PollValues(TwinCAT.TypeSystem.IValueSymbol,System.TimeSpan)">
+            <summary>
+            Polls the symbol as value sequence of object values with a specified period time.
+            </summary>
+            <param name="symbol">The symbol.</param>
+            <param name="period">The period.</param>
+            <example>
+            Here, the values are polled in a specific time period and sequential Reads are triggered (in opposite to ADS Notification in the latter example)
+            <code language="C#" title="Observe changing ADS Symbols (Read Polling)" source="..\Samples\TwinCAT.ADS.NET_Samples\80_ADS.NET_Reactive\Program.cs" region="CODE_SAMPLE_POLLSYMBOLS" />
+            </example>
+            <returns>IObservable&lt;System.Object&gt;.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.ValueSymbolExtensions.PollValuesAnnotated(TwinCAT.TypeSystem.IValueSymbol,System.IObservable{System.Reactive.Unit})">
+            <summary>
+            Polls the values as <see cref="T:TwinCAT.TypeSystem.ValueChangedArgs"/> sequence annotated value on trigger sequence
+            </summary>
+            <param name="symbol">The symbol.</param>
+            <param name="trigger">The polling Trigger.</param>
+            <returns>IObservable&lt;ValueChangedArgs&gt;.</returns>
+        </member>
+        <member name="M:TwinCAT.Ads.Reactive.ValueSymbolExtensions.PollValuesAnnotated(TwinCAT.TypeSystem.IValueSymbol,System.TimeSpan)">
+            <summary>
+            Polls the values as <see cref="T:TwinCAT.TypeSystem.ValueChangedArgs"/> sequence with a specified period time.
+            </summary>
+            <param name="symbol">The symbol.</param>
+            <param name="period">The polling period/interval.</param>
+            <returns>IObservable&lt;ValueChangedArgs&gt;.</returns>
+        </member>
+    </members>
+</doc>

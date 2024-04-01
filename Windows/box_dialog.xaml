@@ -1,0 +1,61 @@
+﻿<Window x:Class="R2R.Windows.box_dialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:R2R.Windows"
+        xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+        xmlns:controls="clr-namespace:controls;assembly=controls"
+        mc:Ignorable="d"
+        Title="box"  Height="530" Width="450" HorizontalAlignment="Left" VerticalAlignment="Top" Icon="/Xwindow/Resources/立方体 立体 多面体 方块2.png" Loaded="Window_Loaded">
+    <Window.Resources>
+
+    </Window.Resources>
+    <Grid Background="{StaticResource Color_BackGround}">
+        <controls:tagSignal sigColor1="{StaticResource sigColor1_Run}" HorizontalAlignment="Left" VerticalAlignment="Top" Text="DC电源状态" FontSize="13" Width="80" Background="{StaticResource Color_tagCtrl_read}" Margin="20,19,0,0"/>
+        <controls:tagSignal sigColor1="{StaticResource ResourceKey=sigColor1_Run}" HorizontalAlignment="Left" VerticalAlignment="Top" Text="护板位置" FontSize="13" Width="80" Background="{StaticResource Color_tagCtrl_read}" Margin="20,41,0,0"/>
+        <controls:tagSignal sigColor1="{StaticResource ResourceKey=sigColor1_Run}" HorizontalAlignment="Left" VerticalAlignment="Top" Text="RF电源状态" FontSize="13" Width="80" Background="{StaticResource Color_tagCtrl_read}" Margin="122,19,0,0"/>
+        <controls:tagSignal sigColor1="{StaticResource ResourceKey=sigColor1_Run}" HorizontalAlignment="Left" VerticalAlignment="Top" Text="水冷盘位置" FontSize="13" Width="80" Background="{StaticResource Color_tagCtrl_read}" Margin="122,44,0,0"/>
+        <controls:tagSignal sigColor1="{StaticResource ResourceKey=sigColor1_Run}" HorizontalAlignment="Left" VerticalAlignment="Top" Text="蒸镀电源1" FontSize="13" Width="80" Background="{StaticResource Color_tagCtrl_read}" Margin="21,69,0,0"/>
+        <controls:tagSignal sigColor1="{StaticResource ResourceKey=sigColor1_Run}" HorizontalAlignment="Left" VerticalAlignment="Top" Text="蒸镀电源2" FontSize="13" Width="80" Background="{StaticResource Color_tagCtrl_read}" Margin="120,69,0,0"/>
+        <controls:tagSignal sigColor1="{StaticResource ResourceKey=sigColor1_Run}" HorizontalAlignment="Left" VerticalAlignment="Top" Text="加热电源" FontSize="13" Width="80" Background="{StaticResource Color_tagCtrl_read}" Margin="222,19,0,0"/>
+        <TextBlock TextWrapping="Wrap" Text="实际温度" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="227,72,0,0"/>
+        <controls:tagControl HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="60"  Background="{StaticResource Color_tagCtrl_read}" Margin="294,72,0,0"/>
+        <controls:tagControl HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="14" Width="60"  Background="{StaticResource Color_tagCtrl_write}" Margin="294,50,0,0"/>
+        <TextBlock TextWrapping="Wrap" Text="设定温度" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="228,50,0,0"/>
+        <GroupBox Header="MFC" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,101,0,0" Background="{x:Null}" Width="409">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="396">
+                <Grid Height="18" Width="348">
+                    <TextBlock TextWrapping="Wrap" Text="设定(sccm)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="180,0,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="实际(sccm)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="270,0,0,0"/>
+                    <TextBlock TextWrapping="Wrap" Text="阀门" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid x:Name="MFC_Ar" Height="25" Width="350" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="NoWrap" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"><Run Text="Ar" FontSize="12" /><LineBreak /><Run x:Name="MFC_Ar_text" Text="200sccm" FontSize="10" /></TextBlock>
+                    <Button x:Name="MFC_Ar_on" Content="打开" HorizontalAlignment="Left" Width="60" VerticalAlignment="Center" Margin="45,0,0,0" Click="MFC_on_Click"/>
+                    <controls:tagControl x:Name="set_MFC_Ar" HorizontalAlignment="Left" FontSize="14" Width="80" VerticalAlignment="Center" Margin="175,0,0,0"  Background="{StaticResource Color_tagCtrl_write}" Format="{}{0:F2}"/>
+                    <controls:tagControl x:Name="value_MFC_Ar" HorizontalAlignment="Left" FontSize="14" Width="80" VerticalAlignment="Center" Margin="270,0,0,0" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False"/>
+                    <Button x:Name="MFC_Ar_off" Content="关闭" HorizontalAlignment="Left" Width="60" VerticalAlignment="Center" Margin="110,0,0,0" Click="MFC_off_Click"/>
+
+                </Grid>
+                <Grid x:Name="MFC_O2" Height="25" Width="350" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"><Run Text="O2" FontSize="12" /><LineBreak /><Run Text="200sccm" FontSize="10" /></TextBlock>
+                    <Button x:Name="MFC_O2_on" Content="打开" HorizontalAlignment="Left" Width="60" VerticalAlignment="Center" Margin="45,0,0,0"  Click="MFC_on_Click"/>
+                    <controls:tagControl x:Name="set_MFC_O2" HorizontalAlignment="Left" FontSize="14" Width="80" VerticalAlignment="Center" Margin="175,0,0,0" Background="{StaticResource Color_tagCtrl_write}" Format="{}{0:F2}"/>
+                    <controls:tagControl x:Name="value_MFC_O2" HorizontalAlignment="Left" FontSize="14" Width="80" VerticalAlignment="Center" Margin="270,0,0,0" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False"/>
+                    <Button x:Name="MFC_O2_off" Content="关闭" HorizontalAlignment="Left" Width="60" VerticalAlignment="Center" Margin="110,0,0,0" Click="MFC_off_Click"/>
+
+                </Grid>
+                <Grid x:Name="MFC_N2" Height="25" Width="350" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"><Run Text="N2" FontSize="12" /><LineBreak /><Run Text="200sccm" FontSize="10" /></TextBlock>
+                    <Button x:Name="MFC_N2_on" Content="打开" HorizontalAlignment="Left" Width="60" VerticalAlignment="Center" Margin="45,0,0,0" Click="MFC_on_Click"/>
+                    <controls:tagControl x:Name="set_MFC_N2" HorizontalAlignment="Left" FontSize="14" Width="80" VerticalAlignment="Center" Margin="175,0,0,0"  Background="{StaticResource Color_tagCtrl_write}" Format="{}{0:F2}"/>
+                    <controls:tagControl x:Name="value_MFC_N2" HorizontalAlignment="Left" FontSize="14" Width="80" VerticalAlignment="Center" Margin="270,0,0,0" Background="{StaticResource Color_tagCtrl_read}" Format="{}{0:F2}" setAble="False"/>
+                    <Button x:Name="MFC_N2_off" Content="关闭" HorizontalAlignment="Left" Width="60" VerticalAlignment="Center" Margin="110,0,0,0" Click="MFC_off_Click"/>
+
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+
+    </Grid>
+</Window>

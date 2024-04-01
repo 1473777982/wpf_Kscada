@@ -1,0 +1,52 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:R2R"
+      xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+      xmlns:controls="clr-namespace:controls;assembly=controls" x:Class="R2R.Page09_SystemParameter"
+      mc:Ignorable="d" 
+     d:DesignHeight="945" d:DesignWidth="1920" 
+      Title="Page09_SystemParameter">
+
+    <Grid x:Name="Page09SystemParameter"  Background="{StaticResource Color_BackGround}">
+        <TextBlock TextWrapping="Wrap" Text="系统参数" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="10,0,0,0" Width="100" Height="20" Margin="41,29,0,0"/>
+
+
+        <WrapPanel  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="126,72,0,0" Width="589" Height="525">
+            <TextBlock TextWrapping="Wrap" Text="CPU负载(%)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="20" Margin="20,20,0,0"/>
+            <controls:tagControl FontSize="14"  Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Width="130" Height="20" varName="Gen_value_CPUUsage" setAble="False"/>
+            <TextBlock TextWrapping="Wrap" Text="Runtime版本" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="20" Margin="20,20,0,0"/>
+            <controls:tagControl FontSize="14"  Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Width="130" Height="20" varName="Gen_value_RuntimeVersion" setAble="False"/>
+            <TextBlock TextWrapping="Wrap" Text="内存使用(%)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="20" Margin="20,20,0,0"/>
+            <controls:tagControl FontSize="14"  Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" DockPanel.Dock="Top" Width="130" Height="20" Margin="20,20,0,0" varName="Gen_value_MenUsage" setAble="False"/>
+            <TextBlock TextWrapping="Wrap" Text="PLC名称" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" DockPanel.Dock="Top" Width="100" Height="20" Margin="20,20,0,0"/>
+            <controls:tagControl FontSize="14"  Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="20" Margin="20,20,0,0" varName="Gen_value_ProductName" setAble="False"/>
+            <TextBlock TextWrapping="Wrap" Text="内存大小(M)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="20" Margin="20,20,0,0"/>
+            <controls:tagControl FontSize="14"  Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Width="130" Height="20" varName="Gen_value_Memsize" setAble="False"/>
+            <TextBlock TextWrapping="Wrap" Text="PLC 序列号" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="20" Margin="20,20,0,0"/>
+            <controls:tagControl FontSize="14"  Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Height="20" varName="Gen_value_serialNumber" setAble="False"/>
+            <TextBlock TextWrapping="Wrap" Text="CPU温度(℃)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="20" Margin="20,20,0,0"/>
+            <controls:tagControl FontSize="14"  Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="20" Margin="20,20,0,0" varName="Gen_value_CPUtempe" setAble="False"/>
+            <TextBlock TextWrapping="Wrap" Text="PLC IP地址" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="20" Margin="20,20,0,0"/>
+            <controls:tagControl FontSize="14"  Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="20" Margin="20,20,0,0" varName="Gen_value_IP" setAble="False"/>
+            <TextBlock TextWrapping="Wrap" Text="CPU主频(Hz)" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="20" Margin="20,20,0,0"/>
+            <controls:tagControl FontSize="14"  Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Width="130" Height="20" varName="Gen_value_CPUfreq" setAble="False"/>
+            <TextBlock TextWrapping="Wrap" Text="PLC Mac地址" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="20" Margin="20,20,0,0"/>
+            <controls:tagControl FontSize="14"  Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Width="130" Height="20" varName="Gen_value_MAC" setAble="False"/>
+            <TextBlock TextWrapping="Wrap" Text="开机时间" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="20" Margin="20,20,0,0"/>
+            <controls:tagControl FontSize="14"  Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="20" Margin="20,20,0,0" varName="Gen_value_bootTime" setAble="False"/>
+            <TextBlock TextWrapping="Wrap" Text="PLC 子网掩码" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="20" Margin="20,20,0,0"/>
+            <controls:tagControl FontSize="14"  Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="20" Margin="20,20,0,0" varName="Gen_value_Mask" setAble="False"/>
+            <TextBlock TextWrapping="Wrap" Text="boot版本" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="20" Margin="20,20,0,0"/>
+            <controls:tagControl FontSize="14"  Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Width="130" Height="20" varName="Gen_value_BootVersion" setAble="False"/>
+            <TextBlock TextWrapping="Wrap" Text="PLC 网关" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="20" Margin="20,20,0,0"/>
+            <controls:tagControl FontSize="14"  Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Width="130" Height="20" varName="Gen_value_Gateway" setAble="False"/>
+            <TextBlock TextWrapping="Wrap" Text="PLC版本" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="20" Margin="20,20,0,0"/>
+            <controls:tagControl FontSize="14"  Background="{StaticResource Color_tagCtrl_read}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Height="20" Margin="20,20,0,0" varName="Gen_value_PLCVersion" setAble="False"/>
+        </WrapPanel>
+
+
+    </Grid>
+</Page>
